@@ -42,10 +42,9 @@ namespace School_Management_System.View
             // 
             this.labelUserName.AutoSize = true;
             this.labelUserName.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUserName.Location = new System.Drawing.Point(105, 101);
-            this.labelUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelUserName.Location = new System.Drawing.Point(140, 124);
             this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(123, 23);
+            this.labelUserName.Size = new System.Drawing.Size(156, 29);
             this.labelUserName.TabIndex = 0;
             this.labelUserName.Text = "User Name:";
             this.labelUserName.Click += new System.EventHandler(this.labelUserName_Click);
@@ -54,29 +53,28 @@ namespace School_Management_System.View
             // 
             this.labelPassword.AutoSize = true;
             this.labelPassword.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPassword.Location = new System.Drawing.Point(119, 164);
-            this.labelPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPassword.Location = new System.Drawing.Point(159, 202);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(109, 23);
+            this.labelPassword.Size = new System.Drawing.Size(137, 29);
             this.labelPassword.TabIndex = 1;
             this.labelPassword.Text = "Password:";
             // 
             // textBoxUserName
             // 
             this.textBoxUserName.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUserName.Location = new System.Drawing.Point(226, 101);
-            this.textBoxUserName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxUserName.Location = new System.Drawing.Point(301, 124);
+            this.textBoxUserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxUserName.Name = "textBoxUserName";
-            this.textBoxUserName.Size = new System.Drawing.Size(258, 27);
+            this.textBoxUserName.Size = new System.Drawing.Size(343, 32);
             this.textBoxUserName.TabIndex = 2;
             // 
             // textBoxPassword
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.Location = new System.Drawing.Point(226, 163);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPassword.Location = new System.Drawing.Point(301, 201);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(258, 27);
+            this.textBoxPassword.Size = new System.Drawing.Size(343, 32);
             this.textBoxPassword.TabIndex = 3;
             // 
             // comboBoxUserType
@@ -87,10 +85,10 @@ namespace School_Management_System.View
             "Admin",
             "Teacher",
             "Student"});
-            this.comboBoxUserType.Location = new System.Drawing.Point(226, 225);
-            this.comboBoxUserType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxUserType.Location = new System.Drawing.Point(301, 277);
+            this.comboBoxUserType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxUserType.Name = "comboBoxUserType";
-            this.comboBoxUserType.Size = new System.Drawing.Size(258, 26);
+            this.comboBoxUserType.Size = new System.Drawing.Size(343, 33);
             this.comboBoxUserType.TabIndex = 4;
             this.comboBoxUserType.Text = " -choose a type-";
             // 
@@ -98,30 +96,29 @@ namespace School_Management_System.View
             // 
             this.labelUserType.AutoSize = true;
             this.labelUserType.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUserType.Location = new System.Drawing.Point(115, 225);
-            this.labelUserType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelUserType.Location = new System.Drawing.Point(153, 277);
             this.labelUserType.Name = "labelUserType";
-            this.labelUserType.Size = new System.Drawing.Size(113, 23);
+            this.labelUserType.Size = new System.Drawing.Size(143, 29);
             this.labelUserType.TabIndex = 5;
             this.labelUserType.Text = "User Type:";
             // 
             // buttonLogIn
             // 
             this.buttonLogIn.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogIn.Location = new System.Drawing.Point(398, 297);
-            this.buttonLogIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonLogIn.Location = new System.Drawing.Point(531, 366);
+            this.buttonLogIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonLogIn.Name = "buttonLogIn";
-            this.buttonLogIn.Size = new System.Drawing.Size(86, 31);
+            this.buttonLogIn.Size = new System.Drawing.Size(115, 38);
             this.buttonLogIn.TabIndex = 6;
             this.buttonLogIn.Text = "LogIn";
             this.buttonLogIn.UseVisualStyleBackColor = true;
             // 
             // FormLogIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Green;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonLogIn);
             this.Controls.Add(this.labelUserType);
             this.Controls.Add(this.comboBoxUserType);
@@ -129,7 +126,7 @@ namespace School_Management_System.View
             this.Controls.Add(this.textBoxUserName);
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.labelUserName);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormLogIn";
             this.Text = "FormLogIn";
             this.Load += new System.EventHandler(this.FormLogIn_Load);
