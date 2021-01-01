@@ -21,5 +21,10 @@ namespace School_Management_System.View
         {
 
         }
+
+        private void FormLogIn_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
