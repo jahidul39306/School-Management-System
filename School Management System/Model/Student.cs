@@ -11,7 +11,7 @@ namespace School_Management_System.Model
         public int sId { get; set; }
         public string name { get; set; }
         public string roll { get; set; }
-        public string fathrName { get; set; }
+        public string fatherName { get; set; }
         public string motherName { get; set; }
         public DateTime dateOfBirth { get; set; }
         public DateTime dateOfAdmission { get; set; }

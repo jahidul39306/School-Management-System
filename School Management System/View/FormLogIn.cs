@@ -68,7 +68,8 @@ namespace School_Management_System.View
             {
                 if (StudentController.AuthenticateStudent(userName, password) != null)
                 {
-                    new FormStudent().Show();
+                    Student s = StudentController.AuthenticateStudent(userName, password);
+                    new FormStudent(s).Show();
                 }
                 else
                 {
