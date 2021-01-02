@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace School_Management_System.Model
 {
-    class Teacher
+    public class Teacher
     {
-        public int teacherId { get; set; }
-        public string teacherName { get; set; }
-        public string teacherPhnNumber { get; set; }
-        public string teacherGender { get; set; }
+        public int tId { get; set; }
+        public string name { get; set; }
+        public string gender { get; set; }
+        public string contact { get; set; }
+        public string address { get; set; }
+
         public string userName { get; set; }
         public string password { get; set; }
     }
