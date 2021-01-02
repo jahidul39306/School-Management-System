@@ -40,5 +40,7 @@ namespace School_Management_System.Model
             conn.Close();
             return teacher;
         }
+
+       
     }
 }

@@ -29,20 +29,33 @@ namespace School_Management_System.View
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelT1 = new System.Windows.Forms.Panel();
+            this.panelTeacher = new System.Windows.Forms.Panel();
+            this.buttonProfile = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.buttonSResult = new System.Windows.Forms.Button();
             this.buttonViewCSInfo = new System.Windows.Forms.Button();
             this.buttonChangePass = new System.Windows.Forms.Button();
             this.panelChangePass = new System.Windows.Forms.Panel();
             this.buttonUpdate = new System.Windows.Forms.Button();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.labelPassword = new System.Windows.Forms.Label();
+            this.textBoxNewPassword = new System.Windows.Forms.TextBox();
+            this.labelNewPassword = new System.Windows.Forms.Label();
             this.textBoxUserName = new System.Windows.Forms.TextBox();
             this.labelUserName = new System.Windows.Forms.Label();
-            this.panelCSInfo = new System.Windows.Forms.Panel();
+            this.panelStudentInfo = new System.Windows.Forms.Panel();
+            this.labelSId = new System.Windows.Forms.Label();
+            this.textBoxSId = new System.Windows.Forms.TextBox();
             this.dataGridViewCSInfo = new System.Windows.Forms.DataGridView();
             this.panelSResult = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonUpdateResult = new System.Windows.Forms.Button();
             this.buttonAddResult = new System.Windows.Forms.Button();
             this.panelAddResult = new System.Windows.Forms.Panel();
             this.buttonAdd = new System.Windows.Forms.Button();
@@ -54,24 +67,175 @@ namespace School_Management_System.View
             this.labelSSubject = new System.Windows.Forms.Label();
             this.comboBoxSClass = new System.Windows.Forms.ComboBox();
             this.labelSClass = new System.Windows.Forms.Label();
-            this.panelT1.SuspendLayout();
+            this.panelTeacherInfo = new System.Windows.Forms.Panel();
+            this.labelPersonalInfo = new System.Windows.Forms.Label();
+            this.richTextBoxAddress = new System.Windows.Forms.RichTextBox();
+            this.labelAddress = new System.Windows.Forms.Label();
+            this.textBoxContact = new System.Windows.Forms.TextBox();
+            this.labelContact = new System.Windows.Forms.Label();
+            this.textBoxGender = new System.Windows.Forms.TextBox();
+            this.labelGender = new System.Windows.Forms.Label();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.labelName = new System.Windows.Forms.Label();
+            this.labelWelcome = new System.Windows.Forms.Label();
+            this.panelResultAdd = new System.Windows.Forms.Panel();
+            this.textBoxSearchStudent = new System.Windows.Forms.TextBox();
+            this.labelStudentId = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.comboBoxCourse = new System.Windows.Forms.ComboBox();
+            this.labelCourse = new System.Windows.Forms.Label();
+            this.comboBoxSection = new System.Windows.Forms.ComboBox();
+            this.labelSection = new System.Windows.Forms.Label();
+            this.comboBoxClass = new System.Windows.Forms.ComboBox();
+            this.labelClass = new System.Windows.Forms.Label();
+            this.panelResultUpdate = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panelTeacher.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panelChangePass.SuspendLayout();
-            this.panelCSInfo.SuspendLayout();
+            this.panelStudentInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCSInfo)).BeginInit();
             this.panelSResult.SuspendLayout();
             this.panelAddResult.SuspendLayout();
+            this.panelTeacherInfo.SuspendLayout();
+            this.panelResultAdd.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panelResultUpdate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelT1
+            // panelTeacher
             // 
-            this.panelT1.BackColor = System.Drawing.Color.Blue;
-            this.panelT1.Controls.Add(this.buttonSResult);
-            this.panelT1.Controls.Add(this.buttonViewCSInfo);
-            this.panelT1.Controls.Add(this.buttonChangePass);
-            this.panelT1.Location = new System.Drawing.Point(1, -1);
-            this.panelT1.Name = "panelT1";
-            this.panelT1.Size = new System.Drawing.Size(171, 418);
-            this.panelT1.TabIndex = 0;
+            this.panelTeacher.BackColor = System.Drawing.Color.Blue;
+            this.panelTeacher.Controls.Add(this.buttonProfile);
+            this.panelTeacher.Controls.Add(this.panel1);
+            this.panelTeacher.Controls.Add(this.buttonSResult);
+            this.panelTeacher.Controls.Add(this.buttonViewCSInfo);
+            this.panelTeacher.Controls.Add(this.buttonChangePass);
+            this.panelTeacher.Location = new System.Drawing.Point(1, -1);
+            this.panelTeacher.Name = "panelTeacher";
+            this.panelTeacher.Size = new System.Drawing.Size(171, 418);
+            this.panelTeacher.TabIndex = 0;
+            // 
+            // buttonProfile
+            // 
+            this.buttonProfile.BackColor = System.Drawing.Color.RoyalBlue;
+            this.buttonProfile.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonProfile.Location = new System.Drawing.Point(0, 37);
+            this.buttonProfile.Name = "buttonProfile";
+            this.buttonProfile.Size = new System.Drawing.Size(171, 53);
+            this.buttonProfile.TabIndex = 10;
+            this.buttonProfile.Text = "Profile";
+            this.buttonProfile.UseVisualStyleBackColor = false;
+            this.buttonProfile.Click += new System.EventHandler(this.buttonProfile_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.dataGridView2);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.comboBox3);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Location = new System.Drawing.Point(177, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(595, 393);
+            this.panel1.TabIndex = 9;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(371, 59);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(161, 26);
+            this.textBox1.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(244, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 19);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Search Student";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 118);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(589, 272);
+            this.dataGridView2.TabIndex = 6;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(325, 17);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 27);
+            this.comboBox1.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(260, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 19);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Course";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(89, 53);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 27);
+            this.comboBox2.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(16, 56);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 19);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Section";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(89, 17);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 27);
+            this.comboBox3.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(33, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 19);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Class";
             // 
             // buttonSResult
             // 
@@ -83,17 +247,19 @@ namespace School_Management_System.View
             this.buttonSResult.TabIndex = 3;
             this.buttonSResult.Text = "Student\'s Result";
             this.buttonSResult.UseVisualStyleBackColor = false;
+            this.buttonSResult.Click += new System.EventHandler(this.buttonSResult_Click);
             // 
             // buttonViewCSInfo
             // 
             this.buttonViewCSInfo.BackColor = System.Drawing.Color.RoyalBlue;
             this.buttonViewCSInfo.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonViewCSInfo.Location = new System.Drawing.Point(0, 99);
+            this.buttonViewCSInfo.Location = new System.Drawing.Point(0, 108);
             this.buttonViewCSInfo.Name = "buttonViewCSInfo";
             this.buttonViewCSInfo.Size = new System.Drawing.Size(171, 53);
             this.buttonViewCSInfo.TabIndex = 2;
-            this.buttonViewCSInfo.Text = "Course Student\'s Info";
+            this.buttonViewCSInfo.Text = " Student\'s Info";
             this.buttonViewCSInfo.UseVisualStyleBackColor = false;
+            this.buttonViewCSInfo.Click += new System.EventHandler(this.buttonViewCSInfo_Click);
             // 
             // buttonChangePass
             // 
@@ -110,8 +276,8 @@ namespace School_Management_System.View
             // panelChangePass
             // 
             this.panelChangePass.Controls.Add(this.buttonUpdate);
-            this.panelChangePass.Controls.Add(this.textBoxPassword);
-            this.panelChangePass.Controls.Add(this.labelPassword);
+            this.panelChangePass.Controls.Add(this.textBoxNewPassword);
+            this.panelChangePass.Controls.Add(this.labelNewPassword);
             this.panelChangePass.Controls.Add(this.textBoxUserName);
             this.panelChangePass.Controls.Add(this.labelUserName);
             this.panelChangePass.Location = new System.Drawing.Point(244, 74);
@@ -129,24 +295,25 @@ namespace School_Management_System.View
             this.buttonUpdate.TabIndex = 9;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
-            // textBoxPassword
+            // textBoxNewPassword
             // 
-            this.textBoxPassword.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.Location = new System.Drawing.Point(159, 106);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(201, 32);
-            this.textBoxPassword.TabIndex = 8;
+            this.textBoxNewPassword.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNewPassword.Location = new System.Drawing.Point(159, 106);
+            this.textBoxNewPassword.Name = "textBoxNewPassword";
+            this.textBoxNewPassword.Size = new System.Drawing.Size(201, 32);
+            this.textBoxNewPassword.TabIndex = 8;
             // 
-            // labelPassword
+            // labelNewPassword
             // 
-            this.labelPassword.AutoSize = true;
-            this.labelPassword.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPassword.Location = new System.Drawing.Point(22, 109);
-            this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(100, 25);
-            this.labelPassword.TabIndex = 7;
-            this.labelPassword.Text = "Password";
+            this.labelNewPassword.AutoSize = true;
+            this.labelNewPassword.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNewPassword.Location = new System.Drawing.Point(3, 109);
+            this.labelNewPassword.Name = "labelNewPassword";
+            this.labelNewPassword.Size = new System.Drawing.Size(145, 25);
+            this.labelNewPassword.TabIndex = 7;
+            this.labelNewPassword.Text = "New Password";
             // 
             // textBoxUserName
             // 
@@ -160,47 +327,67 @@ namespace School_Management_System.View
             // 
             this.labelUserName.AutoSize = true;
             this.labelUserName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUserName.Location = new System.Drawing.Point(22, 67);
+            this.labelUserName.Location = new System.Drawing.Point(11, 67);
             this.labelUserName.Name = "labelUserName";
             this.labelUserName.Size = new System.Drawing.Size(110, 25);
             this.labelUserName.TabIndex = 5;
             this.labelUserName.Text = "User Name";
             // 
-            // panelCSInfo
+            // panelStudentInfo
             // 
-            this.panelCSInfo.Controls.Add(this.dataGridViewCSInfo);
-            this.panelCSInfo.Location = new System.Drawing.Point(178, 65);
-            this.panelCSInfo.Name = "panelCSInfo";
-            this.panelCSInfo.Size = new System.Drawing.Size(625, 339);
-            this.panelCSInfo.TabIndex = 10;
+            this.panelStudentInfo.Controls.Add(this.labelSId);
+            this.panelStudentInfo.Controls.Add(this.textBoxSId);
+            this.panelStudentInfo.Controls.Add(this.dataGridViewCSInfo);
+            this.panelStudentInfo.Location = new System.Drawing.Point(178, 5);
+            this.panelStudentInfo.Name = "panelStudentInfo";
+            this.panelStudentInfo.Size = new System.Drawing.Size(625, 412);
+            this.panelStudentInfo.TabIndex = 10;
+            // 
+            // labelSId
+            // 
+            this.labelSId.AutoSize = true;
+            this.labelSId.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSId.Location = new System.Drawing.Point(85, 55);
+            this.labelSId.Name = "labelSId";
+            this.labelSId.Size = new System.Drawing.Size(87, 19);
+            this.labelSId.TabIndex = 2;
+            this.labelSId.Text = "Student Id";
+            // 
+            // textBoxSId
+            // 
+            this.textBoxSId.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSId.Location = new System.Drawing.Point(190, 52);
+            this.textBoxSId.Name = "textBoxSId";
+            this.textBoxSId.Size = new System.Drawing.Size(175, 26);
+            this.textBoxSId.TabIndex = 1;
             // 
             // dataGridViewCSInfo
             // 
             this.dataGridViewCSInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCSInfo.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewCSInfo.Location = new System.Drawing.Point(0, 123);
             this.dataGridViewCSInfo.Name = "dataGridViewCSInfo";
             this.dataGridViewCSInfo.Size = new System.Drawing.Size(622, 283);
             this.dataGridViewCSInfo.TabIndex = 0;
             // 
             // panelSResult
             // 
-            this.panelSResult.Controls.Add(this.button1);
+            this.panelSResult.Controls.Add(this.buttonUpdateResult);
             this.panelSResult.Controls.Add(this.buttonAddResult);
             this.panelSResult.Location = new System.Drawing.Point(178, 9);
             this.panelSResult.Name = "panelSResult";
             this.panelSResult.Size = new System.Drawing.Size(581, 405);
             this.panelSResult.TabIndex = 1;
             // 
-            // button1
+            // buttonUpdateResult
             // 
-            this.button1.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(282, 135);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 105);
-            this.button1.TabIndex = 1;
-            this.button1.Text = " View/Update Result";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonUpdateResult.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUpdateResult.Location = new System.Drawing.Point(282, 135);
+            this.buttonUpdateResult.Name = "buttonUpdateResult";
+            this.buttonUpdateResult.Size = new System.Drawing.Size(170, 105);
+            this.buttonUpdateResult.TabIndex = 1;
+            this.buttonUpdateResult.Text = " View/Update Result";
+            this.buttonUpdateResult.UseVisualStyleBackColor = true;
+            this.buttonUpdateResult.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonAddResult
             // 
@@ -211,6 +398,7 @@ namespace School_Management_System.View
             this.buttonAddResult.TabIndex = 0;
             this.buttonAddResult.Text = "Add Result";
             this.buttonAddResult.UseVisualStyleBackColor = true;
+            this.buttonAddResult.Click += new System.EventHandler(this.buttonAddResult_Click);
             // 
             // panelAddResult
             // 
@@ -227,6 +415,7 @@ namespace School_Management_System.View
             this.panelAddResult.Name = "panelAddResult";
             this.panelAddResult.Size = new System.Drawing.Size(610, 418);
             this.panelAddResult.TabIndex = 1;
+            this.panelAddResult.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAddResult_Paint);
             // 
             // buttonAdd
             // 
@@ -325,48 +514,374 @@ namespace School_Management_System.View
             this.labelSClass.TabIndex = 0;
             this.labelSClass.Text = "Select Class";
             // 
+            // panelTeacherInfo
+            // 
+            this.panelTeacherInfo.Controls.Add(this.labelPersonalInfo);
+            this.panelTeacherInfo.Controls.Add(this.richTextBoxAddress);
+            this.panelTeacherInfo.Controls.Add(this.labelAddress);
+            this.panelTeacherInfo.Controls.Add(this.textBoxContact);
+            this.panelTeacherInfo.Controls.Add(this.labelContact);
+            this.panelTeacherInfo.Controls.Add(this.textBoxGender);
+            this.panelTeacherInfo.Controls.Add(this.labelGender);
+            this.panelTeacherInfo.Controls.Add(this.textBoxName);
+            this.panelTeacherInfo.Controls.Add(this.labelName);
+            this.panelTeacherInfo.Controls.Add(this.labelWelcome);
+            this.panelTeacherInfo.Location = new System.Drawing.Point(178, 4);
+            this.panelTeacherInfo.Name = "panelTeacherInfo";
+            this.panelTeacherInfo.Size = new System.Drawing.Size(610, 400);
+            this.panelTeacherInfo.TabIndex = 1;
+            // 
+            // labelPersonalInfo
+            // 
+            this.labelPersonalInfo.AutoSize = true;
+            this.labelPersonalInfo.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPersonalInfo.Location = new System.Drawing.Point(89, 87);
+            this.labelPersonalInfo.Name = "labelPersonalInfo";
+            this.labelPersonalInfo.Size = new System.Drawing.Size(276, 32);
+            this.labelPersonalInfo.TabIndex = 46;
+            this.labelPersonalInfo.Text = "Personal Information";
+            // 
+            // richTextBoxAddress
+            // 
+            this.richTextBoxAddress.Location = new System.Drawing.Point(166, 277);
+            this.richTextBoxAddress.Name = "richTextBoxAddress";
+            this.richTextBoxAddress.ReadOnly = true;
+            this.richTextBoxAddress.Size = new System.Drawing.Size(230, 96);
+            this.richTextBoxAddress.TabIndex = 45;
+            this.richTextBoxAddress.Text = "";
+            // 
+            // labelAddress
+            // 
+            this.labelAddress.AutoSize = true;
+            this.labelAddress.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAddress.Location = new System.Drawing.Point(101, 279);
+            this.labelAddress.Name = "labelAddress";
+            this.labelAddress.Size = new System.Drawing.Size(56, 15);
+            this.labelAddress.TabIndex = 44;
+            this.labelAddress.Text = "Address";
+            // 
+            // textBoxContact
+            // 
+            this.textBoxContact.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxContact.Location = new System.Drawing.Point(166, 232);
+            this.textBoxContact.Name = "textBoxContact";
+            this.textBoxContact.ReadOnly = true;
+            this.textBoxContact.Size = new System.Drawing.Size(230, 23);
+            this.textBoxContact.TabIndex = 43;
+            // 
+            // labelContact
+            // 
+            this.labelContact.AutoSize = true;
+            this.labelContact.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelContact.Location = new System.Drawing.Point(100, 235);
+            this.labelContact.Name = "labelContact";
+            this.labelContact.Size = new System.Drawing.Size(52, 15);
+            this.labelContact.TabIndex = 42;
+            this.labelContact.Text = "Contact";
+            // 
+            // textBoxGender
+            // 
+            this.textBoxGender.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGender.Location = new System.Drawing.Point(166, 192);
+            this.textBoxGender.Name = "textBoxGender";
+            this.textBoxGender.ReadOnly = true;
+            this.textBoxGender.Size = new System.Drawing.Size(230, 23);
+            this.textBoxGender.TabIndex = 41;
+            // 
+            // labelGender
+            // 
+            this.labelGender.AutoSize = true;
+            this.labelGender.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGender.Location = new System.Drawing.Point(100, 195);
+            this.labelGender.Name = "labelGender";
+            this.labelGender.Size = new System.Drawing.Size(51, 15);
+            this.labelGender.TabIndex = 40;
+            this.labelGender.Text = "Gender";
+            // 
+            // textBoxName
+            // 
+            this.textBoxName.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxName.Location = new System.Drawing.Point(166, 148);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.ReadOnly = true;
+            this.textBoxName.Size = new System.Drawing.Size(230, 23);
+            this.textBoxName.TabIndex = 39;
+            // 
+            // labelName
+            // 
+            this.labelName.AutoSize = true;
+            this.labelName.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.Location = new System.Drawing.Point(100, 151);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(42, 15);
+            this.labelName.TabIndex = 38;
+            this.labelName.Text = "Name";
+            // 
+            // labelWelcome
+            // 
+            this.labelWelcome.AutoSize = true;
+            this.labelWelcome.Font = new System.Drawing.Font("Cambria", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWelcome.Location = new System.Drawing.Point(233, 26);
+            this.labelWelcome.Name = "labelWelcome";
+            this.labelWelcome.Size = new System.Drawing.Size(124, 28);
+            this.labelWelcome.TabIndex = 37;
+            this.labelWelcome.Text = "Welcome   ";
+            // 
+            // panelResultAdd
+            // 
+            this.panelResultAdd.Controls.Add(this.textBoxSearchStudent);
+            this.panelResultAdd.Controls.Add(this.labelStudentId);
+            this.panelResultAdd.Controls.Add(this.dataGridView1);
+            this.panelResultAdd.Controls.Add(this.comboBoxCourse);
+            this.panelResultAdd.Controls.Add(this.labelCourse);
+            this.panelResultAdd.Controls.Add(this.comboBoxSection);
+            this.panelResultAdd.Controls.Add(this.labelSection);
+            this.panelResultAdd.Controls.Add(this.comboBoxClass);
+            this.panelResultAdd.Controls.Add(this.labelClass);
+            this.panelResultAdd.Location = new System.Drawing.Point(186, 19);
+            this.panelResultAdd.Name = "panelResultAdd";
+            this.panelResultAdd.Size = new System.Drawing.Size(595, 393);
+            this.panelResultAdd.TabIndex = 1;
+            // 
+            // textBoxSearchStudent
+            // 
+            this.textBoxSearchStudent.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearchStudent.Location = new System.Drawing.Point(371, 59);
+            this.textBoxSearchStudent.Name = "textBoxSearchStudent";
+            this.textBoxSearchStudent.Size = new System.Drawing.Size(161, 26);
+            this.textBoxSearchStudent.TabIndex = 8;
+            // 
+            // labelStudentId
+            // 
+            this.labelStudentId.AutoSize = true;
+            this.labelStudentId.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStudentId.Location = new System.Drawing.Point(244, 62);
+            this.labelStudentId.Name = "labelStudentId";
+            this.labelStudentId.Size = new System.Drawing.Size(121, 19);
+            this.labelStudentId.TabIndex = 7;
+            this.labelStudentId.Text = "Search Student";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 118);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(589, 272);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // comboBoxCourse
+            // 
+            this.comboBoxCourse.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxCourse.FormattingEnabled = true;
+            this.comboBoxCourse.Location = new System.Drawing.Point(325, 17);
+            this.comboBoxCourse.Name = "comboBoxCourse";
+            this.comboBoxCourse.Size = new System.Drawing.Size(121, 27);
+            this.comboBoxCourse.TabIndex = 5;
+            // 
+            // labelCourse
+            // 
+            this.labelCourse.AutoSize = true;
+            this.labelCourse.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCourse.Location = new System.Drawing.Point(260, 20);
+            this.labelCourse.Name = "labelCourse";
+            this.labelCourse.Size = new System.Drawing.Size(59, 19);
+            this.labelCourse.TabIndex = 4;
+            this.labelCourse.Text = "Course";
+            // 
+            // comboBoxSection
+            // 
+            this.comboBoxSection.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSection.FormattingEnabled = true;
+            this.comboBoxSection.Location = new System.Drawing.Point(89, 53);
+            this.comboBoxSection.Name = "comboBoxSection";
+            this.comboBoxSection.Size = new System.Drawing.Size(121, 27);
+            this.comboBoxSection.TabIndex = 3;
+            // 
+            // labelSection
+            // 
+            this.labelSection.AutoSize = true;
+            this.labelSection.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSection.Location = new System.Drawing.Point(16, 56);
+            this.labelSection.Name = "labelSection";
+            this.labelSection.Size = new System.Drawing.Size(63, 19);
+            this.labelSection.TabIndex = 2;
+            this.labelSection.Text = "Section";
+            this.labelSection.Click += new System.EventHandler(this.labelSection_Click);
+            // 
+            // comboBoxClass
+            // 
+            this.comboBoxClass.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxClass.FormattingEnabled = true;
+            this.comboBoxClass.Location = new System.Drawing.Point(89, 17);
+            this.comboBoxClass.Name = "comboBoxClass";
+            this.comboBoxClass.Size = new System.Drawing.Size(121, 27);
+            this.comboBoxClass.TabIndex = 1;
+            // 
+            // labelClass
+            // 
+            this.labelClass.AutoSize = true;
+            this.labelClass.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelClass.Location = new System.Drawing.Point(33, 20);
+            this.labelClass.Name = "labelClass";
+            this.labelClass.Size = new System.Drawing.Size(46, 19);
+            this.labelClass.TabIndex = 0;
+            this.labelClass.Text = "Class";
+            // 
+            // panelResultUpdate
+            // 
+            this.panelResultUpdate.Controls.Add(this.textBox2);
+            this.panelResultUpdate.Controls.Add(this.label5);
+            this.panelResultUpdate.Controls.Add(this.dataGridView3);
+            this.panelResultUpdate.Controls.Add(this.comboBox4);
+            this.panelResultUpdate.Controls.Add(this.label6);
+            this.panelResultUpdate.Controls.Add(this.comboBox5);
+            this.panelResultUpdate.Controls.Add(this.label7);
+            this.panelResultUpdate.Controls.Add(this.comboBox6);
+            this.panelResultUpdate.Controls.Add(this.label8);
+            this.panelResultUpdate.Location = new System.Drawing.Point(181, 12);
+            this.panelResultUpdate.Name = "panelResultUpdate";
+            this.panelResultUpdate.Size = new System.Drawing.Size(595, 393);
+            this.panelResultUpdate.TabIndex = 9;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(371, 59);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(161, 26);
+            this.textBox2.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(244, 62);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(121, 19);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Search Student";
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(3, 118);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(589, 272);
+            this.dataGridView3.TabIndex = 6;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(325, 17);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(121, 27);
+            this.comboBox4.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(260, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 19);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Course";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(89, 53);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(121, 27);
+            this.comboBox5.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(16, 56);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 19);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Section";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(89, 17);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(121, 27);
+            this.comboBox6.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(33, 20);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 19);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Class";
+            // 
             // FormTeacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 416);
-            this.Controls.Add(this.panelAddResult);
             this.Controls.Add(this.panelSResult);
-            this.Controls.Add(this.panelCSInfo);
             this.Controls.Add(this.panelChangePass);
-            this.Controls.Add(this.panelT1);
+            this.Controls.Add(this.panelTeacherInfo);
+            this.Controls.Add(this.panelResultAdd);
+            this.Controls.Add(this.panelResultUpdate);
+            this.Controls.Add(this.panelStudentInfo);
+            this.Controls.Add(this.panelTeacher);
             this.Name = "FormTeacher";
             this.Text = "FormTeacher";
             this.Load += new System.EventHandler(this.FormTeacher_Load);
-            this.panelT1.ResumeLayout(false);
+            this.panelTeacher.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panelChangePass.ResumeLayout(false);
             this.panelChangePass.PerformLayout();
-            this.panelCSInfo.ResumeLayout(false);
+            this.panelStudentInfo.ResumeLayout(false);
+            this.panelStudentInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCSInfo)).EndInit();
             this.panelSResult.ResumeLayout(false);
             this.panelAddResult.ResumeLayout(false);
             this.panelAddResult.PerformLayout();
+            this.panelTeacherInfo.ResumeLayout(false);
+            this.panelTeacherInfo.PerformLayout();
+            this.panelResultAdd.ResumeLayout(false);
+            this.panelResultAdd.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panelResultUpdate.ResumeLayout(false);
+            this.panelResultUpdate.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelT1;
+        private System.Windows.Forms.Panel panelTeacher;
         private System.Windows.Forms.Button buttonChangePass;
         private System.Windows.Forms.Button buttonSResult;
         private System.Windows.Forms.Button buttonViewCSInfo;
         private System.Windows.Forms.Panel panelChangePass;
         private System.Windows.Forms.Button buttonUpdate;
-        private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.Label labelPassword;
+        private System.Windows.Forms.TextBox textBoxNewPassword;
+        private System.Windows.Forms.Label labelNewPassword;
         private System.Windows.Forms.TextBox textBoxUserName;
         private System.Windows.Forms.Label labelUserName;
-        private System.Windows.Forms.Panel panelCSInfo;
+        private System.Windows.Forms.Panel panelStudentInfo;
         private System.Windows.Forms.DataGridView dataGridViewCSInfo;
         private System.Windows.Forms.Panel panelSResult;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonUpdateResult;
         private System.Windows.Forms.Button buttonAddResult;
         private System.Windows.Forms.Panel panelAddResult;
         private System.Windows.Forms.TextBox textBoxOMark;
@@ -378,5 +893,49 @@ namespace School_Management_System.View
         private System.Windows.Forms.Label labelSClass;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.TextBox textBoxTMark;
+        private System.Windows.Forms.Panel panelTeacherInfo;
+        private System.Windows.Forms.Label labelPersonalInfo;
+        private System.Windows.Forms.RichTextBox richTextBoxAddress;
+        private System.Windows.Forms.Label labelAddress;
+        private System.Windows.Forms.TextBox textBoxContact;
+        private System.Windows.Forms.Label labelContact;
+        private System.Windows.Forms.TextBox textBoxGender;
+        private System.Windows.Forms.Label labelGender;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label labelWelcome;
+        private System.Windows.Forms.Panel panelResultAdd;
+        private System.Windows.Forms.ComboBox comboBoxCourse;
+        private System.Windows.Forms.Label labelCourse;
+        private System.Windows.Forms.ComboBox comboBoxSection;
+        private System.Windows.Forms.Label labelSection;
+        private System.Windows.Forms.ComboBox comboBoxClass;
+        private System.Windows.Forms.Label labelClass;
+        private System.Windows.Forms.TextBox textBoxSearchStudent;
+        private System.Windows.Forms.Label labelStudentId;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panelResultUpdate;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labelSId;
+        private System.Windows.Forms.TextBox textBoxSId;
+        private System.Windows.Forms.Button buttonProfile;
     }
 }

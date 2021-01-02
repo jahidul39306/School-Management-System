@@ -56,7 +56,8 @@ namespace School_Management_System.View
             {
                 if (TeacherController.AuthenticateTeacher(userName, password) != null)
                 {
-                    new FormTeacher().Show();
+                    Teacher t = TeacherController.AuthenticateTeacher(userName, password);
+                    new FormTeacher(t).Show();
                 }
                 else
                 {
