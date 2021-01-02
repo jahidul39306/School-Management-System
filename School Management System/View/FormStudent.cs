@@ -7,14 +7,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using School_Management_System.Controller;
+using School_Management_System.Model;
 
 namespace School_Management_System.View
 {
     public partial class FormStudent : Form
     {
-        public FormStudent()
+        public FormStudent(Student s)
         {
             InitializeComponent();
+            int sId = s.sId;
+            GetStudentInfo(s);
+            var ds = StudentController.GetStudentResult(sId);
+            dataGridViewResult.DataSource = ds;
+        }
+        
+        public void GetStudentInfo(Student s)
+        {
+            int sId = s.sId;
+            int secId = s.secId;
+            int cId = s.cId;
+            
+            textBoxName.Text = s.name;
+            textBoxClass.Text = ClassController.GetClass(cId).clas.ToString();
+            textBoxSection.Text = SectionController.GetSection(secId).secName.ToString();
+            textBoxFathersName.Text = s.fatherName;
+            textBoxMothersName.Text = s.motherName;
+            textBoxRoll.Text = s.roll;
+            textBoxDateOfBirth.Text = s.dateOfBirth.ToString();
+            textBoxDateOfAdmission.Text = s.dateOfAdmission.ToString();
+            textBoxContact.Text = s.contact;
+            richTextBoxAddress.Text = s.address;
+            textBoxGender.Text = s.gender;
+            textBoxRoll.Text = s.roll;
+            
         }
 
         private void labelFathersName_Click(object sender, EventArgs e)
@@ -113,6 +140,11 @@ namespace School_Management_System.View
         }
 
         private void textBoxName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

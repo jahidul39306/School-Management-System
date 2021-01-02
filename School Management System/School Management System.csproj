@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\AdminController.cs" />
+    <Compile Include="Controller\ClassController.cs" />
+    <Compile Include="Controller\SectionController.cs" />
     <Compile Include="Controller\StudentController.cs" />
     <Compile Include="Controller\TeacherController.cs" />
     <Compile Include="Form1.cs">
@@ -70,7 +72,7 @@
     <Compile Include="Model\Students.cs" />
     <Compile Include="Model\Teacher.cs" />
     <Compile Include="Model\Teachers.cs" />
-    <Compile Include="Model\Teachers_Claasses.cs" />
+    <Compile Include="Model\Teachers_Classes.cs" />
     <Compile Include="Model\Teachers_Courses.cs" />
     <Compile Include="Model\Teachers_Sections.cs" />
     <Compile Include="Model\Teacher_Class.cs" />

@@ -1,9 +1,13 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+
 namespace School_Management_System.Model
 {
     public class Students
@@ -40,7 +44,7 @@ namespace School_Management_System.Model
                 student.sId = reader.GetInt32(reader.GetOrdinal("sId"));
                 student.name = reader.GetString(reader.GetOrdinal("name"));
                 student.roll = reader.GetString(reader.GetOrdinal("roll"));
-                student.fathrName = reader.GetString(reader.GetOrdinal("fatherName"));
+                student.fatherName = reader.GetString(reader.GetOrdinal("fatherName"));
                 student.motherName = reader.GetString(reader.GetOrdinal("motherName"));
                 student.dateOfBirth = reader.GetDateTime(reader.GetOrdinal("dateOfBirth"));
                 student.dateOfAdmission = reader.GetDateTime(reader.GetOrdinal("dateOfAdmission"));
@@ -56,12 +60,24 @@ namespace School_Management_System.Model
             conn.Close();
             return student;
         }
-       // public ArrayList GetAllStudents()
-      
-        /*public bool UpdateStudent(Student student)
+
+        public DataTable GetStudentResult(int sId)
         {
+            conn.Open();
+           
+            string query = string.Format("SELECT courseName, totalMark, obtainedMark FROM Results, Courses" + 
+                                            " WHERE Results.coId = Courses.coId AND Results.sId = '{0}' ", sId);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+    
+            adapter.Fill(dt);
             
-            return false;
-        }*/
+            conn.Close();
+            return dt;
+            
+        }
+      
+        
     }
 }
