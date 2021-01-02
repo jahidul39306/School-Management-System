@@ -16,5 +16,20 @@ namespace School_Management_System.View
         {
             InitializeComponent();
         }
+
+        private void buttonChangePass_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormTeacher_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
