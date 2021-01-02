@@ -13,19 +13,19 @@ namespace School_Management_System.Model
         public Courses Courses { get; set; }
         public Sections Sections { get; set; }
         public Students Students { get; set; }
-        public Students_Courses Students_Courses { get; set; }
+     
         public Teachers Teachers { get; set; }
         
 
         public Database()
         {
-            string connString = "Server = LAPTOP-V5SVLA1P; Integrated Security = true; Database = SchoolManagementDB";
+            string connString = "Server = LAPTOP-V5SVLA1P; Integrated Security = true; Database = SchoolManagementSystemDB";
             SqlConnection conn = new SqlConnection(connString);
             Admins = new Admins(conn);
             Courses = new Courses(conn);
             Sections = new Sections(conn);
             Students = new Students(conn);
-            Students_Courses = new Students_Courses(conn);
+          
             Teachers = new Teachers(conn);
             
         }

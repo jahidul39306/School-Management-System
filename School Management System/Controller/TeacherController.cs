@@ -7,13 +7,12 @@ using School_Management_System.Model;
 
 namespace School_Management_System.Controller
 {
-    public class AdminController
+    public class TeacherController
     {
         static Database db = new Database();
-        public static Admin AuthenticateAdmin(string userName, string password)
+        public static Teacher AuthenticateTeacher(string userName, string password)
         {
-            return db.Admins.AuthenticateAdmin(userName, password);
+            return db.Teachers.AuthenticateTeacher(userName, password);
         }
-
     }
 }

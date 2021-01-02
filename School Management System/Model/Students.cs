@@ -14,7 +14,7 @@ namespace School_Management_System.Model
             this.conn = conn;
         }
 
-        public bool AddStudent(Student student)
+       /* public bool AddStudent(Student student)
         {
             conn.Open();
             string query = string.Format("INSERT INTO Students (studentName, lvl, studentGender, userName, password)" +
@@ -25,7 +25,7 @@ namespace School_Management_System.Model
             conn.Close();
             if (result > 0) return true;
             return false;
-        }
+        }*/
 
         public Student AuthenticateStudent(string userName, string password)
         {
@@ -37,23 +37,31 @@ namespace School_Management_System.Model
             while(reader.Read())
             {
                 student = new Student();
-                student.studentId = reader.GetInt32(reader.GetOrdinal("studentId"));
-                student.studentName = reader.GetString(reader.GetOrdinal("studentName"));
-                student.lvl = reader.GetInt32(reader.GetOrdinal("lvl"));
-                student.result = reader.GetInt32(reader.GetOrdinal("result"));
-                student.studentGender = reader.GetString(reader.GetOrdinal("studentGender"));
+                student.sId = reader.GetInt32(reader.GetOrdinal("sId"));
+                student.name = reader.GetString(reader.GetOrdinal("name"));
+                student.roll = reader.GetString(reader.GetOrdinal("roll"));
+                student.fathrName = reader.GetString(reader.GetOrdinal("fatherName"));
+                student.motherName = reader.GetString(reader.GetOrdinal("motherName"));
+                student.dateOfBirth = reader.GetDateTime(reader.GetOrdinal("dateOfBirth"));
+                student.dateOfAdmission = reader.GetDateTime(reader.GetOrdinal("dateOfAdmission"));
+                student.contact = reader.GetString(reader.GetOrdinal("contact"));
+                student.address = reader.GetString(reader.GetOrdinal("address"));
+                student.gender = reader.GetString(reader.GetOrdinal("gender"));
                 student.userName = reader.GetString(reader.GetOrdinal("userName"));
                 student.password = reader.GetString(reader.GetOrdinal("password"));
+                student.secId = reader.GetInt32(reader.GetOrdinal("secId"));
+                student.cId = reader.GetInt32(reader.GetOrdinal("cId"));
+                
             }
             conn.Close();
             return student;
         }
        // public ArrayList GetAllStudents()
       
-        public bool UpdateStudent(Student student)
+        /*public bool UpdateStudent(Student student)
         {
             
             return false;
-        }
+        }*/
     }
 }

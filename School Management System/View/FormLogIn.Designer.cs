@@ -67,6 +67,7 @@ namespace School_Management_System.View
             this.textBoxUserName.Name = "textBoxUserName";
             this.textBoxUserName.Size = new System.Drawing.Size(343, 32);
             this.textBoxUserName.TabIndex = 2;
+            this.textBoxUserName.TextChanged += new System.EventHandler(this.textBoxUserName_TextChanged);
             // 
             // textBoxPassword
             // 
@@ -91,6 +92,7 @@ namespace School_Management_System.View
             this.comboBoxUserType.Size = new System.Drawing.Size(343, 33);
             this.comboBoxUserType.TabIndex = 4;
             this.comboBoxUserType.Text = " -choose a type-";
+            this.comboBoxUserType.SelectedIndexChanged += new System.EventHandler(this.comboBoxUserType_SelectedIndexChanged);
             // 
             // labelUserType
             // 
@@ -112,6 +114,7 @@ namespace School_Management_System.View
             this.buttonLogIn.TabIndex = 6;
             this.buttonLogIn.Text = "LogIn";
             this.buttonLogIn.UseVisualStyleBackColor = true;
+            this.buttonLogIn.Click += new System.EventHandler(this.buttonLogIn_Click);
             // 
             // FormLogIn
             // 

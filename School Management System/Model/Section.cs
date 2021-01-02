@@ -8,9 +8,9 @@ namespace School_Management_System.Model
 {
     class Section
     {
-        public int sectionId { get; set; }
-        public string sectionName { get; set; }
-        public int teacherId { get; set; }
+        public int secId { get; set; }
+        public string secName { get; set; }
+        public int cId { get; set; }
 
     }
 }

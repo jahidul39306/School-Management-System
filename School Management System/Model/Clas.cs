@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace School_Management_System.Model
 {
-    class Course
+    class Clas
     {
-        public int coId { get; set; }
-        public string courseName { get; set; }
         public int cId { get; set; }
-        
+        public int clas { get; set; }
+        public int classFee { get; set; }
+
     }
 }

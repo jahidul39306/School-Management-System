@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace School_Management_System.Model
 {
-    class Admin
+    public class Admin
     {
-        public int adminId { get; set; }
-        public string adminName { get; set; }
+        public int aId { get; set; }
+        public string name { get; set; }
         public string userName { get; set; }
         public string password { get; set; }
     }
