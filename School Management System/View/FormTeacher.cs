@@ -26,5 +26,10 @@ namespace School_Management_System.View
         {
 
         }
+
+        private void FormTeacher_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
