@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace School_Management_System.View
 {
-    public partial class FormTeacher : Form
+    public partial class FormAddStudent : Form
     {
-        public FormTeacher()
+        public FormAddStudent()
         {
             InitializeComponent();
-        }
-
-        private void buttonChangePass_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
