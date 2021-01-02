@@ -186,7 +186,7 @@ namespace School_Management_System.View
             // 
             this.panelSResult.Controls.Add(this.button1);
             this.panelSResult.Controls.Add(this.buttonAddResult);
-            this.panelSResult.Location = new System.Drawing.Point(181, 12);
+            this.panelSResult.Location = new System.Drawing.Point(178, 9);
             this.panelSResult.Name = "panelSResult";
             this.panelSResult.Size = new System.Drawing.Size(581, 405);
             this.panelSResult.TabIndex = 1;
@@ -223,7 +223,7 @@ namespace School_Management_System.View
             this.panelAddResult.Controls.Add(this.labelSSubject);
             this.panelAddResult.Controls.Add(this.comboBoxSClass);
             this.panelAddResult.Controls.Add(this.labelSClass);
-            this.panelAddResult.Location = new System.Drawing.Point(178, 12);
+            this.panelAddResult.Location = new System.Drawing.Point(178, -1);
             this.panelAddResult.Name = "panelAddResult";
             this.panelAddResult.Size = new System.Drawing.Size(610, 418);
             this.panelAddResult.TabIndex = 1;
