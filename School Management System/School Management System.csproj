@@ -104,6 +104,12 @@
     <Compile Include="View\FormLogIn.Designer.cs">
       <DependentUpon>FormLogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormShowStudentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormShowStudentInfo.Designer.cs">
+      <DependentUpon>FormShowStudentInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,12 @@
     </Compile>
     <Compile Include="View\FormTeacher.Designer.cs">
       <DependentUpon>FormTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormUpdateStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormUpdateStudent.Designer.cs">
+      <DependentUpon>FormUpdateStudent.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -134,11 +146,17 @@
     <EmbeddedResource Include="View\FormLogIn.resx">
       <DependentUpon>FormLogIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FormShowStudentInfo.resx">
+      <DependentUpon>FormShowStudentInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormStudent.resx">
       <DependentUpon>FormStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormTeacher.resx">
       <DependentUpon>FormTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormUpdateStudent.resx">
+      <DependentUpon>FormUpdateStudent.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
