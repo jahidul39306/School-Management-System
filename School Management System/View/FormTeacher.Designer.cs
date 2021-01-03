@@ -79,6 +79,7 @@ namespace School_Management_System.View
             this.textBoxSId = new System.Windows.Forms.TextBox();
             this.dataGridViewCSInfo = new System.Windows.Forms.DataGridView();
             this.panelResultAdd = new System.Windows.Forms.Panel();
+            this.dataGridViewResult = new System.Windows.Forms.DataGridView();
             this.textBoxSearchStudent = new System.Windows.Forms.TextBox();
             this.labelStudentId = new System.Windows.Forms.Label();
             this.comboBoxCourse = new System.Windows.Forms.ComboBox();
@@ -98,7 +99,6 @@ namespace School_Management_System.View
             this.labelSSubject = new System.Windows.Forms.Label();
             this.comboBoxSClass = new System.Windows.Forms.ComboBox();
             this.labelSClass = new System.Windows.Forms.Label();
-            this.dataGridViewResult = new System.Windows.Forms.DataGridView();
             this.panelTeacher.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -110,9 +110,9 @@ namespace School_Management_System.View
             this.panelStudentInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCSInfo)).BeginInit();
             this.panelResultAdd.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelAddResult.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTeacher
@@ -502,9 +502,9 @@ namespace School_Management_System.View
             this.panelTeacherInfo.Controls.Add(this.textBoxName);
             this.panelTeacherInfo.Controls.Add(this.labelName);
             this.panelTeacherInfo.Controls.Add(this.labelWelcome);
-            this.panelTeacherInfo.Location = new System.Drawing.Point(183, 19);
+            this.panelTeacherInfo.Location = new System.Drawing.Point(183, 1);
             this.panelTeacherInfo.Name = "panelTeacherInfo";
-            this.panelTeacherInfo.Size = new System.Drawing.Size(592, 411);
+            this.panelTeacherInfo.Size = new System.Drawing.Size(592, 454);
             this.panelTeacherInfo.TabIndex = 1;
             this.panelTeacherInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTeacherInfo_Paint);
             // 
@@ -659,6 +659,14 @@ namespace School_Management_System.View
             this.panelResultAdd.Name = "panelResultAdd";
             this.panelResultAdd.Size = new System.Drawing.Size(584, 417);
             this.panelResultAdd.TabIndex = 1;
+            // 
+            // dataGridViewResult
+            // 
+            this.dataGridViewResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewResult.Location = new System.Drawing.Point(44, 127);
+            this.dataGridViewResult.Name = "dataGridViewResult";
+            this.dataGridViewResult.Size = new System.Drawing.Size(483, 221);
+            this.dataGridViewResult.TabIndex = 2;
             // 
             // textBoxSearchStudent
             // 
@@ -862,14 +870,6 @@ namespace School_Management_System.View
             this.labelSClass.TabIndex = 0;
             this.labelSClass.Text = "Select Class";
             // 
-            // dataGridViewResult
-            // 
-            this.dataGridViewResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewResult.Location = new System.Drawing.Point(44, 127);
-            this.dataGridViewResult.Name = "dataGridViewResult";
-            this.dataGridViewResult.Size = new System.Drawing.Size(483, 221);
-            this.dataGridViewResult.TabIndex = 2;
-            // 
             // FormTeacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -883,6 +883,7 @@ namespace School_Management_System.View
             this.Controls.Add(this.panelStudentInfo);
             this.Controls.Add(this.panelResultUpdate);
             this.Controls.Add(this.panelTeacher);
+
             this.Name = "FormTeacher";
             this.Text = "FormTeacher";
             this.Load += new System.EventHandler(this.FormTeacher_Load);
@@ -903,10 +904,10 @@ namespace School_Management_System.View
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCSInfo)).EndInit();
             this.panelResultAdd.ResumeLayout(false);
             this.panelResultAdd.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panelAddResult.ResumeLayout(false);
             this.panelAddResult.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult)).EndInit();
             this.ResumeLayout(false);
 
         }
