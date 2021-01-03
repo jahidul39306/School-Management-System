@@ -206,7 +206,7 @@ namespace School_Management_System.View
             this.panelTeacher.Controls.Add(this.buttonShowTeacher);
             this.panelTeacher.Controls.Add(this.buttonUpdateTeacher);
             this.panelTeacher.Controls.Add(this.buttonAddTeacher);
-            this.panelTeacher.Location = new System.Drawing.Point(201, 9);
+            this.panelTeacher.Location = new System.Drawing.Point(201, 13);
             this.panelTeacher.Name = "panelTeacher";
             this.panelTeacher.Size = new System.Drawing.Size(587, 409);
             this.panelTeacher.TabIndex = 10;
@@ -336,6 +336,7 @@ namespace School_Management_System.View
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(863, 464);
+            //this.Controls.Add(this.panelTeacher);
             this.Controls.Add(this.panelStudent);
             this.Controls.Add(this.panelAdmin);
             this.Name = "FormAdmin";
