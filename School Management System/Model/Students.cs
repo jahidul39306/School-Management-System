@@ -18,18 +18,65 @@ namespace School_Management_System.Model
             this.conn = conn;
         }
 
-       /* public bool AddStudent(Student student)
+        public bool AddStudent(Student student)
         {
-            conn.Open();
-            string query = string.Format("INSERT INTO Students (studentName, lvl, studentGender, userName, password)" +
-                                           "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}')", student.studentName, student.lvl, student.studentGender, student.userName, student.password);
+            try
+            {
+                conn.Open();
+                string query = string.Format("INSERT INTO Students (name, roll, fatherName, motherName, dateOfBirth, dateOfAdmission, contact, address, gender, username, password, secId, cId)" +
+                                               "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}')", student.name, student.roll, student.fatherName, student.motherName, student.dateOfBirth, student.dateOfAdmission, student.contact, student.address, student.gender, student.userName, student.password, student.secId, student.cId);
 
-            SqlCommand cmd = new SqlCommand(query, conn);
-            int result = cmd.ExecuteNonQuery();
-            conn.Close();
-            if (result > 0) return true;
-            return false;
-        }*/
+                SqlCommand cmd = new SqlCommand(query, conn);
+                int result = cmd.ExecuteNonQuery();
+                conn.Close();
+                if (result > 0) return true;
+                return false;
+            }
+            catch
+            {
+                MessageBox.Show("Failed to add student. Try another User Name");
+                return false;
+            }
+            
+        }
+
+        public bool UpdateStudent(Student student, int sId)
+        {
+            try
+            {
+                conn.Open();
+                string query = string.Format("UPDATE Students SET name = '{0}', roll = '{1}', fatherName = '{2}', motherName = '{3}', dateOfBirth = '{4}', dateOfAdmission = '{5}', contact = '{6}', address = '{7}', gender = '{8}', username = '{9}', password = '{10}', secId = '{11}', cId = '{12}' WHERE sId = '{13}'", student.name, student.roll, student.fatherName, student.motherName, student.dateOfBirth, student.dateOfAdmission, student.contact, student.address, student.gender, student.userName, student.password, student.secId, student.cId, sId);
+                SqlCommand cmd = new SqlCommand(query, conn);
+                int r = cmd.ExecuteNonQuery();
+                conn.Close();
+                if (r > 0) return true;
+                return false;
+            }
+            catch
+            {
+                MessageBox.Show("Update Student failed, User Name is taken");
+                return false;
+            }        
+        }
+        public bool DeleteStudent(int sId)
+        {
+            try
+            {
+                conn.Open();
+                string query = String.Format("DELETE FROM Students WHERE sId = '{0}'", sId);
+                SqlCommand cmd = new SqlCommand(query, conn);
+                int r = cmd.ExecuteNonQuery();
+                conn.Close();
+                if (r > 0) return true;
+                return false;
+            }
+            catch
+            {
+                MessageBox.Show("Failed to delete student");
+                return false;
+            }
+            
+        }
 
         public Student AuthenticateStudent(string userName, string password)
         {

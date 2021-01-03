@@ -53,6 +53,26 @@ namespace School_Management_System.Model
             }
         }
 
+        public bool DeleteTeacher(int tId)
+        {
+            try
+            {
+                conn.Open();
+                string query = String.Format("DELETE FROOM Teachers WHERE tId = '{0}'", tId);
+                SqlCommand cmd = new SqlCommand(query, conn);
+                int r = cmd.ExecuteNonQuery();
+                conn.Close();
+                if (r > 0) return true;
+                return false;
+            }
+            catch
+            {
+                MessageBox.Show("Failed to delete Teacher");
+                return false;
+            }
+
+        }
+
         public Teacher AuthenticateTeacher(string userName, string password)
         {
             conn.Open();
