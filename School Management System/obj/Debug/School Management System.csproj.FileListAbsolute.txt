@@ -42,5 +42,11 @@ E:\Semester 6\C#\own practice\School Management System\obj\Debug\School Manageme
 E:\Semester 6\C#\own practice\School Management System\obj\Debug\School Management System.pdb
 E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormShowStudentInfo.resources
 E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormUpdateStudent.resources
+<<<<<<< HEAD
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormAddTeacher.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormUpdateTeacher.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormShowTeacherInfo.resources
+=======
 E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School_Management_System.View.FormShowStudentInfo.resources
 E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School_Management_System.View.FormUpdateStudent.resources
+>>>>>>> 96065885ee3eeb06052b4813846a4424bd84e255

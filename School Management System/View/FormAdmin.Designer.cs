@@ -53,11 +53,19 @@ namespace School_Management_System.View
             this.buttonShowSection = new System.Windows.Forms.Button();
             this.buttonUpdateSection = new System.Windows.Forms.Button();
             this.buttonAddSection = new System.Windows.Forms.Button();
+            this.panelAdminHome = new System.Windows.Forms.Panel();
+            this.labelYearlyEnrollment = new System.Windows.Forms.Label();
+            this.labelEarning = new System.Windows.Forms.Label();
+            this.labelTotalSection = new System.Windows.Forms.Label();
+            this.labelTotalCourse = new System.Windows.Forms.Label();
+            this.labelTotalStudent = new System.Windows.Forms.Label();
+            this.labelTotalTeacher = new System.Windows.Forms.Label();
             this.panelAdmin.SuspendLayout();
             this.panelStudent.SuspendLayout();
             this.panelTeacher.SuspendLayout();
             this.panelCourse.SuspendLayout();
             this.panelSection.SuspendLayout();
+            this.panelAdminHome.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelAdmin
@@ -95,6 +103,7 @@ namespace School_Management_System.View
             this.buttonHome.TabIndex = 5;
             this.buttonHome.Text = "Home";
             this.buttonHome.UseVisualStyleBackColor = false;
+            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click);
             // 
             // buttonResultreport
             // 
@@ -221,6 +230,7 @@ namespace School_Management_System.View
             this.buttonShowTeacher.TabIndex = 9;
             this.buttonShowTeacher.Text = "Show Teacher";
             this.buttonShowTeacher.UseVisualStyleBackColor = false;
+            this.buttonShowTeacher.Click += new System.EventHandler(this.buttonShowTeacher_Click);
             // 
             // buttonUpdateTeacher
             // 
@@ -232,6 +242,7 @@ namespace School_Management_System.View
             this.buttonUpdateTeacher.TabIndex = 8;
             this.buttonUpdateTeacher.Text = "Update/ Delete";
             this.buttonUpdateTeacher.UseVisualStyleBackColor = false;
+            this.buttonUpdateTeacher.Click += new System.EventHandler(this.buttonUpdateTeacher_Click);
             // 
             // buttonAddTeacher
             // 
@@ -243,6 +254,7 @@ namespace School_Management_System.View
             this.buttonAddTeacher.TabIndex = 7;
             this.buttonAddTeacher.Text = "Add Teacher";
             this.buttonAddTeacher.UseVisualStyleBackColor = false;
+            this.buttonAddTeacher.Click += new System.EventHandler(this.buttonAddTeacher_Click);
             // 
             // panelCourse
             // 
@@ -330,14 +342,87 @@ namespace School_Management_System.View
             this.buttonAddSection.Text = "Add Section";
             this.buttonAddSection.UseVisualStyleBackColor = false;
             // 
+            // panelAdminHome
+            // 
+            this.panelAdminHome.Controls.Add(this.labelYearlyEnrollment);
+            this.panelAdminHome.Controls.Add(this.labelEarning);
+            this.panelAdminHome.Controls.Add(this.labelTotalSection);
+            this.panelAdminHome.Controls.Add(this.labelTotalCourse);
+            this.panelAdminHome.Controls.Add(this.labelTotalStudent);
+            this.panelAdminHome.Controls.Add(this.labelTotalTeacher);
+            this.panelAdminHome.Location = new System.Drawing.Point(201, 12);
+            this.panelAdminHome.Name = "panelAdminHome";
+            this.panelAdminHome.Size = new System.Drawing.Size(636, 409);
+            this.panelAdminHome.TabIndex = 1;
+            // 
+            // labelYearlyEnrollment
+            // 
+            this.labelYearlyEnrollment.AutoSize = true;
+            this.labelYearlyEnrollment.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelYearlyEnrollment.Location = new System.Drawing.Point(60, 265);
+            this.labelYearlyEnrollment.Name = "labelYearlyEnrollment";
+            this.labelYearlyEnrollment.Size = new System.Drawing.Size(162, 19);
+            this.labelYearlyEnrollment.TabIndex = 5;
+            this.labelYearlyEnrollment.Text = "Yearly Enrollment :   ";
+            // 
+            // labelEarning
+            // 
+            this.labelEarning.AutoSize = true;
+            this.labelEarning.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEarning.Location = new System.Drawing.Point(375, 265);
+            this.labelEarning.Name = "labelEarning";
+            this.labelEarning.Size = new System.Drawing.Size(129, 19);
+            this.labelEarning.TabIndex = 4;
+            this.labelEarning.Text = "Total Earning :   ";
+            // 
+            // labelTotalSection
+            // 
+            this.labelTotalSection.AutoSize = true;
+            this.labelTotalSection.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalSection.Location = new System.Drawing.Point(379, 168);
+            this.labelTotalSection.Name = "labelTotalSection";
+            this.labelTotalSection.Size = new System.Drawing.Size(125, 19);
+            this.labelTotalSection.TabIndex = 3;
+            this.labelTotalSection.Text = "Total Section :   ";
+            // 
+            // labelTotalCourse
+            // 
+            this.labelTotalCourse.AutoSize = true;
+            this.labelTotalCourse.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalCourse.Location = new System.Drawing.Point(59, 168);
+            this.labelTotalCourse.Name = "labelTotalCourse";
+            this.labelTotalCourse.Size = new System.Drawing.Size(121, 19);
+            this.labelTotalCourse.TabIndex = 2;
+            this.labelTotalCourse.Text = "Total Course :   ";
+            // 
+            // labelTotalStudent
+            // 
+            this.labelTotalStudent.AutoSize = true;
+            this.labelTotalStudent.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalStudent.Location = new System.Drawing.Point(60, 70);
+            this.labelTotalStudent.Name = "labelTotalStudent";
+            this.labelTotalStudent.Size = new System.Drawing.Size(129, 19);
+            this.labelTotalStudent.TabIndex = 1;
+            this.labelTotalStudent.Text = "Total Student :   ";
+            // 
+            // labelTotalTeacher
+            // 
+            this.labelTotalTeacher.AutoSize = true;
+            this.labelTotalTeacher.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalTeacher.Location = new System.Drawing.Point(379, 70);
+            this.labelTotalTeacher.Name = "labelTotalTeacher";
+            this.labelTotalTeacher.Size = new System.Drawing.Size(130, 19);
+            this.labelTotalTeacher.TabIndex = 0;
+            this.labelTotalTeacher.Text = "Total Teacher :   ";
+            // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(863, 464);
-            //this.Controls.Add(this.panelTeacher);
-            this.Controls.Add(this.panelStudent);
+            //this.Controls.Add(this.panelAdminHome);
+            this.Controls.Add(this.panelTeacher);
             this.Controls.Add(this.panelAdmin);
             this.Name = "FormAdmin";
             this.Text = "FormAdmin";
@@ -347,6 +432,8 @@ namespace School_Management_System.View
             this.panelTeacher.ResumeLayout(false);
             this.panelCourse.ResumeLayout(false);
             this.panelSection.ResumeLayout(false);
+            this.panelAdminHome.ResumeLayout(false);
+            this.panelAdminHome.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -377,5 +464,12 @@ namespace School_Management_System.View
         private System.Windows.Forms.Button buttonShowTeacher;
         private System.Windows.Forms.Button button;
         private System.Windows.Forms.Button buttonShowSection;
+        private System.Windows.Forms.Panel panelAdminHome;
+        private System.Windows.Forms.Label labelYearlyEnrollment;
+        private System.Windows.Forms.Label labelEarning;
+        private System.Windows.Forms.Label labelTotalSection;
+        private System.Windows.Forms.Label labelTotalCourse;
+        private System.Windows.Forms.Label labelTotalStudent;
+        private System.Windows.Forms.Label labelTotalTeacher;
     }
 }
