@@ -42,3 +42,6 @@ E:\Semester 6\C#\own practice\School Management System\obj\Debug\School Manageme
 E:\Semester 6\C#\own practice\School Management System\obj\Debug\School Management System.pdb
 E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormShowStudentInfo.resources
 E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormUpdateStudent.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormAddTeacher.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormUpdateTeacher.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormShowTeacherInfo.resources

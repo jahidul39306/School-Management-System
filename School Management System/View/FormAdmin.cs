@@ -15,6 +15,7 @@ namespace School_Management_System.View
         public FormAdmin()
         {
             InitializeComponent();
+            panelAdminHome.Visible = true;
             panelStudent.Visible = false;
             panelTeacher.Visible = false;
             panelCourse.Visible = false;
@@ -32,6 +33,7 @@ namespace School_Management_System.View
             panelTeacher.Visible = false;
             panelCourse.Visible = false;
             panelSection.Visible = false;
+            panelAdminHome.Visible = false;
         }
 
         private void buttonTeachers_Click(object sender, EventArgs e)
@@ -40,6 +42,7 @@ namespace School_Management_System.View
             panelTeacher.Visible = true;
             panelCourse.Visible = false;
             panelSection.Visible = false;
+            panelAdminHome.Visible = false;
         }
 
         private void buttonCourses_Click(object sender, EventArgs e)
@@ -48,10 +51,12 @@ namespace School_Management_System.View
             panelTeacher.Visible = false;
             panelCourse.Visible = true;
             panelSection.Visible = false;
+            panelAdminHome.Visible = false;
         }
 
         private void buttonSection_Click(object sender, EventArgs e)
         {
+            panelAdminHome.Visible = false;
             panelStudent.Visible = false;
             panelTeacher.Visible = false;
             panelCourse.Visible = false;
@@ -71,6 +76,30 @@ namespace School_Management_System.View
         private void buttonShowStudent_Click(object sender, EventArgs e)
         {
             new FormShowStudentInfo().Show();
+        }
+
+        private void buttonHome_Click(object sender, EventArgs e)
+        {
+            panelStudent.Visible = false;
+            panelTeacher.Visible = false;
+            panelCourse.Visible = false;
+            panelSection.Visible = false;
+            panelAdminHome.Visible = true;
+        }
+
+        private void buttonAddTeacher_Click(object sender, EventArgs e)
+        {
+            new FormAddTeacher().Show();
+        }
+
+        private void buttonUpdateTeacher_Click(object sender, EventArgs e)
+        {
+            new FormUpdateTeacher().Show();
+        }
+
+        private void buttonShowTeacher_Click(object sender, EventArgs e)
+        {
+            new FormShowTeacherInfo().Show();
         }
     }
 }
