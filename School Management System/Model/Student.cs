@@ -24,6 +24,10 @@ namespace School_Management_System.Model
         public int secId { get; set; }
         public int cId { get; set; }
 
+        //public Student(int sId, string name, string roll, string fatherName, string motherName, DateTime dob, DateTime doa, string con, string add, string gender, string uN, string pass, int secId, int cId)
+        //{
+
+        //}
 
 
     }

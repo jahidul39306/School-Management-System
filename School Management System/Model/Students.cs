@@ -124,7 +124,35 @@ namespace School_Management_System.Model
             return dt;
             
         }
-      
-        
+        public Student GetStudent(int sId)
+        {
+            conn.Open();
+            string query = string.Format("SELECT * FROM Students WHERE sId = '{0}'", sId);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            Student student = null;
+            while (reader.Read())
+            {
+                student = new Student();
+                student.sId = reader.GetInt32(reader.GetOrdinal("sId"));
+                student.name = reader.GetString(reader.GetOrdinal("name"));
+                student.roll = reader.GetString(reader.GetOrdinal("roll"));
+                student.fatherName = reader.GetString(reader.GetOrdinal("fatherName"));
+                student.motherName = reader.GetString(reader.GetOrdinal("motherName"));
+                student.dateOfBirth = reader.GetDateTime(reader.GetOrdinal("dateOfBirth"));
+                student.dateOfAdmission = reader.GetDateTime(reader.GetOrdinal("dateOfAdmission"));
+                student.contact = reader.GetString(reader.GetOrdinal("contact"));
+                student.address = reader.GetString(reader.GetOrdinal("address"));
+                student.gender = reader.GetString(reader.GetOrdinal("gender"));
+                student.userName = reader.GetString(reader.GetOrdinal("userName"));
+                student.password = reader.GetString(reader.GetOrdinal("password"));
+                student.secId = reader.GetInt32(reader.GetOrdinal("secId"));
+                student.cId = reader.GetInt32(reader.GetOrdinal("cId"));
+
+            }
+            conn.Close();
+            return student;
+        }
+
     }
 }
