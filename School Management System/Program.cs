@@ -1,6 +1,8 @@
-﻿using School_Management_System.Model;
+﻿using School_Management_System.Controller;
+using School_Management_System.Model;
 using School_Management_System.View;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -20,7 +22,7 @@ namespace School_Management_System
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormLogIn());
-           
+
         }
     }
 }

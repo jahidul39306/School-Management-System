@@ -26,3 +26,17 @@ E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management Sys
 E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School_Management_System.View.FormAdmin.resources
 E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School_Management_System.View.FormStudent.resources
 E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School_Management_System.View.FormTeacher.resources
+E:\Semester 6\C#\own practice\School Management System\bin\Debug\School Management System.exe.config
+E:\Semester 6\C#\own practice\School Management System\bin\Debug\School Management System.exe
+E:\Semester 6\C#\own practice\School Management System\bin\Debug\School Management System.pdb
+E:\Semester 6\C#\own practice\School Management System\obj\Debug\School Management System.csprojAssemblyReference.cache
+E:\Semester 6\C#\own practice\School Management System\obj\Debug\School_Management_System.Properties.Resources.resources
+E:\Semester 6\C#\own practice\School Management System\obj\Debug\School_Management_System.View.FormAddStudent.resources
+E:\Semester 6\C#\own practice\School Management System\obj\Debug\School_Management_System.View.FormAdmin.resources
+E:\Semester 6\C#\own practice\School Management System\obj\Debug\School_Management_System.View.FormLogIn.resources
+E:\Semester 6\C#\own practice\School Management System\obj\Debug\School_Management_System.View.FormStudent.resources
+E:\Semester 6\C#\own practice\School Management System\obj\Debug\School_Management_System.View.FormTeacher.resources
+E:\Semester 6\C#\own practice\School Management System\obj\Debug\School Management System.csproj.GenerateResource.cache
+E:\Semester 6\C#\own practice\School Management System\obj\Debug\School Management System.csproj.CoreCompileInputs.cache
+E:\Semester 6\C#\own practice\School Management System\obj\Debug\School Management System.exe
+E:\Semester 6\C#\own practice\School Management System\obj\Debug\School Management System.pdb
