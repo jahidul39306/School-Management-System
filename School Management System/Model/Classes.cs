@@ -89,21 +89,5 @@ namespace School_Management_System.Model
     
         }
 
-        public int GetClassStudentTotal(int cId)
-        {
-            conn.Open();
-            string query = String.Format("Select count(*) from Students where cId='{0}'", cId);
-            SqlCommand cmd = new SqlCommand(query, conn);
-            int r = Convert.ToInt32(cmd.ExecuteScalar());
-            conn.Close();
-
-            return r;
-
-
-        }
-        
-       
-
-
     }
 }

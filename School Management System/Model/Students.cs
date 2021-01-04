@@ -37,7 +37,7 @@ namespace School_Management_System.Model
                 MessageBox.Show("Failed to add student. Try another User Name");
                 return false;
             }
-
+            
         }
 
         public bool UpdateStudent(Student student, int sId)
@@ -56,7 +56,7 @@ namespace School_Management_System.Model
             {
                 MessageBox.Show("Update Student failed, User Name is taken");
                 return false;
-            }
+            }        
         }
         public bool DeleteStudent(int sId)
         {
@@ -75,7 +75,7 @@ namespace School_Management_System.Model
                 MessageBox.Show("Failed to delete student");
                 return false;
             }
-
+            
         }
 
         public Student AuthenticateStudent(string userName, string password)
@@ -85,7 +85,7 @@ namespace School_Management_System.Model
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader reader = cmd.ExecuteReader();
             Student student = null;
-            while (reader.Read())
+            while(reader.Read())
             {
                 student = new Student();
                 student.sId = reader.GetInt32(reader.GetOrdinal("sId"));
@@ -102,7 +102,7 @@ namespace School_Management_System.Model
                 student.password = reader.GetString(reader.GetOrdinal("password"));
                 student.secId = reader.GetInt32(reader.GetOrdinal("secId"));
                 student.cId = reader.GetInt32(reader.GetOrdinal("cId"));
-
+                
             }
             conn.Close();
             return student;
@@ -111,18 +111,18 @@ namespace School_Management_System.Model
         public DataTable GetStudentResult(int sId)
         {
             conn.Open();
-
-            string query = string.Format("SELECT courseName, totalMark, obtainedMark FROM Results, Courses" +
+           
+            string query = string.Format("SELECT courseName, totalMark, obtainedMark FROM Results, Courses" + 
                                             " WHERE Results.coId = Courses.coId AND Results.sId = '{0}' ", sId);
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
-
+    
             adapter.Fill(dt);
-
+            
             conn.Close();
             return dt;
-
+            
         }
         public Student GetStudent(int sId)
         {
@@ -208,22 +208,10 @@ namespace School_Management_System.Model
                 student.secId = reader.GetInt32(reader.GetOrdinal("secId"));
                 student.cId = reader.GetInt32(reader.GetOrdinal("cId"));
 
-
                 Students.Add(student);
             }
             conn.Close();
             return Students;
         }
-        public int GetTotalStudent()
-        {
-            conn.Open();
-            string query = String.Format("Select count(*) from Students");
-            SqlCommand cmd = new SqlCommand(query, conn);
-            int r = Convert.ToInt32(cmd.ExecuteScalar());
-            conn.Close();
-            return r;
-        }
-
-
     }
 }

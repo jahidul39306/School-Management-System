@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -92,55 +91,6 @@ namespace School_Management_System.Model
                 MessageBox.Show("Section Delete Failed, Invalid secId");
                 return false;
             }
-        }
-        public int GetTotalSection()
-        {
-            conn.Open();
-            string query = String.Format("Select count(*) from Sections");
-            SqlCommand cmd = new SqlCommand(query, conn);
-            int r = Convert.ToInt32(cmd.ExecuteScalar());
-            conn.Close();
-            return r;
-        }
-
-        public ArrayList GetAllSections()
-        {
-            ArrayList sections = new ArrayList();
-            conn.Open();
-            string query = "SELECT secId,secName,cid FROM Sections";
-            SqlCommand cmd = new SqlCommand(query, conn);
-            SqlDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
-            {
-                Section s = new Section();
-                s.secId = reader.GetInt32(reader.GetOrdinal("secId"));
-                s.secName = reader.GetString(reader.GetOrdinal("secName"));
-                s.cId = reader.GetInt32(reader.GetOrdinal("cId"));
-                sections.Add(s);
-            }
-            conn.Close();
-            return sections;
-        }
-
-        public ArrayList SearchSectios(string search)
-        {
-            ArrayList sections = new ArrayList();
-            conn.Open();
-
-            string query = string.Format("SELECT * FROM Sections WHERE secName LIKE '%{0}%'", search);
-            SqlCommand cmd = new SqlCommand(query, conn);
-            SqlDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
-            {
-               Section section = new Section();
-                section.secId = reader.GetInt32(reader.GetOrdinal("secId"));
-                section.secName = reader.GetString(reader.GetOrdinal("secName"));
-                section.cId = reader.GetInt32(reader.GetOrdinal("cId"));
-                sections.Add(section);
-
-            }
-            conn.Close();
-            return sections;
         }
     }
 }

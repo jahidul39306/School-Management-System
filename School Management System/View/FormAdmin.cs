@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using School_Management_System.Controller;
 
 namespace School_Management_System.View
 {
@@ -21,32 +20,7 @@ namespace School_Management_System.View
             panelTeacher.Visible = false;
             panelCourse.Visible = false;
             panelSection.Visible = false;
-            panelResultReport.Visible = false;
-            GetLabelValue();
         }
-        public void GetLabelValue()
-        {
-            string a = labelTotalStudent.Text;
-            a+=StudentController.GetTotalStudet().ToString();
-            labelTotalStudent.Text = a;
-
-            string b = labelTotalTeacher.Text;
-            b += TeacherController.GetTotalTeacher().ToString();
-            labelTotalTeacher.Text = b;
-
-            string c = labelTotalSection.Text;
-            c += SectionController.GetTotalSection().ToString();
-            labelTotalSection.Text = c;
-
-            string d = labelTotalCourse.Text;
-            d += CourseController.GetTotalCourse().ToString();
-            labelTotalCourse.Text = d;
-
-            
-
-            
-        }
-       
 
         private void FormAdmin_Load(object sender, EventArgs e)
         {
@@ -60,13 +34,11 @@ namespace School_Management_System.View
             panelCourse.Visible = false;
             panelSection.Visible = false;
             panelAdminHome.Visible = false;
-            panelResultReport.Visible = false;
         }
 
         private void buttonTeachers_Click(object sender, EventArgs e)
         {
             panelStudent.Visible = false;
-            panelResultReport.Visible = false;
             panelTeacher.Visible = true;
             panelCourse.Visible = false;
             panelSection.Visible = false;
@@ -76,7 +48,6 @@ namespace School_Management_System.View
         private void buttonCourses_Click(object sender, EventArgs e)
         {
             panelStudent.Visible = false;
-            panelResultReport.Visible = false;
             panelTeacher.Visible = false;
             panelCourse.Visible = true;
             panelSection.Visible = false;
@@ -86,7 +57,6 @@ namespace School_Management_System.View
         private void buttonSection_Click(object sender, EventArgs e)
         {
             panelAdminHome.Visible = false;
-            panelResultReport.Visible = false;
             panelStudent.Visible = false;
             panelTeacher.Visible = false;
             panelCourse.Visible = false;
@@ -114,7 +84,6 @@ namespace School_Management_System.View
             panelTeacher.Visible = false;
             panelCourse.Visible = false;
             panelSection.Visible = false;
-            panelResultReport.Visible = false;
             panelAdminHome.Visible = true;
         }
 
@@ -131,62 +100,6 @@ namespace School_Management_System.View
         private void buttonShowTeacher_Click(object sender, EventArgs e)
         {
             new FormShowTeacherInfo().Show();
-        }
-
-        private void labelStudentId_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonResultreport_Click(object sender, EventArgs e)
-        {
-            panelStudent.Visible = false;
-            panelTeacher.Visible = false;
-            panelCourse.Visible = false;
-            panelSection.Visible = false;
-            panelAdminHome.Visible = false;
-            panelResultReport.Visible = true;
-        }
-
-        private void buttonAddCourse_Click(object sender, EventArgs e)
-        {
-            new FormAddCourse().Show();
-        }
-
-        private void panelAdminHome_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void buttonEnter_Click(object sender, EventArgs e)
-        {
-            int sId=Int32.Parse(textBoxStudentId.Text);
-            dataGridViewResult.DataSource = StudentController.GetStudentResult(sId);
-        }
-
-        private void buttonUpdateCourse_Click(object sender, EventArgs e)
-        {
-            new FormUpdateCourse().Show();
-        }
-
-        private void button_Click(object sender, EventArgs e)
-        {
-            new FormShowCourse().Show();
-        }
-
-        private void buttonAddSection_Click(object sender, EventArgs e)
-        {
-            new FormAddSection().Show();
-        }
-
-        private void buttonShowSection_Click(object sender, EventArgs e)
-        {
-            new FormShowSection().Show();
-        }
-
-        private void buttonUpdateSection_Click(object sender, EventArgs e)
-        {
-            new FormUpdateSection().Show();
         }
     }
 }

@@ -31,12 +31,6 @@ namespace School_Management_System.Controller
         {
             return db.Teachers.GetTeacherAllCourses(tId);
         }
-
-        public static int GetTotalTeacher()
-        {
-            return db.Teachers.GetTotalTeacher();
-        }
-
         
         public static Teacher GetTeacher(int tId)
         {
@@ -49,7 +43,6 @@ namespace School_Management_System.Controller
         public static ArrayList SearchStudent(string search)
         {
             return db.Students.SearchStudent(search);
-
         }
         public static int AssignResult(int cId, int secId, int sId, int coId, int tMark, int obMark)
         {
