@@ -24,7 +24,7 @@ namespace School_Management_System.Model
 
         public Database()
         {
-            string connString = "Server = DISHAN\\SQLEXPRESS; Database = SchoolManagementSystemDB;User Id=sa;Password=Nayamet@19392;";
+            string connString = "Server = LAPTOP-V5SVLA1P; Integrated Security = true; Database = SchoolManagementSystemDB";
             SqlConnection conn = new SqlConnection(connString);
             Admins = new Admins(conn);
             Classes = new Classes(conn);
