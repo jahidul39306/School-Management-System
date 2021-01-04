@@ -30,6 +30,8 @@ namespace School_Management_System.View
             FillClassComboBox(t.tId);
             FillSectionComboBox(t.tId);
             FillCourseComboBox(t.tId);
+            var ds = TeacherController.GetAllStudent();
+            dataGridViewCSInfo.DataSource = ds;
         }
         public void FillClassComboBox(int tId)
         {
@@ -200,6 +202,18 @@ namespace School_Management_System.View
         private void panelTeacherInfo_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void panelStudentInfo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBoxSId_TextChanged(object sender, EventArgs e)
+        {
+            string search = textBoxSId.Text; 
+            var ds = TeacherController.SearchStudent(search);
+            dataGridViewCSInfo.DataSource = ds;
         }
     }
 }

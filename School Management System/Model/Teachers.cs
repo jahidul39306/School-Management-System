@@ -37,9 +37,18 @@ namespace School_Management_System.Model
         }
         public bool UpdateTeacher(Teacher teacher, int tId)
         {
+            /*conn.Open();
+            Console.WriteLine(teacher.name + " 569");
+            string query = string.Format("UPDATE Teachers SET  name = '{0}', gender = '{1}', contact = '{2}', address = '{3}', userName = '{4}', password = '{5}' WHERE tId = '{6}'", teacher.name, teacher.gender, teacher.contact, teacher.address, teacher.userName, teacher.password, tId);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int r = cmd.ExecuteNonQuery();
+            conn.Close();
+            if (r > 0) return true;
+            return false;*/
             try
             {
-                string query = string.Format("UPDATE Teachers SET  name = '{0}', gender = '{1}', contact = '{2}', address = '{3}', userName = '{4}', password = '{5}' WHERE tId = '{6}')", teacher.name, teacher.gender, teacher.contact, teacher.address, teacher.userName, teacher.password, teacher.tId);
+                
+                string query = string.Format("UPDATE Teachers SET  name = '{0}', gender = '{1}', contact = '{2}', address = '{3}', userName = '{4}', password = '{5}' WHERE tId = '{6}'", teacher.name, teacher.gender, teacher.contact, teacher.address, teacher.userName, teacher.password, tId);
                 SqlCommand cmd = new SqlCommand(query, conn);
                 int r = cmd.ExecuteNonQuery();
                 conn.Close();
@@ -58,7 +67,7 @@ namespace School_Management_System.Model
             try
             {
                 conn.Open();
-                string query = String.Format("DELETE FROOM Teachers WHERE tId = '{0}'", tId);
+                string query = String.Format("DELETE FROM Teachers WHERE tId = '{0}'", tId);
                 SqlCommand cmd = new SqlCommand(query, conn);
                 int r = cmd.ExecuteNonQuery();
                 conn.Close();
@@ -72,7 +81,50 @@ namespace School_Management_System.Model
             }
 
         }
+        public ArrayList GetAllTeachers()
+        {
+            ArrayList teachers = new ArrayList();
+            conn.Open();
+            string query = "SELECT tId, name, gender, contact, address, userName FROM Teachers";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Teacher t = new Teacher();
+                t.tId = reader.GetInt32(reader.GetOrdinal("tId"));
+                t.name = reader.GetString(reader.GetOrdinal("name"));
+                t.gender = reader.GetString(reader.GetOrdinal("gender"));
+                t.contact = reader.GetString(reader.GetOrdinal("contact"));
+                t.address = reader.GetString(reader.GetOrdinal("address"));
+                t.userName = reader.GetString(reader.GetOrdinal("userName"));
+                teachers.Add(t);
+            }
+            conn.Close();
+            return teachers;
+        }
 
+        public ArrayList SearchTeachers(string search)
+        {
+            ArrayList teachers = new ArrayList();
+            conn.Open();
+           
+            string query = string.Format("SELECT * FROM Teachers WHERE name LIKE '%{0}%' OR gender LIKE '%{0}%' OR contact LIKE '%{0}%' OR address LIKE '%{0}%' OR userName LIKE '%{0}%'", search);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Teacher t = new Teacher();
+                t.tId = reader.GetInt32(reader.GetOrdinal("tId"));
+                t.name = reader.GetString(reader.GetOrdinal("name"));
+                t.gender = reader.GetString(reader.GetOrdinal("gender"));
+                t.contact = reader.GetString(reader.GetOrdinal("contact"));
+                t.address = reader.GetString(reader.GetOrdinal("address"));
+                t.userName = reader.GetString(reader.GetOrdinal("userName"));
+                teachers.Add(t);
+            }
+            conn.Close();
+            return teachers;
+        }
         public Teacher AuthenticateTeacher(string userName, string password)
         {
             conn.Open();
@@ -98,7 +150,31 @@ namespace School_Management_System.Model
             conn.Close();
             return teacher;
         }
+        public Teacher GetTeacher(int tId)
+        {
+            conn.Open();
+            string query = string.Format("SELECT * FROM Teachers WHERE tId = '{0}'", tId);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            Teacher teacher = null;
+            while (reader.Read())
+            {
+                teacher = new Teacher();
+                teacher.tId = reader.GetInt32(reader.GetOrdinal("tId"));
+                teacher.name = reader.GetString(reader.GetOrdinal("name"));
+                teacher.gender = reader.GetString(reader.GetOrdinal("gender"));
 
+                teacher.contact = reader.GetString(reader.GetOrdinal("contact"));
+                teacher.address = reader.GetString(reader.GetOrdinal("address"));
+
+                teacher.userName = reader.GetString(reader.GetOrdinal("userName"));
+                teacher.password = reader.GetString(reader.GetOrdinal("password"));
+
+
+            }
+            conn.Close();
+            return teacher;
+        }
         public bool UpdateTeacherPassword(string userName, string password)
         {
             conn.Open();
@@ -109,6 +185,8 @@ namespace School_Management_System.Model
             if (r > 0) return true;
             return false;
         }
+
+
         public ArrayList GetTeacherAllSections(int tId)
         {
             conn.Open();

@@ -153,6 +153,65 @@ namespace School_Management_System.Model
             conn.Close();
             return student;
         }
+        public ArrayList GetAllStudent()
+        {
+            ArrayList Students = new ArrayList();
+            conn.Open();
+            string query = "SELECT * FROM Students";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Student student = new Student();
+                student.sId = reader.GetInt32(reader.GetOrdinal("sId"));
+                student.name = reader.GetString(reader.GetOrdinal("name"));
+                student.roll = reader.GetString(reader.GetOrdinal("roll"));
+                student.fatherName = reader.GetString(reader.GetOrdinal("fatherName"));
+                student.motherName = reader.GetString(reader.GetOrdinal("motherName"));
+                student.dateOfBirth = reader.GetDateTime(reader.GetOrdinal("dateOfBirth"));
+                student.dateOfAdmission = reader.GetDateTime(reader.GetOrdinal("dateOfAdmission"));
+                student.contact = reader.GetString(reader.GetOrdinal("contact"));
+                student.address = reader.GetString(reader.GetOrdinal("address"));
+                student.gender = reader.GetString(reader.GetOrdinal("gender"));
+                student.userName = reader.GetString(reader.GetOrdinal("userName"));
+                student.password = reader.GetString(reader.GetOrdinal("password"));
+                student.secId = reader.GetInt32(reader.GetOrdinal("secId"));
+                student.cId = reader.GetInt32(reader.GetOrdinal("cId"));
 
+                Students.Add(student);
+            }
+            conn.Close();
+            return Students;
+        }
+        public ArrayList SearchStudent(string search)
+        {
+            ArrayList Students = new ArrayList();
+            conn.Open();
+            string query = string.Format("SELECT * FROM Students WHERE name LIKE '%{0}%' OR userName LIKE '%{0}%' OR fatherName LIKE '%{0}%' OR motherName LIKE '%{0}%'", search);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Student student = new Student();
+                student.sId = reader.GetInt32(reader.GetOrdinal("sId"));
+                student.name = reader.GetString(reader.GetOrdinal("name"));
+                student.roll = reader.GetString(reader.GetOrdinal("roll"));
+                student.fatherName = reader.GetString(reader.GetOrdinal("fatherName"));
+                student.motherName = reader.GetString(reader.GetOrdinal("motherName"));
+                student.dateOfBirth = reader.GetDateTime(reader.GetOrdinal("dateOfBirth"));
+                student.dateOfAdmission = reader.GetDateTime(reader.GetOrdinal("dateOfAdmission"));
+                student.contact = reader.GetString(reader.GetOrdinal("contact"));
+                student.address = reader.GetString(reader.GetOrdinal("address"));
+                student.gender = reader.GetString(reader.GetOrdinal("gender"));
+                student.userName = reader.GetString(reader.GetOrdinal("userName"));
+                //student.password = reader.GetString(reader.GetOrdinal("password"));
+                student.secId = reader.GetInt32(reader.GetOrdinal("secId"));
+                student.cId = reader.GetInt32(reader.GetOrdinal("cId"));
+
+                Students.Add(student);
+            }
+            conn.Close();
+            return Students;
+        }
     }
 }
