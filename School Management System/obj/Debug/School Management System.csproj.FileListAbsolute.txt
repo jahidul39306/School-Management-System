@@ -17,3 +17,5 @@ E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management Sys
 E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School Management System.exe
 E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School Management System.pdb
 E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School Management System.csprojAssemblyReference.cache
+E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School_Management_System.View.FormAddResult1.resources
+E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School_Management_System.View.FormUpdateResult.resources

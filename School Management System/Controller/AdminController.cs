@@ -40,5 +40,32 @@ namespace School_Management_System.Controller
         {
             return db.Teachers.SearchTeachers(search);
         }
+
+        public static bool AddSection(Section s)
+        {
+            return db.Sections.AddSection(s);
+        }
+        public static bool UpdateSection(Section s, int secId)
+        {
+            return db.Sections.UpdateSection(s, secId);
+        }
+
+        public static bool DeleteSection(int secId)
+        {
+            return db.Sections.DeleteSection(secId);
+        }
+
+        public static bool AddCourse(Course c)
+        {
+            return db.Courses.AddCourse(c);
+        }
+        public static bool UpdateCourse(Course c, int coId)
+        {
+            return db.Courses.UpdateCourse(c, coId);
+        }
+        public static bool DeleteCourse(int coId)
+        {
+            return db.Courses.DeleteCourse(coId);
+        }
     }
 }

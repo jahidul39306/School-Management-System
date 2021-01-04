@@ -75,11 +75,15 @@ namespace School_Management_System.Model
             try
             {
                 conn.Open();
+                string query1 = string.Format("DELETE FROM Teachers_Sections WHERE secID = {0}", secId);
+                SqlCommand cmd1 = new SqlCommand(query1, conn);
+                int x = cmd1.ExecuteNonQuery();
+
                 string query = String.Format("DELETE FROM Sections WHERE secId = '{0}'", secId);
                 SqlCommand cmd = new SqlCommand(query, conn);
                 int r = cmd.ExecuteNonQuery();
                 conn.Close();
-                if (r > 0) return true;
+                if (r > 0 && x > 0) return true;
                 return false;
             }
             catch

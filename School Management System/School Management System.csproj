@@ -86,6 +86,12 @@
     <Compile Include="View\FormAddCourses.Designer.cs">
       <DependentUpon>FormAddCourses.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormAddResult1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormAddResult1.Designer.cs">
+      <DependentUpon>FormAddResult1.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormAddStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,12 @@
     <Compile Include="View\FormTeacher.Designer.cs">
       <DependentUpon>FormTeacher.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormUpdateResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormUpdateResult.Designer.cs">
+      <DependentUpon>FormUpdateResult.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormUpdateStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +173,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\FormAddResult1.resx">
+      <DependentUpon>FormAddResult1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormAddStudent.resx">
       <DependentUpon>FormAddStudent.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormTeacher.resx">
       <DependentUpon>FormTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormUpdateResult.resx">
+      <DependentUpon>FormUpdateResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormUpdateStudent.resx">
       <DependentUpon>FormUpdateStudent.cs</DependentUpon>

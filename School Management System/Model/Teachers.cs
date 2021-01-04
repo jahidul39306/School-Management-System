@@ -67,16 +67,28 @@ namespace School_Management_System.Model
             try
             {
                 conn.Open();
+                string query1 = string.Format("DELETE FROM Teachers_Courses WHERE tId = {0}", tId);
+                SqlCommand cmd1 = new SqlCommand(query1, conn);
+                int x = cmd1.ExecuteNonQuery();
+
+                string query2 = string.Format("DELETE FROM Teachers_Sections WHERE tId = {0}", tId);
+                SqlCommand cmd2 = new SqlCommand(query2, conn);
+                int y = cmd2.ExecuteNonQuery();
+
+                string query3 = string.Format("DELETE FROM Teachers_Classes WHERE tId = {0}", tId);
+                SqlCommand cmd3 = new SqlCommand(query3, conn);
+                int z = cmd3.ExecuteNonQuery();
+
                 string query = String.Format("DELETE FROM Teachers WHERE tId = '{0}'", tId);
                 SqlCommand cmd = new SqlCommand(query, conn);
                 int r = cmd.ExecuteNonQuery();
                 conn.Close();
-                if (r > 0) return true;
+                if (r > 0 && x > 0 && y > 0 && z > 0) return true;
                 return false;
             }
             catch
             {
-                MessageBox.Show("Failed to delete Teacher");
+                MessageBox.Show("Failed to delete Teacher. Invalid Teacher Id");
                 return false;
             }
 
@@ -191,13 +203,13 @@ namespace School_Management_System.Model
         {
             conn.Open();
             ArrayList sections = new ArrayList();
-            string query = string.Format("SELECT secName FROM Sections, Teachers_Sections where Teachers_Sections.secId = Sections.secId AND Teachers_Sections.tId = '{0}'", tId);
+            string query = string.Format("SELECT secId FROM Teachers_Sections WHERE tId = '{0}'", tId);
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                string secName = reader.GetString(reader.GetOrdinal("secName"));
-                sections.Add(secName);
+                int secId = reader.GetInt32(reader.GetOrdinal("secId"));
+                sections.Add(secId);
 
             }
             conn.Close();
@@ -208,13 +220,13 @@ namespace School_Management_System.Model
         {
             conn.Open();
             ArrayList classes = new ArrayList();
-            string query = string.Format("SELECT class FROM Classes, Teachers_Classes where Teachers_Classes.cId = Classes.cId AND Teachers_Classes.tId = '{0}'", tId);
+            string query = string.Format("SELECT cId FROM Teachers_Classes where tId = '{0}'", tId);
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader reader = cmd.ExecuteReader();
             while(reader.Read())
             {
-                int clsName = reader.GetInt32(0);
-                classes.Add(clsName);
+                int clsId = reader.GetInt32(reader.GetOrdinal("cId"));
+                classes.Add(clsId);
              
             }
             conn.Close();
@@ -225,17 +237,106 @@ namespace School_Management_System.Model
         {
             conn.Open();
             ArrayList courses = new ArrayList();
-            string query = string.Format("SELECT courseName FROM Courses, Teachers_Courses where Teachers_Courses.coId = Courses.coId AND Teachers_Courses.tId = '{0}'", tId);
+            string query = string.Format("SELECT coId FROM Teachers_Courses where tId = '{0}'", tId);
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                string courseName = reader.GetString(reader.GetOrdinal("courseName"));
-                courses.Add(courseName);
+                int courseId = reader.GetInt32(reader.GetOrdinal("coId"));
+                courses.Add(courseId);
 
             }
             conn.Close();
             return courses;
+        }
+
+        public int AssignResult(int cId, int secId, int sId, int coId, int tMark, int obMark)
+        {
+            
+            conn.Open();
+            string query = string.Format("SELECT * FROM Students WHERE cId = {0} AND secId = {1} AND sId = {2}", cId, secId, sId);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            //SqlDataReader reader = cmd.ExecuteReader();
+            int r = Convert.ToInt32(cmd.ExecuteScalar());
+            if (r == 0) 
+            {
+                conn.Close();
+                return 1;
+            }
+
+            string query2 = string.Format("SELECT * FROM Results WHERE coId = {0} AND sId = {1}", coId, sId);
+            SqlCommand cmd2 = new SqlCommand(query2, conn);
+            int x = Convert.ToInt32(cmd2.ExecuteScalar());
+            if (x != 0)
+            {
+                conn.Close();
+                return 2;
+            }
+            if (r > 0 && x == 0)
+            {
+                string query1 = string.Format("INSERT INTO Results (totalMark, obtainedMark, coId, sId) VALUES ({0}, {1}, {2}, {3})", tMark, obMark, coId, sId);
+                SqlCommand cmd1 = new SqlCommand(query1, conn);
+                int result = cmd1.ExecuteNonQuery();
+                conn.Close();
+                if (result > 0) return 0;
+                return 1;
+            }
+            conn.Close();
+            return 1;
+                
+        }
+        public Result GetCourseResult(int cId, int secId, int sId, int coId)
+        {
+            conn.Open();
+            string query = string.Format("SELECT * FROM Students WHERE cId = {0} AND secId = {1} AND sId = {2}", cId, secId, sId);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            
+            int count = Convert.ToInt32(cmd.ExecuteScalar());
+            //Result result = null;
+            if (count > 0)
+            {
+                string query1 = string.Format("SELECT * FROM Results WHERE sId = {0} AND coId = {1}", sId, coId);
+                
+                SqlCommand cmd1 = new SqlCommand(query1, conn);
+                SqlDataReader reader1 = cmd1.ExecuteReader();
+                Result result = null;
+                while (reader1.Read())
+                {
+                    Console.WriteLine(reader1.GetInt32(reader1.GetOrdinal("rId")));
+                    result = new Result();
+                    result.rId = reader1.GetInt32(reader1.GetOrdinal("rId"));
+                    result.totalMark = reader1.GetInt32(reader1.GetOrdinal("totalMark"));
+                    result.obtainedMark = reader1.GetInt32(reader1.GetOrdinal("obtainedMark"));
+                    result.coId = reader1.GetInt32(reader1.GetOrdinal("coId"));
+                    result.sId = reader1.GetInt32(reader1.GetOrdinal("sId"));
+                }
+                conn.Close();
+                return result;
+            }
+            conn.Close();
+            return null;
+        }
+        public bool UpdateResult(int cId, int secId, int sId, int coId, int tMark, int obMark)
+        {
+
+            conn.Open();
+            string query = string.Format("SELECT * FROM Students WHERE cId = {0} AND secId = {1} AND sId = {2}", cId, secId, sId);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            //SqlDataReader reader = cmd.ExecuteReader();
+            int r = Convert.ToInt32(cmd.ExecuteScalar());
+
+            if (r > 0)
+            {
+                string query1 = string.Format("UPDATE Results SET totalMark = {0}, obtainedMark = {1} WHERE coId = {2} AND sId = {3}", tMark, obMark, coId, sId);
+                SqlCommand cmd1 = new SqlCommand(query1, conn);
+                int result = cmd1.ExecuteNonQuery();
+                conn.Close();
+                if (result > 0) return true;
+                return false;
+            }
+            conn.Close();
+            return false;
+
         }
     }
 }
