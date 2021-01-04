@@ -81,6 +81,7 @@ namespace School_Management_System.View
             this.buttonAdd.TabIndex = 4;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // FormAddCourse
             // 

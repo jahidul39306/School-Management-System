@@ -41,5 +41,6 @@ namespace School_Management_System.Controller
         {
             return db.Students.GetTotalStudent();
         }
+       
     }
 }
