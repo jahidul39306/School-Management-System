@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -79,6 +80,54 @@ namespace School_Management_System.Model
             }
 
         }
+        public int GetTotalCourse()
+        {
+            conn.Open();
+            string query = String.Format("Select count(*) from Courses");
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int r = Convert.ToInt32(cmd.ExecuteScalar());
+            conn.Close();
+            return r;
+        }
 
+        public ArrayList GetAllCourses()
+        {
+            ArrayList courses = new ArrayList();
+            conn.Open();
+            string query = "SELECT coId,courseName,cid FROM Courses";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Course c = new Course();
+                c.cId = reader.GetInt32(reader.GetOrdinal("cId"));
+                c.courseName = reader.GetString(reader.GetOrdinal("courseName"));
+                c.coId = reader.GetInt32(reader.GetOrdinal("coId"));
+                courses.Add(c);
+            }
+            conn.Close();
+            return courses;
+        }
+
+        public ArrayList SearchCourses(string search)
+        {
+            ArrayList courses = new ArrayList();
+            conn.Open();
+
+            string query = string.Format("SELECT * FROM Courses WHERE courseName LIKE '%{0}%'", search);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Course c = new Course();
+                c.cId = reader.GetInt32(reader.GetOrdinal("cId"));
+                c.courseName = reader.GetString(reader.GetOrdinal("courseName"));
+                c.coId = reader.GetInt32(reader.GetOrdinal("coId"));
+                courses.Add(c);
+
+            }
+            conn.Close();
+            return courses;
+        }
     }
 }

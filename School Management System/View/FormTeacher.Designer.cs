@@ -126,20 +126,18 @@ namespace School_Management_System.View
             this.panelTeacher.Controls.Add(this.buttonSResult);
             this.panelTeacher.Controls.Add(this.buttonViewCSInfo);
             this.panelTeacher.Controls.Add(this.buttonChangePass);
-            this.panelTeacher.Location = new System.Drawing.Point(8, 22);
-            this.panelTeacher.Margin = new System.Windows.Forms.Padding(4);
+            this.panelTeacher.Location = new System.Drawing.Point(6, 18);
             this.panelTeacher.Name = "panelTeacher";
-            this.panelTeacher.Size = new System.Drawing.Size(228, 514);
+            this.panelTeacher.Size = new System.Drawing.Size(171, 418);
             this.panelTeacher.TabIndex = 0;
             // 
             // buttonProfile
             // 
             this.buttonProfile.BackColor = System.Drawing.Color.RoyalBlue;
             this.buttonProfile.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonProfile.Location = new System.Drawing.Point(0, 46);
-            this.buttonProfile.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonProfile.Location = new System.Drawing.Point(0, 37);
             this.buttonProfile.Name = "buttonProfile";
-            this.buttonProfile.Size = new System.Drawing.Size(228, 65);
+            this.buttonProfile.Size = new System.Drawing.Size(171, 53);
             this.buttonProfile.TabIndex = 10;
             this.buttonProfile.Text = "Profile";
             this.buttonProfile.UseVisualStyleBackColor = false;
@@ -156,60 +154,54 @@ namespace School_Management_System.View
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.comboBox3);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(236, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(177, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(793, 484);
+            this.panel1.Size = new System.Drawing.Size(595, 393);
             this.panel1.TabIndex = 9;
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(495, 73);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Location = new System.Drawing.Point(371, 59);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(213, 31);
+            this.textBox1.Size = new System.Drawing.Size(161, 26);
             this.textBox1.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(325, 76);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(244, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 23);
+            this.label1.Size = new System.Drawing.Size(121, 19);
             this.label1.TabIndex = 7;
             this.label1.Text = "Search Student";
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(4, 145);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView2.Location = new System.Drawing.Point(3, 118);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(785, 335);
+            this.dataGridView2.Size = new System.Drawing.Size(589, 272);
             this.dataGridView2.TabIndex = 6;
             // 
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(433, 21);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Location = new System.Drawing.Point(325, 17);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 31);
+            this.comboBox1.Size = new System.Drawing.Size(121, 27);
             this.comboBox1.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(347, 25);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(260, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 23);
+            this.label2.Size = new System.Drawing.Size(59, 19);
             this.label2.TabIndex = 4;
             this.label2.Text = "Course";
             // 
@@ -217,20 +209,18 @@ namespace School_Management_System.View
             // 
             this.comboBox2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(119, 65);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox2.Location = new System.Drawing.Point(89, 53);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(160, 31);
+            this.comboBox2.Size = new System.Drawing.Size(121, 27);
             this.comboBox2.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 69);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(16, 56);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 23);
+            this.label3.Size = new System.Drawing.Size(63, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Section";
             // 
@@ -238,20 +228,18 @@ namespace School_Management_System.View
             // 
             this.comboBox3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(119, 21);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox3.Location = new System.Drawing.Point(89, 17);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(160, 31);
+            this.comboBox3.Size = new System.Drawing.Size(121, 27);
             this.comboBox3.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(44, 25);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(33, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 23);
+            this.label4.Size = new System.Drawing.Size(46, 19);
             this.label4.TabIndex = 0;
             this.label4.Text = "Class";
             // 
@@ -259,10 +247,9 @@ namespace School_Management_System.View
             // 
             this.buttonSResult.BackColor = System.Drawing.Color.RoyalBlue;
             this.buttonSResult.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSResult.Location = new System.Drawing.Point(0, 223);
-            this.buttonSResult.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSResult.Location = new System.Drawing.Point(0, 181);
             this.buttonSResult.Name = "buttonSResult";
-            this.buttonSResult.Size = new System.Drawing.Size(228, 65);
+            this.buttonSResult.Size = new System.Drawing.Size(171, 53);
             this.buttonSResult.TabIndex = 3;
             this.buttonSResult.Text = "Student\'s Result";
             this.buttonSResult.UseVisualStyleBackColor = false;
@@ -272,10 +259,9 @@ namespace School_Management_System.View
             // 
             this.buttonViewCSInfo.BackColor = System.Drawing.Color.RoyalBlue;
             this.buttonViewCSInfo.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonViewCSInfo.Location = new System.Drawing.Point(0, 133);
-            this.buttonViewCSInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonViewCSInfo.Location = new System.Drawing.Point(0, 108);
             this.buttonViewCSInfo.Name = "buttonViewCSInfo";
-            this.buttonViewCSInfo.Size = new System.Drawing.Size(228, 65);
+            this.buttonViewCSInfo.Size = new System.Drawing.Size(171, 53);
             this.buttonViewCSInfo.TabIndex = 2;
             this.buttonViewCSInfo.Text = " Student\'s Info";
             this.buttonViewCSInfo.UseVisualStyleBackColor = false;
@@ -285,10 +271,9 @@ namespace School_Management_System.View
             // 
             this.buttonChangePass.BackColor = System.Drawing.Color.RoyalBlue;
             this.buttonChangePass.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonChangePass.Location = new System.Drawing.Point(0, 298);
-            this.buttonChangePass.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonChangePass.Location = new System.Drawing.Point(0, 242);
             this.buttonChangePass.Name = "buttonChangePass";
-            this.buttonChangePass.Size = new System.Drawing.Size(228, 65);
+            this.buttonChangePass.Size = new System.Drawing.Size(171, 53);
             this.buttonChangePass.TabIndex = 1;
             this.buttonChangePass.Text = "Change Password";
             this.buttonChangePass.UseVisualStyleBackColor = false;
@@ -301,10 +286,10 @@ namespace School_Management_System.View
             this.panelChangePass.Controls.Add(this.labelNewPassword);
             this.panelChangePass.Controls.Add(this.textBoxUserName);
             this.panelChangePass.Controls.Add(this.labelUserName);
-            this.panelChangePass.Location = new System.Drawing.Point(245, 25);
-            this.panelChangePass.Margin = new System.Windows.Forms.Padding(5);
+            this.panelChangePass.Location = new System.Drawing.Point(184, 20);
+            this.panelChangePass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelChangePass.Name = "panelChangePass";
-            this.panelChangePass.Size = new System.Drawing.Size(783, 512);
+            this.panelChangePass.Size = new System.Drawing.Size(587, 416);
             this.panelChangePass.TabIndex = 4;
             this.panelChangePass.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChangePass_Paint);
             // 
@@ -312,10 +297,10 @@ namespace School_Management_System.View
             // 
             this.buttonUpdate.BackColor = System.Drawing.Color.IndianRed;
             this.buttonUpdate.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdate.Location = new System.Drawing.Point(283, 255);
-            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(5);
+            this.buttonUpdate.Location = new System.Drawing.Point(212, 207);
+            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(208, 78);
+            this.buttonUpdate.Size = new System.Drawing.Size(156, 63);
             this.buttonUpdate.TabIndex = 9;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = false;
@@ -324,10 +309,10 @@ namespace School_Management_System.View
             // textBoxNewPassword
             // 
             this.textBoxNewPassword.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNewPassword.Location = new System.Drawing.Point(283, 160);
-            this.textBoxNewPassword.Margin = new System.Windows.Forms.Padding(5);
+            this.textBoxNewPassword.Location = new System.Drawing.Point(212, 130);
+            this.textBoxNewPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxNewPassword.Name = "textBoxNewPassword";
-            this.textBoxNewPassword.Size = new System.Drawing.Size(355, 38);
+            this.textBoxNewPassword.Size = new System.Drawing.Size(267, 32);
             this.textBoxNewPassword.TabIndex = 8;
             this.textBoxNewPassword.TextChanged += new System.EventHandler(this.textBoxNewPassword_TextChanged);
             // 
@@ -335,20 +320,20 @@ namespace School_Management_System.View
             // 
             this.labelNewPassword.AutoSize = true;
             this.labelNewPassword.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNewPassword.Location = new System.Drawing.Point(5, 165);
-            this.labelNewPassword.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelNewPassword.Location = new System.Drawing.Point(4, 134);
+            this.labelNewPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNewPassword.Name = "labelNewPassword";
-            this.labelNewPassword.Size = new System.Drawing.Size(185, 32);
+            this.labelNewPassword.Size = new System.Drawing.Size(145, 25);
             this.labelNewPassword.TabIndex = 7;
             this.labelNewPassword.Text = "New Password";
             // 
             // textBoxUserName
             // 
             this.textBoxUserName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUserName.Location = new System.Drawing.Point(283, 97);
-            this.textBoxUserName.Margin = new System.Windows.Forms.Padding(5);
+            this.textBoxUserName.Location = new System.Drawing.Point(212, 79);
+            this.textBoxUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxUserName.Name = "textBoxUserName";
-            this.textBoxUserName.Size = new System.Drawing.Size(355, 38);
+            this.textBoxUserName.Size = new System.Drawing.Size(267, 32);
             this.textBoxUserName.TabIndex = 6;
             this.textBoxUserName.TextChanged += new System.EventHandler(this.textBoxUserName_TextChanged);
             // 
@@ -356,10 +341,10 @@ namespace School_Management_System.View
             // 
             this.labelUserName.AutoSize = true;
             this.labelUserName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUserName.Location = new System.Drawing.Point(20, 101);
-            this.labelUserName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelUserName.Location = new System.Drawing.Point(15, 82);
+            this.labelUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(141, 32);
+            this.labelUserName.Size = new System.Drawing.Size(110, 25);
             this.labelUserName.TabIndex = 5;
             this.labelUserName.Text = "User Name";
             // 
@@ -367,20 +352,20 @@ namespace School_Management_System.View
             // 
             this.panelSResult.Controls.Add(this.buttonUpdateResult);
             this.panelSResult.Controls.Add(this.buttonAddResult);
-            this.panelSResult.Location = new System.Drawing.Point(244, 21);
-            this.panelSResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelSResult.Location = new System.Drawing.Point(182, 16);
+            this.panelSResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelSResult.Name = "panelSResult";
-            this.panelSResult.Size = new System.Drawing.Size(789, 540);
+            this.panelSResult.Size = new System.Drawing.Size(592, 439);
             this.panelSResult.TabIndex = 1;
             this.panelSResult.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSResult_Paint);
             // 
             // buttonUpdateResult
             // 
             this.buttonUpdateResult.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdateResult.Location = new System.Drawing.Point(441, 198);
-            this.buttonUpdateResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonUpdateResult.Location = new System.Drawing.Point(331, 161);
+            this.buttonUpdateResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonUpdateResult.Name = "buttonUpdateResult";
-            this.buttonUpdateResult.Size = new System.Drawing.Size(216, 105);
+            this.buttonUpdateResult.Size = new System.Drawing.Size(162, 85);
             this.buttonUpdateResult.TabIndex = 1;
             this.buttonUpdateResult.Text = " View/Update Result";
             this.buttonUpdateResult.UseVisualStyleBackColor = true;
@@ -389,10 +374,10 @@ namespace School_Management_System.View
             // buttonAddResult
             // 
             this.buttonAddResult.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAddResult.Location = new System.Drawing.Point(160, 198);
-            this.buttonAddResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonAddResult.Location = new System.Drawing.Point(120, 161);
+            this.buttonAddResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonAddResult.Name = "buttonAddResult";
-            this.buttonAddResult.Size = new System.Drawing.Size(211, 105);
+            this.buttonAddResult.Size = new System.Drawing.Size(158, 85);
             this.buttonAddResult.TabIndex = 0;
             this.buttonAddResult.Text = "Add Result";
             this.buttonAddResult.UseVisualStyleBackColor = true;
@@ -409,58 +394,60 @@ namespace School_Management_System.View
             this.panelResultUpdate.Controls.Add(this.label7);
             this.panelResultUpdate.Controls.Add(this.comboBox6);
             this.panelResultUpdate.Controls.Add(this.label8);
-            this.panelResultUpdate.Location = new System.Drawing.Point(244, 22);
-            this.panelResultUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelResultUpdate.Location = new System.Drawing.Point(183, 18);
+            this.panelResultUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelResultUpdate.Name = "panelResultUpdate";
-            this.panelResultUpdate.Size = new System.Drawing.Size(717, 491);
+            this.panelResultUpdate.Size = new System.Drawing.Size(538, 399);
             this.panelResultUpdate.TabIndex = 9;
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(461, 66);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Location = new System.Drawing.Point(346, 54);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(161, 31);
+            this.textBox2.Size = new System.Drawing.Size(122, 26);
             this.textBox2.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(281, 68);
+            this.label5.Location = new System.Drawing.Point(211, 55);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(147, 23);
+            this.label5.Size = new System.Drawing.Size(121, 19);
             this.label5.TabIndex = 7;
             this.label5.Text = "Search Student";
             // 
             // dataGridView3
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(65, 153);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView3.Location = new System.Drawing.Point(49, 124);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.Size = new System.Drawing.Size(589, 272);
+            this.dataGridView3.Size = new System.Drawing.Size(442, 221);
             this.dataGridView3.TabIndex = 6;
             // 
             // comboBox4
             // 
             this.comboBox4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(461, 18);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox4.Location = new System.Drawing.Point(346, 15);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 31);
+            this.comboBox4.Size = new System.Drawing.Size(92, 27);
             this.comboBox4.TabIndex = 5;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(340, 18);
+            this.label6.Location = new System.Drawing.Point(255, 15);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 23);
+            this.label6.Size = new System.Drawing.Size(59, 19);
             this.label6.TabIndex = 4;
             this.label6.Text = "Course";
             // 
@@ -468,19 +455,20 @@ namespace School_Management_System.View
             // 
             this.comboBox5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(108, 66);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox5.Location = new System.Drawing.Point(81, 54);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 31);
+            this.comboBox5.Size = new System.Drawing.Size(92, 27);
             this.comboBox5.TabIndex = 3;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(16, 70);
+            this.label7.Location = new System.Drawing.Point(12, 57);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 23);
+            this.label7.Size = new System.Drawing.Size(63, 19);
             this.label7.TabIndex = 2;
             this.label7.Text = "Section";
             // 
@@ -488,19 +476,20 @@ namespace School_Management_System.View
             // 
             this.comboBox6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(105, 17);
-            this.comboBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox6.Location = new System.Drawing.Point(79, 14);
+            this.comboBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(121, 31);
+            this.comboBox6.Size = new System.Drawing.Size(92, 27);
             this.comboBox6.TabIndex = 1;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(32, 25);
+            this.label8.Location = new System.Drawing.Point(24, 20);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 23);
+            this.label8.Size = new System.Drawing.Size(46, 19);
             this.label8.TabIndex = 0;
             this.label8.Text = "Class";
             // 
@@ -516,10 +505,9 @@ namespace School_Management_System.View
             this.panelTeacherInfo.Controls.Add(this.textBoxName);
             this.panelTeacherInfo.Controls.Add(this.labelName);
             this.panelTeacherInfo.Controls.Add(this.labelWelcome);
-            this.panelTeacherInfo.Location = new System.Drawing.Point(244, 25);
-            this.panelTeacherInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.panelTeacherInfo.Location = new System.Drawing.Point(183, 20);
             this.panelTeacherInfo.Name = "panelTeacherInfo";
-            this.panelTeacherInfo.Size = new System.Drawing.Size(785, 535);
+            this.panelTeacherInfo.Size = new System.Drawing.Size(589, 435);
             this.panelTeacherInfo.TabIndex = 1;
             this.panelTeacherInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTeacherInfo_Paint);
             // 
@@ -527,20 +515,18 @@ namespace School_Management_System.View
             // 
             this.labelPersonalInfo.AutoSize = true;
             this.labelPersonalInfo.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPersonalInfo.Location = new System.Drawing.Point(119, 107);
-            this.labelPersonalInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPersonalInfo.Location = new System.Drawing.Point(89, 87);
             this.labelPersonalInfo.Name = "labelPersonalInfo";
-            this.labelPersonalInfo.Size = new System.Drawing.Size(352, 40);
+            this.labelPersonalInfo.Size = new System.Drawing.Size(276, 32);
             this.labelPersonalInfo.TabIndex = 46;
             this.labelPersonalInfo.Text = "Personal Information";
             // 
             // richTextBoxAddress
             // 
-            this.richTextBoxAddress.Location = new System.Drawing.Point(221, 341);
-            this.richTextBoxAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.richTextBoxAddress.Location = new System.Drawing.Point(166, 277);
             this.richTextBoxAddress.Name = "richTextBoxAddress";
             this.richTextBoxAddress.ReadOnly = true;
-            this.richTextBoxAddress.Size = new System.Drawing.Size(305, 117);
+            this.richTextBoxAddress.Size = new System.Drawing.Size(230, 96);
             this.richTextBoxAddress.TabIndex = 45;
             this.richTextBoxAddress.Text = "";
             // 
@@ -548,73 +534,66 @@ namespace School_Management_System.View
             // 
             this.labelAddress.AutoSize = true;
             this.labelAddress.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAddress.Location = new System.Drawing.Point(135, 343);
-            this.labelAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelAddress.Location = new System.Drawing.Point(101, 279);
             this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(73, 20);
+            this.labelAddress.Size = new System.Drawing.Size(56, 15);
             this.labelAddress.TabIndex = 44;
             this.labelAddress.Text = "Address";
             // 
             // textBoxContact
             // 
             this.textBoxContact.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxContact.Location = new System.Drawing.Point(221, 286);
-            this.textBoxContact.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxContact.Location = new System.Drawing.Point(166, 232);
             this.textBoxContact.Name = "textBoxContact";
             this.textBoxContact.ReadOnly = true;
-            this.textBoxContact.Size = new System.Drawing.Size(305, 27);
+            this.textBoxContact.Size = new System.Drawing.Size(230, 23);
             this.textBoxContact.TabIndex = 43;
             // 
             // labelContact
             // 
             this.labelContact.AutoSize = true;
             this.labelContact.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelContact.Location = new System.Drawing.Point(133, 289);
-            this.labelContact.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelContact.Location = new System.Drawing.Point(100, 235);
             this.labelContact.Name = "labelContact";
-            this.labelContact.Size = new System.Drawing.Size(68, 20);
+            this.labelContact.Size = new System.Drawing.Size(52, 15);
             this.labelContact.TabIndex = 42;
             this.labelContact.Text = "Contact";
             // 
             // textBoxGender
             // 
             this.textBoxGender.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxGender.Location = new System.Drawing.Point(221, 236);
-            this.textBoxGender.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGender.Location = new System.Drawing.Point(166, 192);
             this.textBoxGender.Name = "textBoxGender";
             this.textBoxGender.ReadOnly = true;
-            this.textBoxGender.Size = new System.Drawing.Size(305, 27);
+            this.textBoxGender.Size = new System.Drawing.Size(230, 23);
             this.textBoxGender.TabIndex = 41;
             // 
             // labelGender
             // 
             this.labelGender.AutoSize = true;
             this.labelGender.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGender.Location = new System.Drawing.Point(133, 240);
-            this.labelGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelGender.Location = new System.Drawing.Point(100, 195);
             this.labelGender.Name = "labelGender";
-            this.labelGender.Size = new System.Drawing.Size(66, 20);
+            this.labelGender.Size = new System.Drawing.Size(51, 15);
             this.labelGender.TabIndex = 40;
             this.labelGender.Text = "Gender";
             // 
             // textBoxName
             // 
             this.textBoxName.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxName.Location = new System.Drawing.Point(221, 182);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxName.Location = new System.Drawing.Point(166, 148);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.ReadOnly = true;
-            this.textBoxName.Size = new System.Drawing.Size(305, 27);
+            this.textBoxName.Size = new System.Drawing.Size(230, 23);
             this.textBoxName.TabIndex = 39;
             // 
             // labelName
             // 
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.Location = new System.Drawing.Point(133, 186);
-            this.labelName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelName.Location = new System.Drawing.Point(100, 151);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(54, 20);
+            this.labelName.Size = new System.Drawing.Size(42, 15);
             this.labelName.TabIndex = 38;
             this.labelName.Text = "Name";
             // 
@@ -622,10 +601,9 @@ namespace School_Management_System.View
             // 
             this.labelWelcome.AutoSize = true;
             this.labelWelcome.Font = new System.Drawing.Font("Cambria", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWelcome.Location = new System.Drawing.Point(232, 33);
-            this.labelWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelWelcome.Location = new System.Drawing.Point(174, 27);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(157, 36);
+            this.labelWelcome.Size = new System.Drawing.Size(124, 28);
             this.labelWelcome.TabIndex = 37;
             this.labelWelcome.Text = "Welcome   ";
             // 
@@ -634,10 +612,9 @@ namespace School_Management_System.View
             this.panelStudentInfo.Controls.Add(this.labelSId);
             this.panelStudentInfo.Controls.Add(this.textBoxSId);
             this.panelStudentInfo.Controls.Add(this.dataGridViewCSInfo);
-            this.panelStudentInfo.Location = new System.Drawing.Point(244, 23);
-            this.panelStudentInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.panelStudentInfo.Location = new System.Drawing.Point(183, 19);
             this.panelStudentInfo.Name = "panelStudentInfo";
-            this.panelStudentInfo.Size = new System.Drawing.Size(789, 507);
+            this.panelStudentInfo.Size = new System.Drawing.Size(592, 412);
             this.panelStudentInfo.TabIndex = 10;
             this.panelStudentInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelStudentInfo_Paint);
             // 
@@ -645,31 +622,28 @@ namespace School_Management_System.View
             // 
             this.labelSId.AutoSize = true;
             this.labelSId.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSId.Location = new System.Drawing.Point(113, 68);
-            this.labelSId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSId.Location = new System.Drawing.Point(85, 55);
             this.labelSId.Name = "labelSId";
-            this.labelSId.Size = new System.Drawing.Size(104, 23);
+            this.labelSId.Size = new System.Drawing.Size(87, 19);
             this.labelSId.TabIndex = 2;
             this.labelSId.Text = "Student Id";
             // 
             // textBoxSId
             // 
             this.textBoxSId.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSId.Location = new System.Drawing.Point(253, 64);
-            this.textBoxSId.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSId.Location = new System.Drawing.Point(190, 52);
             this.textBoxSId.Name = "textBoxSId";
-            this.textBoxSId.Size = new System.Drawing.Size(232, 31);
+            this.textBoxSId.Size = new System.Drawing.Size(175, 26);
             this.textBoxSId.TabIndex = 1;
             this.textBoxSId.TextChanged += new System.EventHandler(this.textBoxSId_TextChanged);
             // 
             // dataGridViewCSInfo
             // 
             this.dataGridViewCSInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCSInfo.Location = new System.Drawing.Point(27, 153);
-            this.dataGridViewCSInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewCSInfo.Location = new System.Drawing.Point(20, 124);
             this.dataGridViewCSInfo.Name = "dataGridViewCSInfo";
             this.dataGridViewCSInfo.RowHeadersWidth = 51;
-            this.dataGridViewCSInfo.Size = new System.Drawing.Size(748, 348);
+            this.dataGridViewCSInfo.Size = new System.Drawing.Size(561, 283);
             this.dataGridViewCSInfo.TabIndex = 0;
             // 
             // panelResultAdd
@@ -690,29 +664,50 @@ namespace School_Management_System.View
             this.panelResultAdd.Controls.Add(this.labelSection);
             this.panelResultAdd.Controls.Add(this.comboBoxClass);
             this.panelResultAdd.Controls.Add(this.labelClass);
-            this.panelResultAdd.Location = new System.Drawing.Point(251, 23);
-            this.panelResultAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.panelResultAdd.Location = new System.Drawing.Point(188, 19);
             this.panelResultAdd.Name = "panelResultAdd";
-            this.panelResultAdd.Size = new System.Drawing.Size(779, 513);
+            this.panelResultAdd.Size = new System.Drawing.Size(584, 417);
             this.panelResultAdd.TabIndex = 1;
             // 
+<<<<<<< HEAD
             // textBoxSearchStudent
             // 
             this.textBoxSearchStudent.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSearchStudent.Location = new System.Drawing.Point(517, 69);
             this.textBoxSearchStudent.Margin = new System.Windows.Forms.Padding(4);
+=======
+            // dataGridViewResult
+            // 
+            this.dataGridViewResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewResult.Location = new System.Drawing.Point(44, 127);
+            this.dataGridViewResult.Name = "dataGridViewResult";
+            this.dataGridViewResult.RowHeadersWidth = 51;
+            this.dataGridViewResult.Size = new System.Drawing.Size(483, 221);
+            this.dataGridViewResult.TabIndex = 2;
+            // 
+            // textBoxSearchStudent
+            // 
+            this.textBoxSearchStudent.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearchStudent.Location = new System.Drawing.Point(388, 60);
+>>>>>>> 2a673b42559bd157560eb4cc17b134f5c0d6409e
             this.textBoxSearchStudent.Name = "textBoxSearchStudent";
-            this.textBoxSearchStudent.Size = new System.Drawing.Size(213, 31);
+            this.textBoxSearchStudent.Size = new System.Drawing.Size(161, 26);
             this.textBoxSearchStudent.TabIndex = 8;
             // 
             // labelStudentId
             // 
             this.labelStudentId.AutoSize = true;
             this.labelStudentId.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.labelStudentId.Location = new System.Drawing.Point(403, 71);
             this.labelStudentId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelStudentId.Name = "labelStudentId";
             this.labelStudentId.Size = new System.Drawing.Size(106, 23);
+=======
+            this.labelStudentId.Location = new System.Drawing.Point(244, 62);
+            this.labelStudentId.Name = "labelStudentId";
+            this.labelStudentId.Size = new System.Drawing.Size(121, 19);
+>>>>>>> 2a673b42559bd157560eb4cc17b134f5c0d6409e
             this.labelStudentId.TabIndex = 7;
             this.labelStudentId.Text = "Student ID";
             // 
@@ -720,20 +715,28 @@ namespace School_Management_System.View
             // 
             this.comboBoxCourse.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCourse.FormattingEnabled = true;
+<<<<<<< HEAD
             this.comboBoxCourse.Location = new System.Drawing.Point(517, 15);
             this.comboBoxCourse.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.comboBoxCourse.Location = new System.Drawing.Point(388, 19);
+>>>>>>> 2a673b42559bd157560eb4cc17b134f5c0d6409e
             this.comboBoxCourse.Name = "comboBoxCourse";
-            this.comboBoxCourse.Size = new System.Drawing.Size(160, 31);
+            this.comboBoxCourse.Size = new System.Drawing.Size(121, 27);
             this.comboBoxCourse.TabIndex = 5;
             // 
             // labelCourse
             // 
             this.labelCourse.AutoSize = true;
             this.labelCourse.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.labelCourse.Location = new System.Drawing.Point(436, 19);
             this.labelCourse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.labelCourse.Location = new System.Drawing.Point(281, 22);
+>>>>>>> 2a673b42559bd157560eb4cc17b134f5c0d6409e
             this.labelCourse.Name = "labelCourse";
-            this.labelCourse.Size = new System.Drawing.Size(73, 23);
+            this.labelCourse.Size = new System.Drawing.Size(59, 19);
             this.labelCourse.TabIndex = 4;
             this.labelCourse.Text = "Course";
             this.labelCourse.Click += new System.EventHandler(this.labelCourse_Click);
@@ -742,20 +745,18 @@ namespace School_Management_System.View
             // 
             this.comboBoxSection.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxSection.FormattingEnabled = true;
-            this.comboBoxSection.Location = new System.Drawing.Point(127, 65);
-            this.comboBoxSection.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxSection.Location = new System.Drawing.Point(95, 53);
             this.comboBoxSection.Name = "comboBoxSection";
-            this.comboBoxSection.Size = new System.Drawing.Size(160, 31);
+            this.comboBoxSection.Size = new System.Drawing.Size(121, 27);
             this.comboBoxSection.TabIndex = 3;
             // 
             // labelSection
             // 
             this.labelSection.AutoSize = true;
             this.labelSection.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSection.Location = new System.Drawing.Point(21, 69);
-            this.labelSection.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSection.Location = new System.Drawing.Point(16, 56);
             this.labelSection.Name = "labelSection";
-            this.labelSection.Size = new System.Drawing.Size(76, 23);
+            this.labelSection.Size = new System.Drawing.Size(63, 19);
             this.labelSection.TabIndex = 2;
             this.labelSection.Text = "Section";
             this.labelSection.Click += new System.EventHandler(this.labelSection_Click);
@@ -765,10 +766,9 @@ namespace School_Management_System.View
             this.comboBoxClass.AllowDrop = true;
             this.comboBoxClass.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxClass.FormattingEnabled = true;
-            this.comboBoxClass.Location = new System.Drawing.Point(127, 21);
-            this.comboBoxClass.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxClass.Location = new System.Drawing.Point(95, 17);
             this.comboBoxClass.Name = "comboBoxClass";
-            this.comboBoxClass.Size = new System.Drawing.Size(160, 31);
+            this.comboBoxClass.Size = new System.Drawing.Size(121, 27);
             this.comboBoxClass.TabIndex = 1;
             this.comboBoxClass.SelectedIndexChanged += new System.EventHandler(this.comboBoxClass_SelectedIndexChanged);
             // 
@@ -776,10 +776,9 @@ namespace School_Management_System.View
             // 
             this.labelClass.AutoSize = true;
             this.labelClass.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClass.Location = new System.Drawing.Point(44, 25);
-            this.labelClass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelClass.Location = new System.Drawing.Point(33, 20);
             this.labelClass.Name = "labelClass";
-            this.labelClass.Size = new System.Drawing.Size(56, 23);
+            this.labelClass.Size = new System.Drawing.Size(46, 19);
             this.labelClass.TabIndex = 0;
             this.labelClass.Text = "Class";
             // 
@@ -823,14 +822,14 @@ namespace School_Management_System.View
             // 
             this.textBoxTMark.Location = new System.Drawing.Point(394, 157);
             this.textBoxTMark.Name = "textBoxTMark";
-            this.textBoxTMark.Size = new System.Drawing.Size(100, 22);
+            this.textBoxTMark.Size = new System.Drawing.Size(100, 20);
             this.textBoxTMark.TabIndex = 7;
             // 
             // textBoxOMark
             // 
             this.textBoxOMark.Location = new System.Drawing.Point(394, 108);
             this.textBoxOMark.Name = "textBoxOMark";
-            this.textBoxOMark.Size = new System.Drawing.Size(100, 22);
+            this.textBoxOMark.Size = new System.Drawing.Size(100, 20);
             this.textBoxOMark.TabIndex = 6;
             // 
             // labeloMark
@@ -839,7 +838,7 @@ namespace School_Management_System.View
             this.labeloMark.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labeloMark.Location = new System.Drawing.Point(294, 110);
             this.labeloMark.Name = "labeloMark";
-            this.labeloMark.Size = new System.Drawing.Size(106, 20);
+            this.labeloMark.Size = new System.Drawing.Size(83, 15);
             this.labeloMark.TabIndex = 5;
             this.labeloMark.Text = "Obtain Mark";
             // 
@@ -849,7 +848,7 @@ namespace School_Management_System.View
             this.labelTMark.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTMark.Location = new System.Drawing.Point(294, 157);
             this.labelTMark.Name = "labelTMark";
-            this.labelTMark.Size = new System.Drawing.Size(94, 20);
+            this.labelTMark.Size = new System.Drawing.Size(72, 15);
             this.labelTMark.TabIndex = 4;
             this.labelTMark.Text = "Total Mark";
             // 
@@ -864,7 +863,11 @@ namespace School_Management_System.View
             "Islam"});
             this.comboBoxSSubject.Location = new System.Drawing.Point(373, 32);
             this.comboBoxSSubject.Name = "comboBoxSSubject";
+<<<<<<< HEAD
             this.comboBoxSSubject.Size = new System.Drawing.Size(121, 27);
+=======
+            this.comboBoxSSubject.Size = new System.Drawing.Size(121, 23);
+>>>>>>> 2a673b42559bd157560eb4cc17b134f5c0d6409e
             this.comboBoxSSubject.TabIndex = 3;
             // 
             // labelSSubject
@@ -873,7 +876,7 @@ namespace School_Management_System.View
             this.labelSSubject.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSSubject.Location = new System.Drawing.Point(279, 34);
             this.labelSSubject.Name = "labelSSubject";
-            this.labelSSubject.Size = new System.Drawing.Size(116, 20);
+            this.labelSSubject.Size = new System.Drawing.Size(91, 15);
             this.labelSSubject.TabIndex = 2;
             this.labelSSubject.Text = "Select Subject";
             // 
@@ -894,7 +897,11 @@ namespace School_Management_System.View
             "10"});
             this.comboBoxSClass.Location = new System.Drawing.Point(124, 29);
             this.comboBoxSClass.Name = "comboBoxSClass";
+<<<<<<< HEAD
             this.comboBoxSClass.Size = new System.Drawing.Size(121, 27);
+=======
+            this.comboBoxSClass.Size = new System.Drawing.Size(121, 23);
+>>>>>>> 2a673b42559bd157560eb4cc17b134f5c0d6409e
             this.comboBoxSClass.TabIndex = 1;
             // 
             // labelSClass
@@ -903,7 +910,7 @@ namespace School_Management_System.View
             this.labelSClass.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSClass.Location = new System.Drawing.Point(30, 31);
             this.labelSClass.Name = "labelSClass";
-            this.labelSClass.Size = new System.Drawing.Size(99, 20);
+            this.labelSClass.Size = new System.Drawing.Size(76, 15);
             this.labelSClass.TabIndex = 0;
             this.labelSClass.Text = "Select Class";
             // 
@@ -956,14 +963,13 @@ namespace School_Management_System.View
             // 
             // FormTeacher
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1045, 639);
+            this.ClientSize = new System.Drawing.Size(784, 519);
             this.Controls.Add(this.panelSResult);
             
             this.Controls.Add(this.panelTeacher);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormTeacher";
             this.Text = "FormTeacher";
             this.Load += new System.EventHandler(this.FormTeacher_Load);

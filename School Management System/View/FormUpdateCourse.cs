@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace School_Management_System.View
 {
-    public partial class FormAddCourses : Form
+    public partial class FormUpdateCourse : Form
     {
-        public FormAddCourses()
+        public FormUpdateCourse()
         {
             InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

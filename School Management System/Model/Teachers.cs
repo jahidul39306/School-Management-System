@@ -250,6 +250,7 @@ namespace School_Management_System.Model
             return courses;
         }
 
+<<<<<<< HEAD
         public int AssignResult(int cId, int secId, int sId, int coId, int tMark, int obMark)
         {
             
@@ -337,6 +338,16 @@ namespace School_Management_System.Model
             conn.Close();
             return false;
 
+=======
+        public int GetTotalTeacher()
+        {
+            conn.Open();
+            string query = String.Format("Select count(*) from Teachers");
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int r = Convert.ToInt32(cmd.ExecuteScalar());
+            conn.Close();
+            return r;
+>>>>>>> 2a673b42559bd157560eb4cc17b134f5c0d6409e
         }
     }
 }
