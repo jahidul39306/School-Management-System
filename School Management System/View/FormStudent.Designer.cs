@@ -61,10 +61,9 @@ namespace School_Management_System.View
             // 
             this.labelPersonalInfo.AutoSize = true;
             this.labelPersonalInfo.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPersonalInfo.Location = new System.Drawing.Point(16, 11);
-            this.labelPersonalInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPersonalInfo.Location = new System.Drawing.Point(12, 9);
             this.labelPersonalInfo.Name = "labelPersonalInfo";
-            this.labelPersonalInfo.Size = new System.Drawing.Size(325, 36);
+            this.labelPersonalInfo.Size = new System.Drawing.Size(260, 28);
             this.labelPersonalInfo.TabIndex = 0;
             this.labelPersonalInfo.Text = "Personal Information :";
             // 
@@ -72,10 +71,9 @@ namespace School_Management_System.View
             // 
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.Location = new System.Drawing.Point(136, 68);
-            this.labelName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelName.Location = new System.Drawing.Point(102, 55);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(54, 20);
+            this.labelName.Size = new System.Drawing.Size(42, 15);
             this.labelName.TabIndex = 1;
             this.labelName.Text = "Name";
             this.labelName.Click += new System.EventHandler(this.labelName_Click);
@@ -83,22 +81,20 @@ namespace School_Management_System.View
             // textBoxName
             // 
             this.textBoxName.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxName.Location = new System.Drawing.Point(224, 64);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxName.Location = new System.Drawing.Point(168, 52);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.ReadOnly = true;
-            this.textBoxName.Size = new System.Drawing.Size(305, 27);
+            this.textBoxName.Size = new System.Drawing.Size(230, 23);
             this.textBoxName.TabIndex = 2;
             this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
             // 
             // textBoxFathersName
             // 
             this.textBoxFathersName.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFathersName.Location = new System.Drawing.Point(224, 207);
-            this.textBoxFathersName.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxFathersName.Location = new System.Drawing.Point(168, 168);
             this.textBoxFathersName.Name = "textBoxFathersName";
             this.textBoxFathersName.ReadOnly = true;
-            this.textBoxFathersName.Size = new System.Drawing.Size(305, 27);
+            this.textBoxFathersName.Size = new System.Drawing.Size(230, 23);
             this.textBoxFathersName.TabIndex = 4;
             this.textBoxFathersName.TextChanged += new System.EventHandler(this.textBoxFathersName_TextChanged);
             // 
@@ -106,10 +102,9 @@ namespace School_Management_System.View
             // 
             this.labelFathersName.AutoSize = true;
             this.labelFathersName.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFathersName.Location = new System.Drawing.Point(68, 210);
-            this.labelFathersName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelFathersName.Location = new System.Drawing.Point(51, 171);
             this.labelFathersName.Name = "labelFathersName";
-            this.labelFathersName.Size = new System.Drawing.Size(120, 20);
+            this.labelFathersName.Size = new System.Drawing.Size(93, 15);
             this.labelFathersName.TabIndex = 3;
             this.labelFathersName.Text = "Father\'s Name";
             this.labelFathersName.Click += new System.EventHandler(this.labelFathersName_Click);
@@ -117,11 +112,10 @@ namespace School_Management_System.View
             // textBoxMothersName
             // 
             this.textBoxMothersName.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMothersName.Location = new System.Drawing.Point(224, 242);
-            this.textBoxMothersName.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMothersName.Location = new System.Drawing.Point(168, 197);
             this.textBoxMothersName.Name = "textBoxMothersName";
             this.textBoxMothersName.ReadOnly = true;
-            this.textBoxMothersName.Size = new System.Drawing.Size(305, 27);
+            this.textBoxMothersName.Size = new System.Drawing.Size(230, 23);
             this.textBoxMothersName.TabIndex = 6;
             this.textBoxMothersName.TextChanged += new System.EventHandler(this.textBoxMothersName_TextChanged);
             // 
@@ -129,10 +123,9 @@ namespace School_Management_System.View
             // 
             this.labelMothersName.AutoSize = true;
             this.labelMothersName.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMothersName.Location = new System.Drawing.Point(61, 246);
-            this.labelMothersName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelMothersName.Location = new System.Drawing.Point(46, 200);
             this.labelMothersName.Name = "labelMothersName";
-            this.labelMothersName.Size = new System.Drawing.Size(127, 20);
+            this.labelMothersName.Size = new System.Drawing.Size(98, 15);
             this.labelMothersName.TabIndex = 5;
             this.labelMothersName.Text = "Mother\'s Name";
             this.labelMothersName.Click += new System.EventHandler(this.labelMothersName_Click);
@@ -140,11 +133,10 @@ namespace School_Management_System.View
             // textBoxGender
             // 
             this.textBoxGender.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxGender.Location = new System.Drawing.Point(224, 278);
-            this.textBoxGender.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGender.Location = new System.Drawing.Point(168, 226);
             this.textBoxGender.Name = "textBoxGender";
             this.textBoxGender.ReadOnly = true;
-            this.textBoxGender.Size = new System.Drawing.Size(305, 27);
+            this.textBoxGender.Size = new System.Drawing.Size(230, 23);
             this.textBoxGender.TabIndex = 8;
             this.textBoxGender.TextChanged += new System.EventHandler(this.textBoxGender_TextChanged);
             // 
@@ -152,10 +144,9 @@ namespace School_Management_System.View
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(124, 282);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(93, 229);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 20);
+            this.label3.Size = new System.Drawing.Size(51, 15);
             this.label3.TabIndex = 7;
             this.label3.Text = "Gender";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -163,11 +154,10 @@ namespace School_Management_System.View
             // textBoxDateOfAdmission
             // 
             this.textBoxDateOfAdmission.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDateOfAdmission.Location = new System.Drawing.Point(224, 386);
-            this.textBoxDateOfAdmission.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDateOfAdmission.Location = new System.Drawing.Point(168, 314);
             this.textBoxDateOfAdmission.Name = "textBoxDateOfAdmission";
             this.textBoxDateOfAdmission.ReadOnly = true;
-            this.textBoxDateOfAdmission.Size = new System.Drawing.Size(305, 27);
+            this.textBoxDateOfAdmission.Size = new System.Drawing.Size(230, 23);
             this.textBoxDateOfAdmission.TabIndex = 10;
             this.textBoxDateOfAdmission.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
@@ -175,10 +165,9 @@ namespace School_Management_System.View
             // 
             this.labelDateOfBirth.AutoSize = true;
             this.labelDateOfBirth.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDateOfBirth.Location = new System.Drawing.Point(37, 386);
-            this.labelDateOfBirth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDateOfBirth.Location = new System.Drawing.Point(28, 314);
             this.labelDateOfBirth.Name = "labelDateOfBirth";
-            this.labelDateOfBirth.Size = new System.Drawing.Size(151, 20);
+            this.labelDateOfBirth.Size = new System.Drawing.Size(115, 15);
             this.labelDateOfBirth.TabIndex = 9;
             this.labelDateOfBirth.Text = "Date of Admission";
             this.labelDateOfBirth.Click += new System.EventHandler(this.labelDateOfBirth_Click);
@@ -186,11 +175,10 @@ namespace School_Management_System.View
             // textBoxContact
             // 
             this.textBoxContact.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxContact.Location = new System.Drawing.Point(224, 350);
-            this.textBoxContact.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxContact.Location = new System.Drawing.Point(168, 284);
             this.textBoxContact.Name = "textBoxContact";
             this.textBoxContact.ReadOnly = true;
-            this.textBoxContact.Size = new System.Drawing.Size(305, 27);
+            this.textBoxContact.Size = new System.Drawing.Size(230, 23);
             this.textBoxContact.TabIndex = 12;
             this.textBoxContact.TextChanged += new System.EventHandler(this.textBoxContact_TextChanged);
             // 
@@ -198,10 +186,9 @@ namespace School_Management_System.View
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(117, 353);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(88, 287);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 20);
+            this.label5.Size = new System.Drawing.Size(52, 15);
             this.label5.TabIndex = 11;
             this.label5.Text = "Contact";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -209,11 +196,10 @@ namespace School_Management_System.View
             // textBoxDateOfBirth
             // 
             this.textBoxDateOfBirth.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDateOfBirth.Location = new System.Drawing.Point(224, 315);
-            this.textBoxDateOfBirth.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDateOfBirth.Location = new System.Drawing.Point(168, 256);
             this.textBoxDateOfBirth.Name = "textBoxDateOfBirth";
             this.textBoxDateOfBirth.ReadOnly = true;
-            this.textBoxDateOfBirth.Size = new System.Drawing.Size(305, 27);
+            this.textBoxDateOfBirth.Size = new System.Drawing.Size(230, 23);
             this.textBoxDateOfBirth.TabIndex = 14;
             this.textBoxDateOfBirth.TextChanged += new System.EventHandler(this.textBoxDateOfBirth_TextChanged);
             // 
@@ -221,10 +207,9 @@ namespace School_Management_System.View
             // 
             this.labelDate.AutoSize = true;
             this.labelDate.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDate.Location = new System.Drawing.Point(76, 318);
-            this.labelDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDate.Location = new System.Drawing.Point(57, 258);
             this.labelDate.Name = "labelDate";
-            this.labelDate.Size = new System.Drawing.Size(109, 20);
+            this.labelDate.Size = new System.Drawing.Size(83, 15);
             this.labelDate.TabIndex = 13;
             this.labelDate.Text = "Date of Birth";
             this.labelDate.Click += new System.EventHandler(this.labelDate_Click);
@@ -233,10 +218,9 @@ namespace School_Management_System.View
             // 
             this.labelAddress.AutoSize = true;
             this.labelAddress.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAddress.Location = new System.Drawing.Point(117, 425);
-            this.labelAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelAddress.Location = new System.Drawing.Point(88, 345);
             this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(73, 20);
+            this.labelAddress.Size = new System.Drawing.Size(56, 15);
             this.labelAddress.TabIndex = 15;
             this.labelAddress.Text = "Address";
             this.labelAddress.Click += new System.EventHandler(this.labelAddress_Click);
@@ -244,11 +228,10 @@ namespace School_Management_System.View
             // richTextBoxAddress
             // 
             this.richTextBoxAddress.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxAddress.Location = new System.Drawing.Point(224, 421);
-            this.richTextBoxAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.richTextBoxAddress.Location = new System.Drawing.Point(168, 342);
             this.richTextBoxAddress.Name = "richTextBoxAddress";
             this.richTextBoxAddress.ReadOnly = true;
-            this.richTextBoxAddress.Size = new System.Drawing.Size(305, 102);
+            this.richTextBoxAddress.Size = new System.Drawing.Size(230, 84);
             this.richTextBoxAddress.TabIndex = 16;
             this.richTextBoxAddress.Text = "";
             this.richTextBoxAddress.TextChanged += new System.EventHandler(this.richTextBoxAddress_TextChanged);
@@ -257,10 +240,9 @@ namespace School_Management_System.View
             // 
             this.labelRoll.AutoSize = true;
             this.labelRoll.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRoll.Location = new System.Drawing.Point(151, 175);
-            this.labelRoll.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelRoll.Location = new System.Drawing.Point(113, 142);
             this.labelRoll.Name = "labelRoll";
-            this.labelRoll.Size = new System.Drawing.Size(40, 20);
+            this.labelRoll.Size = new System.Drawing.Size(31, 15);
             this.labelRoll.TabIndex = 17;
             this.labelRoll.Text = "Roll";
             this.labelRoll.Click += new System.EventHandler(this.labelRoll_Click);
@@ -269,10 +251,9 @@ namespace School_Management_System.View
             // 
             this.labelClass.AutoSize = true;
             this.labelClass.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClass.Location = new System.Drawing.Point(143, 103);
-            this.labelClass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelClass.Location = new System.Drawing.Point(107, 84);
             this.labelClass.Name = "labelClass";
-            this.labelClass.Size = new System.Drawing.Size(49, 20);
+            this.labelClass.Size = new System.Drawing.Size(37, 15);
             this.labelClass.TabIndex = 18;
             this.labelClass.Text = "Class";
             this.labelClass.Click += new System.EventHandler(this.labelClass_Click);
@@ -280,44 +261,40 @@ namespace School_Management_System.View
             // textBoxRoll
             // 
             this.textBoxRoll.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxRoll.Location = new System.Drawing.Point(224, 171);
-            this.textBoxRoll.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRoll.Location = new System.Drawing.Point(168, 139);
             this.textBoxRoll.Name = "textBoxRoll";
             this.textBoxRoll.ReadOnly = true;
-            this.textBoxRoll.Size = new System.Drawing.Size(305, 27);
+            this.textBoxRoll.Size = new System.Drawing.Size(230, 23);
             this.textBoxRoll.TabIndex = 19;
             this.textBoxRoll.TextChanged += new System.EventHandler(this.textBoxRoll_TextChanged);
             // 
             // textBoxClass
             // 
             this.textBoxClass.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxClass.Location = new System.Drawing.Point(224, 100);
-            this.textBoxClass.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxClass.Location = new System.Drawing.Point(168, 81);
             this.textBoxClass.Name = "textBoxClass";
             this.textBoxClass.ReadOnly = true;
-            this.textBoxClass.Size = new System.Drawing.Size(305, 27);
+            this.textBoxClass.Size = new System.Drawing.Size(230, 23);
             this.textBoxClass.TabIndex = 20;
             // 
             // labelResultInformation
             // 
             this.labelResultInformation.AutoSize = true;
             this.labelResultInformation.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelResultInformation.Location = new System.Drawing.Point(12, 549);
-            this.labelResultInformation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelResultInformation.Location = new System.Drawing.Point(9, 446);
             this.labelResultInformation.Name = "labelResultInformation";
-            this.labelResultInformation.Size = new System.Drawing.Size(291, 36);
+            this.labelResultInformation.Size = new System.Drawing.Size(233, 28);
             this.labelResultInformation.TabIndex = 21;
             this.labelResultInformation.Text = "Result Information :";
             // 
             // dataGridViewResult
             // 
             this.dataGridViewResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewResult.Location = new System.Drawing.Point(41, 601);
-            this.dataGridViewResult.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewResult.Location = new System.Drawing.Point(31, 488);
             this.dataGridViewResult.Name = "dataGridViewResult";
             this.dataGridViewResult.ReadOnly = true;
             this.dataGridViewResult.RowHeadersWidth = 51;
-            this.dataGridViewResult.Size = new System.Drawing.Size(552, 185);
+            this.dataGridViewResult.Size = new System.Drawing.Size(414, 150);
             this.dataGridViewResult.TabIndex = 22;
             this.dataGridViewResult.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -325,30 +302,28 @@ namespace School_Management_System.View
             // 
             this.labelSection.AutoSize = true;
             this.labelSection.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSection.Location = new System.Drawing.Point(124, 139);
-            this.labelSection.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSection.Location = new System.Drawing.Point(93, 113);
             this.labelSection.Name = "labelSection";
-            this.labelSection.Size = new System.Drawing.Size(66, 20);
+            this.labelSection.Size = new System.Drawing.Size(51, 15);
             this.labelSection.TabIndex = 23;
             this.labelSection.Text = "Section";
             // 
             // textBoxSection
             // 
             this.textBoxSection.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSection.Location = new System.Drawing.Point(224, 135);
-            this.textBoxSection.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSection.Location = new System.Drawing.Point(168, 110);
             this.textBoxSection.Name = "textBoxSection";
             this.textBoxSection.ReadOnly = true;
-            this.textBoxSection.Size = new System.Drawing.Size(305, 27);
+            this.textBoxSection.Size = new System.Drawing.Size(230, 23);
             this.textBoxSection.TabIndex = 24;
             this.textBoxSection.TextChanged += new System.EventHandler(this.textBoxSection_TextChanged);
             // 
             // FormStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(987, 875);
+            this.ClientSize = new System.Drawing.Size(792, 609);
             this.Controls.Add(this.textBoxSection);
             this.Controls.Add(this.labelSection);
             this.Controls.Add(this.dataGridViewResult);
@@ -374,7 +349,6 @@ namespace School_Management_System.View
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.labelPersonalInfo);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormStudent";
             this.Text = "FormStudent";
             this.Load += new System.EventHandler(this.FormStudent_Load);

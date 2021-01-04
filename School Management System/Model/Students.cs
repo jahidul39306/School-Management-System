@@ -208,10 +208,24 @@ namespace School_Management_System.Model
                 student.secId = reader.GetInt32(reader.GetOrdinal("secId"));
                 student.cId = reader.GetInt32(reader.GetOrdinal("cId"));
 
+<<<<<<< HEAD
+        public int GetTotalStudent()
+        {
+            conn.Open();
+            string query = String.Format("Select count(*) from Students");
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int r = Convert.ToInt32(cmd.ExecuteScalar());
+            conn.Close();
+            return r;
+        }
+
+       
+=======
                 Students.Add(student);
             }
             conn.Close();
             return Students;
         }
+>>>>>>> 5c08c1cf0f45aa1046484e4645d6287cbacb248e
     }
 }
