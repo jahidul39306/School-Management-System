@@ -504,12 +504,12 @@ namespace School_Management_System.View
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(863, 464);
-            this.Controls.Add(this.panelStudent);
-            this.Controls.Add(this.panelSection);
+            /*this.Controls.Add(this.panelStudent);*/
+           // this.Controls.Add(this.panelSection);
             this.Controls.Add(this.panelCourse);
-            this.Controls.Add(this.panelTeacher);
+            /*this.Controls.Add(this.panelTeacher);
             this.Controls.Add(this.panelResultReport);
-            this.Controls.Add(this.panelAdminHome);
+            this.Controls.Add(this.panelAdminHome);*/
             this.Controls.Add(this.panelAdmin);
             this.Name = "FormAdmin";
             this.Text = "FormAdmin";

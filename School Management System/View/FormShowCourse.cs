@@ -1,4 +1,5 @@
-﻿using System;
+﻿using School_Management_System.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace School_Management_System.View
         public FormShowCourse()
         {
             InitializeComponent();
+            dataGridViewCourse.DataSource = CourseController.GetAllCourses();
+        }
+
+        private void FormShowCourse_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxSearchCourse_TextChanged(object sender, EventArgs e)
+        {
+            string search = textBoxSearchCourse.Text;
+            dataGridViewCourse.DataSource = CourseController.SearchCourses(search);
         }
     }
 }

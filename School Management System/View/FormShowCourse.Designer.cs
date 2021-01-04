@@ -53,6 +53,7 @@ namespace School_Management_System.View
             this.textBoxSearchCourse.Name = "textBoxSearchCourse";
             this.textBoxSearchCourse.Size = new System.Drawing.Size(130, 26);
             this.textBoxSearchCourse.TabIndex = 48;
+            this.textBoxSearchCourse.TextChanged += new System.EventHandler(this.textBoxSearchCourse_TextChanged);
             // 
             // labelSearchCourses
             // 
@@ -74,6 +75,7 @@ namespace School_Management_System.View
             this.Controls.Add(this.labelSearchCourses);
             this.Name = "FormShowCourse";
             this.Text = "FormShowCourse";
+            this.Load += new System.EventHandler(this.FormShowCourse_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCourse)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
