@@ -163,5 +163,30 @@ namespace School_Management_System.View
             int sId=Int32.Parse(textBoxStudentId.Text);
             dataGridViewResult.DataSource = StudentController.GetStudentResult(sId);
         }
+
+        private void buttonUpdateCourse_Click(object sender, EventArgs e)
+        {
+            new FormUpdateCourse().Show();
+        }
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            new FormShowCourse().Show();
+        }
+
+        private void buttonAddSection_Click(object sender, EventArgs e)
+        {
+            new FormAddSection().Show();
+        }
+
+        private void buttonShowSection_Click(object sender, EventArgs e)
+        {
+            new FormShowSection().Show();
+        }
+
+        private void buttonUpdateSection_Click(object sender, EventArgs e)
+        {
+            new FormUpdateSection().Show();
+        }
     }
 }

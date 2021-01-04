@@ -87,6 +87,12 @@
     <Compile Include="View\FormAddCourse.Designer.cs">
       <DependentUpon>FormAddCourse.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormAddSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormAddSection.Designer.cs">
+      <DependentUpon>FormAddSection.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormAddStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,18 @@
     <Compile Include="View\FormLogIn.Designer.cs">
       <DependentUpon>FormLogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormShowCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormShowCourse.Designer.cs">
+      <DependentUpon>FormShowCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormShowSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormShowSection.Designer.cs">
+      <DependentUpon>FormShowSection.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormShowStudentInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +158,18 @@
     </Compile>
     <Compile Include="View\FormTeacher.Designer.cs">
       <DependentUpon>FormTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormUpdateCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormUpdateCourse.Designer.cs">
+      <DependentUpon>FormUpdateCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormUpdateSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormUpdateSection.Designer.cs">
+      <DependentUpon>FormUpdateSection.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FormUpdateStudent.cs">
       <SubType>Form</SubType>
@@ -165,6 +195,9 @@
     <EmbeddedResource Include="View\FormAddCourse.resx">
       <DependentUpon>FormAddCourse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FormAddSection.resx">
+      <DependentUpon>FormAddSection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormAddStudent.resx">
       <DependentUpon>FormAddStudent.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +210,12 @@
     <EmbeddedResource Include="View\FormLogIn.resx">
       <DependentUpon>FormLogIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FormShowCourse.resx">
+      <DependentUpon>FormShowCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormShowSection.resx">
+      <DependentUpon>FormShowSection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormShowStudentInfo.resx">
       <DependentUpon>FormShowStudentInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +227,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormTeacher.resx">
       <DependentUpon>FormTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormUpdateCourse.resx">
+      <DependentUpon>FormUpdateCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormUpdateSection.resx">
+      <DependentUpon>FormUpdateSection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormUpdateStudent.resx">
       <DependentUpon>FormUpdateStudent.cs</DependentUpon>
