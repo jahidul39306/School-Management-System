@@ -21,5 +21,26 @@ namespace School_Management_System.Controller
         {
             return db.Students.GetStudentResult(sId);
         }
+        public static bool AddStudent(Student student)
+        {
+            return db.Students.AddStudent(student);
+        }
+        public static Student GetStudent(int sId)
+        {
+            return db.Students.GetStudent(sId);
+        }
+        public static bool UpdateStudent(Student student, int sId)
+        {
+            return db.Students.UpdateStudent(student, sId);
+        }
+        public static bool DeleteStudent(int sId)
+        {
+            return db.Students.DeleteStudent(sId);
+        }
+        public static int GetTotalStudet()
+        {
+            return db.Students.GetTotalStudent();
+        }
+       
     }
 }

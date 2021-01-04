@@ -148,5 +148,10 @@ namespace School_Management_System.View
         {
 
         }
+
+        private void textBoxSection_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

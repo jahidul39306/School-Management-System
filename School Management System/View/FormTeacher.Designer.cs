@@ -284,7 +284,7 @@ namespace School_Management_System.View
             this.panelChangePass.Controls.Add(this.textBoxUserName);
             this.panelChangePass.Controls.Add(this.labelUserName);
             this.panelChangePass.Location = new System.Drawing.Point(184, 20);
-            this.panelChangePass.Margin = new System.Windows.Forms.Padding(4);
+            this.panelChangePass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelChangePass.Name = "panelChangePass";
             this.panelChangePass.Size = new System.Drawing.Size(587, 416);
             this.panelChangePass.TabIndex = 4;
@@ -295,7 +295,7 @@ namespace School_Management_System.View
             this.buttonUpdate.BackColor = System.Drawing.Color.IndianRed;
             this.buttonUpdate.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUpdate.Location = new System.Drawing.Point(212, 207);
-            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(156, 63);
             this.buttonUpdate.TabIndex = 9;
@@ -307,7 +307,7 @@ namespace School_Management_System.View
             // 
             this.textBoxNewPassword.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNewPassword.Location = new System.Drawing.Point(212, 130);
-            this.textBoxNewPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxNewPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxNewPassword.Name = "textBoxNewPassword";
             this.textBoxNewPassword.Size = new System.Drawing.Size(267, 32);
             this.textBoxNewPassword.TabIndex = 8;
@@ -328,7 +328,7 @@ namespace School_Management_System.View
             // 
             this.textBoxUserName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUserName.Location = new System.Drawing.Point(212, 79);
-            this.textBoxUserName.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxUserName.Name = "textBoxUserName";
             this.textBoxUserName.Size = new System.Drawing.Size(267, 32);
             this.textBoxUserName.TabIndex = 6;
@@ -349,10 +349,10 @@ namespace School_Management_System.View
             // 
             this.panelSResult.Controls.Add(this.buttonUpdateResult);
             this.panelSResult.Controls.Add(this.buttonAddResult);
-            this.panelSResult.Location = new System.Drawing.Point(183, 18);
-            this.panelSResult.Margin = new System.Windows.Forms.Padding(2);
+            this.panelSResult.Location = new System.Drawing.Point(182, 16);
+            this.panelSResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelSResult.Name = "panelSResult";
-            this.panelSResult.Size = new System.Drawing.Size(553, 418);
+            this.panelSResult.Size = new System.Drawing.Size(592, 439);
             this.panelSResult.TabIndex = 1;
             this.panelSResult.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSResult_Paint);
             // 
@@ -360,7 +360,7 @@ namespace School_Management_System.View
             // 
             this.buttonUpdateResult.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUpdateResult.Location = new System.Drawing.Point(331, 161);
-            this.buttonUpdateResult.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonUpdateResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonUpdateResult.Name = "buttonUpdateResult";
             this.buttonUpdateResult.Size = new System.Drawing.Size(162, 85);
             this.buttonUpdateResult.TabIndex = 1;
@@ -372,7 +372,7 @@ namespace School_Management_System.View
             // 
             this.buttonAddResult.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAddResult.Location = new System.Drawing.Point(120, 161);
-            this.buttonAddResult.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAddResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonAddResult.Name = "buttonAddResult";
             this.buttonAddResult.Size = new System.Drawing.Size(158, 85);
             this.buttonAddResult.TabIndex = 0;
@@ -392,7 +392,7 @@ namespace School_Management_System.View
             this.panelResultUpdate.Controls.Add(this.comboBox6);
             this.panelResultUpdate.Controls.Add(this.label8);
             this.panelResultUpdate.Location = new System.Drawing.Point(183, 18);
-            this.panelResultUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.panelResultUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelResultUpdate.Name = "panelResultUpdate";
             this.panelResultUpdate.Size = new System.Drawing.Size(538, 399);
             this.panelResultUpdate.TabIndex = 9;
@@ -401,7 +401,7 @@ namespace School_Management_System.View
             // 
             this.textBox2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(346, 54);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(122, 26);
             this.textBox2.TabIndex = 8;
@@ -421,7 +421,7 @@ namespace School_Management_System.View
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Location = new System.Drawing.Point(49, 124);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.Size = new System.Drawing.Size(442, 221);
@@ -432,7 +432,7 @@ namespace School_Management_System.View
             this.comboBox4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(346, 15);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(92, 27);
             this.comboBox4.TabIndex = 5;
@@ -453,7 +453,7 @@ namespace School_Management_System.View
             this.comboBox5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(81, 54);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(92, 27);
             this.comboBox5.TabIndex = 3;
@@ -474,7 +474,7 @@ namespace School_Management_System.View
             this.comboBox6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(79, 14);
-            this.comboBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(92, 27);
             this.comboBox6.TabIndex = 1;
@@ -502,9 +502,9 @@ namespace School_Management_System.View
             this.panelTeacherInfo.Controls.Add(this.textBoxName);
             this.panelTeacherInfo.Controls.Add(this.labelName);
             this.panelTeacherInfo.Controls.Add(this.labelWelcome);
-            this.panelTeacherInfo.Location = new System.Drawing.Point(183, 1);
+            this.panelTeacherInfo.Location = new System.Drawing.Point(183, 20);
             this.panelTeacherInfo.Name = "panelTeacherInfo";
-            this.panelTeacherInfo.Size = new System.Drawing.Size(592, 454);
+            this.panelTeacherInfo.Size = new System.Drawing.Size(589, 435);
             this.panelTeacherInfo.TabIndex = 1;
             this.panelTeacherInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTeacherInfo_Paint);
             // 
@@ -613,6 +613,7 @@ namespace School_Management_System.View
             this.panelStudentInfo.Name = "panelStudentInfo";
             this.panelStudentInfo.Size = new System.Drawing.Size(592, 412);
             this.panelStudentInfo.TabIndex = 10;
+            this.panelStudentInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelStudentInfo_Paint);
             // 
             // labelSId
             // 
@@ -631,6 +632,7 @@ namespace School_Management_System.View
             this.textBoxSId.Name = "textBoxSId";
             this.textBoxSId.Size = new System.Drawing.Size(175, 26);
             this.textBoxSId.TabIndex = 1;
+            this.textBoxSId.TextChanged += new System.EventHandler(this.textBoxSId_TextChanged);
             // 
             // dataGridViewCSInfo
             // 
@@ -665,6 +667,7 @@ namespace School_Management_System.View
             this.dataGridViewResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewResult.Location = new System.Drawing.Point(44, 127);
             this.dataGridViewResult.Name = "dataGridViewResult";
+            this.dataGridViewResult.RowHeadersWidth = 51;
             this.dataGridViewResult.Size = new System.Drawing.Size(483, 221);
             this.dataGridViewResult.TabIndex = 2;
             // 
@@ -883,7 +886,6 @@ namespace School_Management_System.View
             this.Controls.Add(this.panelStudentInfo);
             this.Controls.Add(this.panelResultUpdate);
             this.Controls.Add(this.panelTeacher);
-
             this.Name = "FormTeacher";
             this.Text = "FormTeacher";
             this.Load += new System.EventHandler(this.FormTeacher_Load);
