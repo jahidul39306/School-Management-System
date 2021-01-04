@@ -14,6 +14,10 @@ namespace School_Management_System.Controller
         {
             return db.Sections.GetSection(secId);
         }
+        public static int GetTotalSection()
+        {
+            return db.Sections.GetTotalSection();
+        }
     }
 }
 

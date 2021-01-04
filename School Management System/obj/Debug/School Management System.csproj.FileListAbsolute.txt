@@ -1,52 +1,20 @@
-E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\bin\Debug\School Management System.exe.config
-E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\bin\Debug\School Management System.exe
-E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\bin\Debug\School Management System.pdb
-E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School Management System.csprojAssemblyReference.cache
-E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School_Management_System.Properties.Resources.resources
-E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School Management System.csproj.GenerateResource.cache
-E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School Management System.csproj.CoreCompileInputs.cache
-E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School Management System.exe
-E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School Management System.pdb
-E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School_Management_System.View.FormLogIn.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School Management System.csprojAssemblyReference.cache
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.Properties.Resources.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormAddCourse.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormAddStudent.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormAddTeacher.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormAdmin.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormLogIn.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormShowStudentInfo.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormShowTeacherInfo.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormStudent.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormTeacher.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormUpdateStudent.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormUpdateTeacher.resources
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School Management System.csproj.GenerateResource.cache
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School Management System.csproj.CoreCompileInputs.cache
 E:\Semester 6\C#\project\School-Management-System\School Management System\bin\Debug\School Management System.exe.config
 E:\Semester 6\C#\project\School-Management-System\School Management System\bin\Debug\School Management System.exe
 E:\Semester 6\C#\project\School-Management-System\School Management System\bin\Debug\School Management System.pdb
-E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School Management System.csprojAssemblyReference.cache
-E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.Properties.Resources.resources
-E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormLogIn.resources
-E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School Management System.csproj.GenerateResource.cache
-E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School Management System.csproj.CoreCompileInputs.cache
 E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School Management System.exe
 E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School Management System.pdb
-E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormStudent.resources
-E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormAddStudent.resources
-E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormAdmin.resources
-E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormTeacher.resources
-E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School_Management_System.View.FormAddStudent.resources
-E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School_Management_System.View.FormAdmin.resources
-E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School_Management_System.View.FormStudent.resources
-E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School_Management_System.View.FormTeacher.resources
-E:\Semester 6\C#\own practice\School Management System\bin\Debug\School Management System.exe.config
-E:\Semester 6\C#\own practice\School Management System\bin\Debug\School Management System.exe
-E:\Semester 6\C#\own practice\School Management System\bin\Debug\School Management System.pdb
-E:\Semester 6\C#\own practice\School Management System\obj\Debug\School Management System.csprojAssemblyReference.cache
-E:\Semester 6\C#\own practice\School Management System\obj\Debug\School_Management_System.Properties.Resources.resources
-E:\Semester 6\C#\own practice\School Management System\obj\Debug\School_Management_System.View.FormAddStudent.resources
-E:\Semester 6\C#\own practice\School Management System\obj\Debug\School_Management_System.View.FormAdmin.resources
-E:\Semester 6\C#\own practice\School Management System\obj\Debug\School_Management_System.View.FormLogIn.resources
-E:\Semester 6\C#\own practice\School Management System\obj\Debug\School_Management_System.View.FormStudent.resources
-E:\Semester 6\C#\own practice\School Management System\obj\Debug\School_Management_System.View.FormTeacher.resources
-E:\Semester 6\C#\own practice\School Management System\obj\Debug\School Management System.csproj.GenerateResource.cache
-E:\Semester 6\C#\own practice\School Management System\obj\Debug\School Management System.csproj.CoreCompileInputs.cache
-E:\Semester 6\C#\own practice\School Management System\obj\Debug\School Management System.exe
-E:\Semester 6\C#\own practice\School Management System\obj\Debug\School Management System.pdb
-E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormShowStudentInfo.resources
-E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormUpdateStudent.resources
-<<<<<<< HEAD
-E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormAddTeacher.resources
-E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormUpdateTeacher.resources
-E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormShowTeacherInfo.resources
-=======
-E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School_Management_System.View.FormShowStudentInfo.resources
-E:\Semesters\Second Year\6th Semester(COVID-19)\C#\Project\School Management System\obj\Debug\School_Management_System.View.FormUpdateStudent.resources
->>>>>>> 96065885ee3eeb06052b4813846a4424bd84e255

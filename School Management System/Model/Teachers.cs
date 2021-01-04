@@ -159,5 +159,15 @@ namespace School_Management_System.Model
             conn.Close();
             return courses;
         }
+
+        public int GetTotalTeacher()
+        {
+            conn.Open();
+            string query = String.Format("Select count(*) from Teachers");
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int r = Convert.ToInt32(cmd.ExecuteScalar());
+            conn.Close();
+            return r;
+        }
     }
 }

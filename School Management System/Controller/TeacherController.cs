@@ -31,5 +31,9 @@ namespace School_Management_System.Controller
         {
             return db.Teachers.GetTeacherAllCourses(tId);
         }
+        public static int GetTotalTeacher()
+        {
+            return db.Teachers.GetTotalTeacher();
+        }
     }
 }
