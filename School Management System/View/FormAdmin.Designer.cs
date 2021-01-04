@@ -180,9 +180,9 @@ namespace School_Management_System.View
             this.panelStudent.Controls.Add(this.buttonShowStudent);
             this.panelStudent.Controls.Add(this.buttonUpdateStudent);
             this.panelStudent.Controls.Add(this.buttonAddStudent);
-            this.panelStudent.Location = new System.Drawing.Point(193, 12);
+            this.panelStudent.Location = new System.Drawing.Point(201, 12);
             this.panelStudent.Name = "panelStudent";
-            this.panelStudent.Size = new System.Drawing.Size(668, 409);
+            this.panelStudent.Size = new System.Drawing.Size(650, 409);
             this.panelStudent.TabIndex = 7;
             // 
             // buttonShowStudent
@@ -289,6 +289,7 @@ namespace School_Management_System.View
             this.button.TabIndex = 9;
             this.button.Text = "Show Course";
             this.button.UseVisualStyleBackColor = false;
+            this.button.Click += new System.EventHandler(this.button_Click);
             // 
             // buttonUpdateCourse
             // 
@@ -300,6 +301,7 @@ namespace School_Management_System.View
             this.buttonUpdateCourse.TabIndex = 8;
             this.buttonUpdateCourse.Text = "Update Course";
             this.buttonUpdateCourse.UseVisualStyleBackColor = false;
+            this.buttonUpdateCourse.Click += new System.EventHandler(this.buttonUpdateCourse_Click);
             // 
             // buttonAddCourse
             // 
@@ -334,6 +336,7 @@ namespace School_Management_System.View
             this.buttonShowSection.TabIndex = 9;
             this.buttonShowSection.Text = "Show Section";
             this.buttonShowSection.UseVisualStyleBackColor = false;
+            this.buttonShowSection.Click += new System.EventHandler(this.buttonShowSection_Click);
             // 
             // buttonUpdateSection
             // 
@@ -345,6 +348,7 @@ namespace School_Management_System.View
             this.buttonUpdateSection.TabIndex = 8;
             this.buttonUpdateSection.Text = "Update/Delete";
             this.buttonUpdateSection.UseVisualStyleBackColor = false;
+            this.buttonUpdateSection.Click += new System.EventHandler(this.buttonUpdateSection_Click);
             // 
             // buttonAddSection
             // 
@@ -356,6 +360,7 @@ namespace School_Management_System.View
             this.buttonAddSection.TabIndex = 7;
             this.buttonAddSection.Text = "Add Section";
             this.buttonAddSection.UseVisualStyleBackColor = false;
+            this.buttonAddSection.Click += new System.EventHandler(this.buttonAddSection_Click);
             // 
             // panelAdminHome
             // 
@@ -449,7 +454,7 @@ namespace School_Management_System.View
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(46, 132);
+            this.label1.Location = new System.Drawing.Point(66, 136);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(209, 25);
             this.label1.TabIndex = 4;
@@ -459,7 +464,7 @@ namespace School_Management_System.View
             // 
             this.labelStudentId.AutoSize = true;
             this.labelStudentId.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStudentId.Location = new System.Drawing.Point(139, 18);
+            this.labelStudentId.Location = new System.Drawing.Point(73, 20);
             this.labelStudentId.Name = "labelStudentId";
             this.labelStudentId.Size = new System.Drawing.Size(87, 19);
             this.labelStudentId.TabIndex = 3;
@@ -469,7 +474,7 @@ namespace School_Management_System.View
             // buttonEnter
             // 
             this.buttonEnter.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEnter.Location = new System.Drawing.Point(232, 57);
+            this.buttonEnter.Location = new System.Drawing.Point(166, 59);
             this.buttonEnter.Name = "buttonEnter";
             this.buttonEnter.Size = new System.Drawing.Size(75, 28);
             this.buttonEnter.TabIndex = 2;
@@ -480,7 +485,7 @@ namespace School_Management_System.View
             // textBoxStudentId
             // 
             this.textBoxStudentId.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxStudentId.Location = new System.Drawing.Point(232, 15);
+            this.textBoxStudentId.Location = new System.Drawing.Point(166, 17);
             this.textBoxStudentId.Name = "textBoxStudentId";
             this.textBoxStudentId.Size = new System.Drawing.Size(139, 26);
             this.textBoxStudentId.TabIndex = 1;
@@ -488,7 +493,7 @@ namespace School_Management_System.View
             // dataGridViewResult
             // 
             this.dataGridViewResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewResult.Location = new System.Drawing.Point(49, 180);
+            this.dataGridViewResult.Location = new System.Drawing.Point(69, 184);
             this.dataGridViewResult.Name = "dataGridViewResult";
             this.dataGridViewResult.Size = new System.Drawing.Size(343, 203);
             this.dataGridViewResult.TabIndex = 0;
