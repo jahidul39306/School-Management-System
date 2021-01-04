@@ -38,7 +38,30 @@ namespace School_Management_System.Model
             return admin;
         }
 
-        
+        public bool AssignTeacher(int tId, int coId, int cId, int secId)
+        {
+            conn.Open();
+            string query = string.Format("INSERT INTO Teachers_Courses VALUES ({0}, {1})", tId, coId);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            int x = cmd.ExecuteNonQuery();
+
+            
+            string query1 = string.Format("INSERT INTO Teachers_Classes VALUES ({0}, {1})", tId, cId);
+            SqlCommand cmd1 = new SqlCommand(query1, conn);
+            SqlDataReader reader1 = cmd1.ExecuteReader();
+            int y = cmd1.ExecuteNonQuery();
+
+            string query2 = string.Format("INSERT INTO Teachers_Sections VALUES ({0}, {1})", tId, secId);
+            SqlCommand cmd2 = new SqlCommand(query2, conn);
+            SqlDataReader reader2 = cmd2.ExecuteReader();
+            int z = cmd1.ExecuteNonQuery();
+
+            if (x > 0 && y > 0 && z > 0) return true;
+            else return false;
+
+
+        }
 
         
     }

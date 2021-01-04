@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -35,7 +34,7 @@ namespace School_Management_System.Model
                 return false;
             }
         }
-        public bool UpdateClass(Course c, int coId)
+        public bool UpdateCourse(Course c, int coId)
         {
             try
             {
@@ -58,11 +57,19 @@ namespace School_Management_System.Model
             try
             {
                 conn.Open();
+                string query1 = string.Format("DELETE FROM Results WHERE coId = {0}", coId);
+                SqlCommand cmd1 = new SqlCommand(query1, conn);
+                int x = cmd1.ExecuteNonQuery();
+
+                string query2 = string.Format("DELETE FROM Teachers_Courses WHERE coId = {0}", coId);
+                SqlCommand cmd2 = new SqlCommand(query2, conn);
+                int y = cmd2.ExecuteNonQuery();
+
                 string query = String.Format("DELETE FROM Courses WHERE coId = '{0}'", coId);
                 SqlCommand cmd = new SqlCommand(query, conn);
                 int r = cmd.ExecuteNonQuery();
                 conn.Close();
-                if (r > 0) return true;
+                if (r > 0 && x > 0 && y > 0) return true;
                 return false;
             }
             catch
@@ -72,54 +79,6 @@ namespace School_Management_System.Model
             }
 
         }
-        public int GetTotalCourse()
-        {
-            conn.Open();
-            string query = String.Format("Select count(*) from Courses");
-            SqlCommand cmd = new SqlCommand(query, conn);
-            int r = Convert.ToInt32(cmd.ExecuteScalar());
-            conn.Close();
-            return r;
-        }
 
-        public ArrayList GetAllCourses()
-        {
-            ArrayList courses = new ArrayList();
-            conn.Open();
-            string query = "SELECT coId,courseName,cid FROM Courses";
-            SqlCommand cmd = new SqlCommand(query, conn);
-            SqlDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
-            {
-                Course c = new Course();
-                c.cId = reader.GetInt32(reader.GetOrdinal("cId"));
-                c.courseName = reader.GetString(reader.GetOrdinal("courseName"));
-                c.coId = reader.GetInt32(reader.GetOrdinal("coId"));
-                courses.Add(c);
-            }
-            conn.Close();
-            return courses;
-        }
-
-        public ArrayList SearchCourses(string search)
-        {
-            ArrayList courses = new ArrayList();
-            conn.Open();
-
-            string query = string.Format("SELECT * FROM Courses WHERE courseName LIKE '%{0}%'", search);
-            SqlCommand cmd = new SqlCommand(query, conn);
-            SqlDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
-            {
-                Course c = new Course();
-                c.cId = reader.GetInt32(reader.GetOrdinal("cId"));
-                c.courseName = reader.GetString(reader.GetOrdinal("courseName"));
-                c.coId = reader.GetInt32(reader.GetOrdinal("coId"));
-                courses.Add(c);
-
-            }
-            conn.Close();
-            return courses;
-        }
     }
 }

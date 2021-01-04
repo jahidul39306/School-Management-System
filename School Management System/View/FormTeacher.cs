@@ -49,7 +49,7 @@ namespace School_Management_System.View
 
             foreach (var i in sections)
             {
-                comboBoxSection.Items.Add(i);
+                comboBoxSection.Items.Add(i.ToString());
 
             }
         }
@@ -60,7 +60,7 @@ namespace School_Management_System.View
 
             foreach (var i in courses)
             {
-                comboBoxCourse.Items.Add(i);
+                comboBoxCourse.Items.Add(i.ToString());
 
             }
         }
@@ -87,10 +87,11 @@ namespace School_Management_System.View
 
         private void button1_Click(object sender, EventArgs e)
         {
+            new FormUpdateResult(t).Show();
             panelTeacherInfo.Visible = false;
             panelChangePass.Visible = false;
             panelResultAdd.Visible = false;
-            panelResultUpdate.Visible = true;
+            
             panelStudentInfo.Visible = false;
             panelSResult.Visible = false;
         }
@@ -124,7 +125,7 @@ namespace School_Management_System.View
         {
             panelTeacherInfo.Visible = false;
             panelChangePass.Visible = false;
-            panelResultAdd.Visible = false;
+           
             panelResultUpdate.Visible = false;
             panelStudentInfo.Visible = false;
             panelSResult.Visible = true;
@@ -139,7 +140,7 @@ namespace School_Management_System.View
         {
             panelTeacherInfo.Visible = true;
             panelChangePass.Visible = false;
-            panelResultAdd.Visible = false;
+          
             panelResultUpdate.Visible = false;
             panelStudentInfo.Visible = false;
             panelSResult.Visible = false;
@@ -151,7 +152,7 @@ namespace School_Management_System.View
             panelTeacherInfo.Visible = false;
             panelChangePass.Visible = false;
             // panelAddResult.Visible = false;
-            panelResultAdd.Visible = false;
+            
             panelResultUpdate.Visible = false;
             panelSResult.Visible = false;
             panelStudentInfo.Visible = true;
@@ -159,9 +160,10 @@ namespace School_Management_System.View
 
         private void buttonAddResult_Click(object sender, EventArgs e)
         {
+            new FormAddResult1(t).Show();
             panelTeacherInfo.Visible = false;
             panelChangePass.Visible = false;
-            panelResultAdd.Visible = true;
+            
             panelResultUpdate.Visible = false;
             panelStudentInfo.Visible = false;
             panelSResult.Visible = false;
@@ -214,6 +216,24 @@ namespace School_Management_System.View
             string search = textBoxSId.Text; 
             var ds = TeacherController.SearchStudent(search);
             dataGridViewCSInfo.DataSource = ds;
+        }
+
+        private void labelCourse_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonResultAdd_Click(object sender, EventArgs e)
+        {
+            int cId = Int32.Parse(this.comboBoxClass.Text);
+            int secId = Int32.Parse(this.comboBoxSection.Text);
+            int sId = Int32.Parse(this.textBoxSearchStudent.Text);
+            int coId = Int32.Parse(this.comboBoxCourse.Text);
+            int tMark = Int32.Parse(this.textBoxTotalMark.Text);
+            int obMark = Int32.Parse(this.textBoxObtainedMark.Text);
+            Console.WriteLine(cId + secId + sId + coId + tMark + obMark + " 985563 Form Teacher");
+            //int b = TeacherController.AssignResult(cId, secId, sId, coId, tMark, obMark);
+            
         }
     }
 }
