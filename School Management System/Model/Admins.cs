@@ -69,8 +69,19 @@ namespace School_Management_System.Model
 
 
         }
-
         
+        public int TotalEarning()
+        {
+            conn.Open();
+            
+            string query = String.Format("Select count(*) from Students");
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int r = Convert.ToInt32(cmd.ExecuteScalar());
+            conn.Close();
+            return r * 1000;
+
+        }
+
     }
 }
 

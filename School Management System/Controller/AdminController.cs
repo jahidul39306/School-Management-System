@@ -138,5 +138,17 @@ namespace School_Management_System.Controller
         {
             return db.Results.SearchResult(search);
         }
+        public static ArrayList GetAllStudent()
+        {
+            return db.Students.GetAllStudent();
+        }
+        public static ArrayList SearchStudent(string search)
+        {
+            return db.Students.SearchStudent(search);
+        }
+        public static int TotalEarning()
+        {
+            return db.Admins.TotalEarning();
+        }
     }
 }

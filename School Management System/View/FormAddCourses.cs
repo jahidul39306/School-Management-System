@@ -44,7 +44,8 @@ namespace School_Management_System.View
                 bool b = AdminController.AddCourse(c);
                 if (b)
                 {
-                    MessageBox.Show("Section Added");
+                    MessageBox.Show("Courses Added");
+                    this.Close();
                 }
                 else
                     MessageBox.Show("Failed");

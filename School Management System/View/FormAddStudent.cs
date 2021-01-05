@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,7 +18,25 @@ namespace School_Management_System.View
         public FormAddStudent()
         {
             InitializeComponent();
+            FillClassComboBox();
+            FillSectionComboBox();
+        }
+        public void FillClassComboBox()
+        {
+            ArrayList classes = AdminController.GetAllClasses();
+            foreach (var e in classes)
+            {
+                comboBoxClassId.Items.Add(e.ToString());
+            }
+        }
 
+        public void FillSectionComboBox()
+        {
+            ArrayList sections = AdminController.GetAllSections();
+            foreach (var e in sections)
+            {
+                comboBoxSecId.Items.Add(e.ToString());
+            }
         }
 
         private void FormAddStudent_Load(object sender, EventArgs e)
@@ -47,8 +66,8 @@ namespace School_Management_System.View
                 s.gender = comboBoxGender.Text;
                 s.userName = textBoxUserName.Text;
                 s.password = textBoxPassword.Text;
-                s.secId = Int32.Parse(textBoxSectionId.Text);
-                s.cId = Int32.Parse(textBoxClassId.Text);
+                s.secId = Int32.Parse(comboBoxSecId.Text);
+                s.cId = Int32.Parse(comboBoxClassId.Text);
                 bool b = StudentController.AddStudent(s);
                 if (b)
                 {
@@ -61,6 +80,11 @@ namespace School_Management_System.View
                 MessageBox.Show("Invalid Input");
             }
             
+        }
+
+        private void comboBoxClassId_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -31,6 +31,7 @@ namespace School_Management_System.Model
             }
             catch
             {
+                conn.Close();
                 MessageBox.Show("User Name is taken, choose another User Name");
                 return false;
             }
@@ -47,8 +48,8 @@ namespace School_Management_System.Model
             return false;*/
             try
             {
-                
-                string query = string.Format("UPDATE Teachers SET  name = '{0}', gender = '{1}', contact = '{2}', address = '{3}', userName = '{4}', password = '{5}' WHERE tId = '{6}'", teacher.name, teacher.gender, teacher.contact, teacher.address, teacher.userName, teacher.password, tId);
+                conn.Open();
+                string query = string.Format("UPDATE Teachers SET  name = '{0}', gender = '{1}', contact = '{2}', address = '{3}', userName = '{4}', password = '{5}' WHERE tId = {6}", teacher.name, teacher.gender, teacher.contact, teacher.address, teacher.userName, teacher.password, tId);
                 SqlCommand cmd = new SqlCommand(query, conn);
                 int r = cmd.ExecuteNonQuery();
                 conn.Close();

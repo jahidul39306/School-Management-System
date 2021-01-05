@@ -29,7 +29,6 @@ namespace School_Management_System.View
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxSectionId = new System.Windows.Forms.TextBox();
             this.labelSection = new System.Windows.Forms.Label();
             this.textBoxRoll = new System.Windows.Forms.TextBox();
             this.labelClass = new System.Windows.Forms.Label();
@@ -55,18 +54,10 @@ namespace School_Management_System.View
             this.labelUserName = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.labelPassword = new System.Windows.Forms.Label();
-            this.textBoxClassId = new System.Windows.Forms.TextBox();
             this.comboBoxGender = new System.Windows.Forms.ComboBox();
+            this.comboBoxSecId = new System.Windows.Forms.ComboBox();
+            this.comboBoxClassId = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // textBoxSectionId
-            // 
-            this.textBoxSectionId.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSectionId.Location = new System.Drawing.Point(275, 134);
-            this.textBoxSectionId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBoxSectionId.Name = "textBoxSectionId";
-            this.textBoxSectionId.Size = new System.Drawing.Size(305, 27);
-            this.textBoxSectionId.TabIndex = 47;
             // 
             // labelSection
             // 
@@ -83,7 +74,7 @@ namespace School_Management_System.View
             // 
             this.textBoxRoll.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxRoll.Location = new System.Drawing.Point(275, 170);
-            this.textBoxRoll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxRoll.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxRoll.Name = "textBoxRoll";
             this.textBoxRoll.Size = new System.Drawing.Size(305, 27);
             this.textBoxRoll.TabIndex = 44;
@@ -114,7 +105,7 @@ namespace School_Management_System.View
             // 
             this.richTextBoxAddress.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBoxAddress.Location = new System.Drawing.Point(275, 420);
-            this.richTextBoxAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBoxAddress.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxAddress.Name = "richTextBoxAddress";
             this.richTextBoxAddress.Size = new System.Drawing.Size(305, 102);
             this.richTextBoxAddress.TabIndex = 41;
@@ -135,7 +126,7 @@ namespace School_Management_System.View
             // 
             this.textBoxDateOfBirth.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxDateOfBirth.Location = new System.Drawing.Point(277, 313);
-            this.textBoxDateOfBirth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxDateOfBirth.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxDateOfBirth.Name = "textBoxDateOfBirth";
             this.textBoxDateOfBirth.Size = new System.Drawing.Size(305, 27);
             this.textBoxDateOfBirth.TabIndex = 39;
@@ -155,7 +146,7 @@ namespace School_Management_System.View
             // 
             this.textBoxContact.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxContact.Location = new System.Drawing.Point(275, 348);
-            this.textBoxContact.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxContact.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxContact.Name = "textBoxContact";
             this.textBoxContact.Size = new System.Drawing.Size(305, 27);
             this.textBoxContact.TabIndex = 37;
@@ -175,7 +166,7 @@ namespace School_Management_System.View
             // 
             this.textBoxDateOfAdmission.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxDateOfAdmission.Location = new System.Drawing.Point(275, 381);
-            this.textBoxDateOfAdmission.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxDateOfAdmission.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxDateOfAdmission.Name = "textBoxDateOfAdmission";
             this.textBoxDateOfAdmission.Size = new System.Drawing.Size(305, 27);
             this.textBoxDateOfAdmission.TabIndex = 35;
@@ -206,7 +197,7 @@ namespace School_Management_System.View
             // 
             this.textBoxMothersName.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxMothersName.Location = new System.Drawing.Point(275, 241);
-            this.textBoxMothersName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxMothersName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMothersName.Name = "textBoxMothersName";
             this.textBoxMothersName.Size = new System.Drawing.Size(305, 27);
             this.textBoxMothersName.TabIndex = 31;
@@ -226,7 +217,7 @@ namespace School_Management_System.View
             // 
             this.textBoxFathersName.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFathersName.Location = new System.Drawing.Point(275, 206);
-            this.textBoxFathersName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxFathersName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxFathersName.Name = "textBoxFathersName";
             this.textBoxFathersName.Size = new System.Drawing.Size(305, 27);
             this.textBoxFathersName.TabIndex = 29;
@@ -246,7 +237,7 @@ namespace School_Management_System.View
             // 
             this.textBoxName.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxName.Location = new System.Drawing.Point(275, 63);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(305, 27);
             this.textBoxName.TabIndex = 27;
@@ -278,7 +269,7 @@ namespace School_Management_System.View
             // 
             this.buttonAdd.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAdd.Location = new System.Drawing.Point(393, 645);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(183, 65);
             this.buttonAdd.TabIndex = 49;
@@ -290,7 +281,7 @@ namespace School_Management_System.View
             // 
             this.textBoxUserName.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUserName.Location = new System.Drawing.Point(269, 558);
-            this.textBoxUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxUserName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxUserName.Name = "textBoxUserName";
             this.textBoxUserName.Size = new System.Drawing.Size(305, 27);
             this.textBoxUserName.TabIndex = 51;
@@ -310,7 +301,7 @@ namespace School_Management_System.View
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.Location = new System.Drawing.Point(269, 603);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(305, 27);
             this.textBoxPassword.TabIndex = 53;
@@ -326,14 +317,6 @@ namespace School_Management_System.View
             this.labelPassword.TabIndex = 52;
             this.labelPassword.Text = "Password";
             // 
-            // textBoxClassId
-            // 
-            this.textBoxClassId.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxClassId.Location = new System.Drawing.Point(275, 98);
-            this.textBoxClassId.Name = "textBoxClassId";
-            this.textBoxClassId.Size = new System.Drawing.Size(305, 27);
-            this.textBoxClassId.TabIndex = 54;
-            // 
             // comboBoxGender
             // 
             this.comboBoxGender.FormattingEnabled = true;
@@ -346,19 +329,36 @@ namespace School_Management_System.View
             this.comboBoxGender.Size = new System.Drawing.Size(305, 24);
             this.comboBoxGender.TabIndex = 55;
             // 
+            // comboBoxSecId
+            // 
+            this.comboBoxSecId.FormattingEnabled = true;
+            this.comboBoxSecId.Location = new System.Drawing.Point(275, 136);
+            this.comboBoxSecId.Name = "comboBoxSecId";
+            this.comboBoxSecId.Size = new System.Drawing.Size(305, 24);
+            this.comboBoxSecId.TabIndex = 56;
+            // 
+            // comboBoxClassId
+            // 
+            this.comboBoxClassId.FormattingEnabled = true;
+            this.comboBoxClassId.Location = new System.Drawing.Point(275, 101);
+            this.comboBoxClassId.Name = "comboBoxClassId";
+            this.comboBoxClassId.Size = new System.Drawing.Size(305, 24);
+            this.comboBoxClassId.TabIndex = 57;
+            this.comboBoxClassId.SelectedIndexChanged += new System.EventHandler(this.comboBoxClassId_SelectedIndexChanged);
+            // 
             // FormAddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 725);
+            this.Controls.Add(this.comboBoxClassId);
+            this.Controls.Add(this.comboBoxSecId);
             this.Controls.Add(this.comboBoxGender);
-            this.Controls.Add(this.textBoxClassId);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.textBoxUserName);
             this.Controls.Add(this.labelUserName);
             this.Controls.Add(this.buttonAdd);
-            this.Controls.Add(this.textBoxSectionId);
             this.Controls.Add(this.labelSection);
             this.Controls.Add(this.textBoxRoll);
             this.Controls.Add(this.labelClass);
@@ -379,7 +379,7 @@ namespace School_Management_System.View
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.labelPersonalInfo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormAddStudent";
             this.Text = "FormAddStudent";
             this.Load += new System.EventHandler(this.FormAddStudent_Load);
@@ -389,8 +389,6 @@ namespace School_Management_System.View
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBoxSectionId;
         private System.Windows.Forms.Label labelSection;
         private System.Windows.Forms.TextBox textBoxRoll;
         private System.Windows.Forms.Label labelClass;
@@ -416,7 +414,8 @@ namespace School_Management_System.View
         private System.Windows.Forms.Label labelUserName;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Label labelPassword;
-        private System.Windows.Forms.TextBox textBoxClassId;
         private System.Windows.Forms.ComboBox comboBoxGender;
+        private System.Windows.Forms.ComboBox comboBoxSecId;
+        private System.Windows.Forms.ComboBox comboBoxClassId;
     }
 }

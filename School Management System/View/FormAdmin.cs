@@ -41,6 +41,10 @@ namespace School_Management_System.View
             string d = labelTotalCourse.Text;
             d += AdminController.GetTotalCourse().ToString();
             labelTotalCourse.Text = d;
+
+            string e = labelEarning.Text;
+            e += AdminController.TotalEarning().ToString();
+            labelEarning.Text = e;
         }
        
         private void FormAdmin_Load(object sender, EventArgs e)
@@ -96,7 +100,8 @@ namespace School_Management_System.View
 
         private void buttonShowStudent_Click(object sender, EventArgs e)
         {
-            new FormShowStudentInfo().Show();
+            
+            new FormAdminStudentInfo().Show();
         }
 
         private void buttonHome_Click(object sender, EventArgs e)
@@ -166,6 +171,16 @@ namespace School_Management_System.View
         private void buttonResultreport_Click(object sender, EventArgs e)
         {
             new FormResultShow().Show();
+        }
+
+        private void panelStudent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void labelEarning_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

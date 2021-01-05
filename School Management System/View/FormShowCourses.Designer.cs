@@ -39,7 +39,7 @@ namespace School_Management_System.View
             // 
             this.labelCourseName.AutoSize = true;
             this.labelCourseName.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCourseName.Location = new System.Drawing.Point(228, 102);
+            this.labelCourseName.Location = new System.Drawing.Point(325, 94);
             this.labelCourseName.Name = "labelCourseName";
             this.labelCourseName.Size = new System.Drawing.Size(130, 23);
             this.labelCourseName.TabIndex = 12;
@@ -48,7 +48,7 @@ namespace School_Management_System.View
             // textBoxCourseName
             // 
             this.textBoxCourseName.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCourseName.Location = new System.Drawing.Point(364, 99);
+            this.textBoxCourseName.Location = new System.Drawing.Point(461, 91);
             this.textBoxCourseName.Name = "textBoxCourseName";
             this.textBoxCourseName.Size = new System.Drawing.Size(187, 31);
             this.textBoxCourseName.TabIndex = 11;
@@ -57,18 +57,18 @@ namespace School_Management_System.View
             // dataGridViewCourses
             // 
             this.dataGridViewCourses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCourses.Location = new System.Drawing.Point(228, 201);
+            this.dataGridViewCourses.Location = new System.Drawing.Point(215, 180);
             this.dataGridViewCourses.Name = "dataGridViewCourses";
             this.dataGridViewCourses.RowHeadersWidth = 51;
             this.dataGridViewCourses.RowTemplate.Height = 24;
-            this.dataGridViewCourses.Size = new System.Drawing.Size(349, 150);
+            this.dataGridViewCourses.Size = new System.Drawing.Size(577, 208);
             this.dataGridViewCourses.TabIndex = 10;
             // 
             // FormShowCourses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(987, 469);
             this.Controls.Add(this.labelCourseName);
             this.Controls.Add(this.textBoxCourseName);
             this.Controls.Add(this.dataGridViewCourses);

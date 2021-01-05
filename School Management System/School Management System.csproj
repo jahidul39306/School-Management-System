@@ -116,6 +116,12 @@
     <Compile Include="View\FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormAdminStudentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormAdminStudentInfo.Designer.cs">
+      <DependentUpon>FormAdminStudentInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormAdminStudentInfo.resx">
+      <DependentUpon>FormAdminStudentInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormLogIn.resx">
       <DependentUpon>FormLogIn.cs</DependentUpon>

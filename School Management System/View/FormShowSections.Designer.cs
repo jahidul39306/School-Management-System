@@ -38,18 +38,18 @@ namespace School_Management_System.View
             // dataGridViewSections
             // 
             this.dataGridViewSections.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSections.Location = new System.Drawing.Point(213, 168);
+            this.dataGridViewSections.Location = new System.Drawing.Point(215, 170);
             this.dataGridViewSections.Name = "dataGridViewSections";
             this.dataGridViewSections.RowHeadersWidth = 51;
             this.dataGridViewSections.RowTemplate.Height = 24;
-            this.dataGridViewSections.Size = new System.Drawing.Size(349, 150);
+            this.dataGridViewSections.Size = new System.Drawing.Size(530, 190);
             this.dataGridViewSections.TabIndex = 0;
             this.dataGridViewSections.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSections_CellContentClick);
             // 
             // textBoxSecName
             // 
             this.textBoxSecName.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSecName.Location = new System.Drawing.Point(349, 66);
+            this.textBoxSecName.Location = new System.Drawing.Point(448, 77);
             this.textBoxSecName.Name = "textBoxSecName";
             this.textBoxSecName.Size = new System.Drawing.Size(187, 31);
             this.textBoxSecName.TabIndex = 3;
@@ -59,7 +59,7 @@ namespace School_Management_System.View
             // 
             this.labelSecName.AutoSize = true;
             this.labelSecName.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSecName.Location = new System.Drawing.Point(209, 66);
+            this.labelSecName.Location = new System.Drawing.Point(308, 77);
             this.labelSecName.Name = "labelSecName";
             this.labelSecName.Size = new System.Drawing.Size(134, 23);
             this.labelSecName.TabIndex = 9;
@@ -69,7 +69,7 @@ namespace School_Management_System.View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(947, 461);
             this.Controls.Add(this.labelSecName);
             this.Controls.Add(this.textBoxSecName);
             this.Controls.Add(this.dataGridViewSections);
