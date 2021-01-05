@@ -68,19 +68,26 @@ namespace School_Management_System.View
 
         private void buttonAssignTeacher_Click(object sender, EventArgs e)
         {
-            int tId = Int32.Parse(comboBoxTeacher.Text);
-            int coId = Int32.Parse(comboBoxCourse.Text);
-            int secId = Int32.Parse(comboBoxSection.Text);
-            int cId = Int32.Parse(comboBoxClass.Text);
-            bool b = AdminController.AssignTeacher(tId, coId, cId, secId);
-            if(b)
+            try
             {
-                MessageBox.Show("Teacher Assigned");
-                this.Close();
+                int tId = Int32.Parse(comboBoxTeacher.Text);
+                int coId = Int32.Parse(comboBoxCourse.Text);
+                int secId = Int32.Parse(comboBoxSection.Text);
+                int cId = Int32.Parse(comboBoxClass.Text);
+                bool b = AdminController.AssignTeacher(tId, coId, cId, secId);
+                if (b)
+                {
+                    MessageBox.Show("Teacher Assigned");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Failed to assign Invalid Input");
+                }
             }
-            else
+            catch(Exception)
             {
-                MessageBox.Show("Failed to assign Invalid Input");
+                MessageBox.Show("Invalid input");
             }
         }
 

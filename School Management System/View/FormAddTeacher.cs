@@ -20,22 +20,29 @@ namespace School_Management_System.View
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            Teacher t = new Teacher();
-            t.name = textBoxName.Text;
-            t.gender = comboBoxGender.Text;
-            t.contact = textBoxContact.Text;
-            t.address = richTextBoxAddress.Text;
-            t.userName = textBoxUserName.Text;
-            t.password = textBoxPassword.Text;
-            bool b = AdminController.AddTeacher(t);
-            if(b)
+            try
             {
-                MessageBox.Show("Teacher added");
-                this.Close();
+                Teacher t = new Teacher();
+                t.name = textBoxName.Text;
+                t.gender = comboBoxGender.Text;
+                t.contact = textBoxContact.Text;
+                t.address = richTextBoxAddress.Text;
+                t.userName = textBoxUserName.Text;
+                t.password = textBoxPassword.Text;
+                bool b = AdminController.AddTeacher(t);
+                if (b)
+                {
+                    MessageBox.Show("Teacher added");
+                    this.Close();
+                }
+                /*else
+                {
+                    MessageBox.Show("Failed to add teacher");
+                }*/
             }
-            else
+            catch(Exception)
             {
-                MessageBox.Show("Failed to add teacher");
+                MessageBox.Show("Invalid Input");
             }
         }
 
