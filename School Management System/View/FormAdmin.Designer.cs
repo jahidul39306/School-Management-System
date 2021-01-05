@@ -77,20 +77,18 @@ namespace School_Management_System.View
             this.panelAdmin.Controls.Add(this.buttonCourses);
             this.panelAdmin.Controls.Add(this.buttonTeachers);
             this.panelAdmin.Controls.Add(this.buttonStudents);
-            this.panelAdmin.Location = new System.Drawing.Point(3, 15);
-            this.panelAdmin.Margin = new System.Windows.Forms.Padding(4);
+            this.panelAdmin.Location = new System.Drawing.Point(2, 12);
             this.panelAdmin.Name = "panelAdmin";
-            this.panelAdmin.Size = new System.Drawing.Size(257, 503);
+            this.panelAdmin.Size = new System.Drawing.Size(193, 409);
             this.panelAdmin.TabIndex = 0;
             // 
             // buttonTeacherAssign
             // 
             this.buttonTeacherAssign.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonTeacherAssign.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTeacherAssign.Location = new System.Drawing.Point(13, 428);
-            this.buttonTeacherAssign.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonTeacherAssign.Location = new System.Drawing.Point(10, 348);
             this.buttonTeacherAssign.Name = "buttonTeacherAssign";
-            this.buttonTeacherAssign.Size = new System.Drawing.Size(219, 60);
+            this.buttonTeacherAssign.Size = new System.Drawing.Size(164, 49);
             this.buttonTeacherAssign.TabIndex = 6;
             this.buttonTeacherAssign.Text = "Teacher Assign";
             this.buttonTeacherAssign.UseVisualStyleBackColor = false;
@@ -100,10 +98,9 @@ namespace School_Management_System.View
             // 
             this.buttonHome.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonHome.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHome.Location = new System.Drawing.Point(13, 18);
-            this.buttonHome.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonHome.Location = new System.Drawing.Point(10, 15);
             this.buttonHome.Name = "buttonHome";
-            this.buttonHome.Size = new System.Drawing.Size(219, 60);
+            this.buttonHome.Size = new System.Drawing.Size(164, 49);
             this.buttonHome.TabIndex = 5;
             this.buttonHome.Text = "Home";
             this.buttonHome.UseVisualStyleBackColor = false;
@@ -113,10 +110,9 @@ namespace School_Management_System.View
             // 
             this.buttonResultreport.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonResultreport.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonResultreport.Location = new System.Drawing.Point(13, 357);
-            this.buttonResultreport.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonResultreport.Location = new System.Drawing.Point(10, 290);
             this.buttonResultreport.Name = "buttonResultreport";
-            this.buttonResultreport.Size = new System.Drawing.Size(219, 60);
+            this.buttonResultreport.Size = new System.Drawing.Size(164, 49);
             this.buttonResultreport.TabIndex = 4;
             this.buttonResultreport.Text = "Result report";
             this.buttonResultreport.UseVisualStyleBackColor = false;
@@ -125,10 +121,9 @@ namespace School_Management_System.View
             // 
             this.buttonSection.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonSection.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSection.Location = new System.Drawing.Point(13, 289);
-            this.buttonSection.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSection.Location = new System.Drawing.Point(10, 235);
             this.buttonSection.Name = "buttonSection";
-            this.buttonSection.Size = new System.Drawing.Size(219, 60);
+            this.buttonSection.Size = new System.Drawing.Size(164, 49);
             this.buttonSection.TabIndex = 3;
             this.buttonSection.Text = "Sections";
             this.buttonSection.UseVisualStyleBackColor = false;
@@ -138,10 +133,9 @@ namespace School_Management_System.View
             // 
             this.buttonCourses.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonCourses.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCourses.Location = new System.Drawing.Point(13, 222);
-            this.buttonCourses.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCourses.Location = new System.Drawing.Point(10, 180);
             this.buttonCourses.Name = "buttonCourses";
-            this.buttonCourses.Size = new System.Drawing.Size(219, 60);
+            this.buttonCourses.Size = new System.Drawing.Size(164, 49);
             this.buttonCourses.TabIndex = 2;
             this.buttonCourses.Text = "Courses";
             this.buttonCourses.UseVisualStyleBackColor = false;
@@ -151,10 +145,9 @@ namespace School_Management_System.View
             // 
             this.buttonTeachers.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonTeachers.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTeachers.Location = new System.Drawing.Point(13, 154);
-            this.buttonTeachers.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonTeachers.Location = new System.Drawing.Point(10, 125);
             this.buttonTeachers.Name = "buttonTeachers";
-            this.buttonTeachers.Size = new System.Drawing.Size(219, 60);
+            this.buttonTeachers.Size = new System.Drawing.Size(164, 49);
             this.buttonTeachers.TabIndex = 1;
             this.buttonTeachers.Text = "Teachers";
             this.buttonTeachers.UseVisualStyleBackColor = false;
@@ -164,10 +157,9 @@ namespace School_Management_System.View
             // 
             this.buttonStudents.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonStudents.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonStudents.Location = new System.Drawing.Point(13, 86);
-            this.buttonStudents.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonStudents.Location = new System.Drawing.Point(10, 70);
             this.buttonStudents.Name = "buttonStudents";
-            this.buttonStudents.Size = new System.Drawing.Size(219, 60);
+            this.buttonStudents.Size = new System.Drawing.Size(164, 49);
             this.buttonStudents.TabIndex = 0;
             this.buttonStudents.Text = "Students";
             this.buttonStudents.UseVisualStyleBackColor = false;
@@ -363,15 +355,17 @@ namespace School_Management_System.View
             // 
             // panelAdminHome
             // 
+            this.panelAdminHome.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panelAdminHome.Controls.Add(this.labelYearlyEnrollment);
             this.panelAdminHome.Controls.Add(this.labelEarning);
             this.panelAdminHome.Controls.Add(this.labelTotalSection);
             this.panelAdminHome.Controls.Add(this.labelTotalCourse);
             this.panelAdminHome.Controls.Add(this.labelTotalStudent);
             this.panelAdminHome.Controls.Add(this.labelTotalTeacher);
-            this.panelAdminHome.Location = new System.Drawing.Point(262, 15);
+            this.panelAdminHome.Location = new System.Drawing.Point(196, 12);
+            this.panelAdminHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelAdminHome.Name = "panelAdminHome";
-            this.panelAdminHome.Size = new System.Drawing.Size(757, 503);
+            this.panelAdminHome.Size = new System.Drawing.Size(663, 409);
             this.panelAdminHome.TabIndex = 1;
             this.panelAdminHome.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAdminHome_Paint);
             // 
@@ -379,9 +373,10 @@ namespace School_Management_System.View
             // 
             this.labelYearlyEnrollment.AutoSize = true;
             this.labelYearlyEnrollment.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelYearlyEnrollment.Location = new System.Drawing.Point(60, 265);
+            this.labelYearlyEnrollment.Location = new System.Drawing.Point(135, 234);
+            this.labelYearlyEnrollment.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelYearlyEnrollment.Name = "labelYearlyEnrollment";
-            this.labelYearlyEnrollment.Size = new System.Drawing.Size(197, 23);
+            this.labelYearlyEnrollment.Size = new System.Drawing.Size(162, 19);
             this.labelYearlyEnrollment.TabIndex = 5;
             this.labelYearlyEnrollment.Text = "Yearly Enrollment :   ";
             // 
@@ -389,9 +384,10 @@ namespace School_Management_System.View
             // 
             this.labelEarning.AutoSize = true;
             this.labelEarning.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEarning.Location = new System.Drawing.Point(375, 265);
+            this.labelEarning.Location = new System.Drawing.Point(371, 234);
+            this.labelEarning.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEarning.Name = "labelEarning";
-            this.labelEarning.Size = new System.Drawing.Size(154, 23);
+            this.labelEarning.Size = new System.Drawing.Size(129, 19);
             this.labelEarning.TabIndex = 4;
             this.labelEarning.Text = "Total Earning :   ";
             // 
@@ -399,9 +395,10 @@ namespace School_Management_System.View
             // 
             this.labelTotalSection.AutoSize = true;
             this.labelTotalSection.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalSection.Location = new System.Drawing.Point(379, 168);
+            this.labelTotalSection.Location = new System.Drawing.Point(374, 155);
+            this.labelTotalSection.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTotalSection.Name = "labelTotalSection";
-            this.labelTotalSection.Size = new System.Drawing.Size(148, 23);
+            this.labelTotalSection.Size = new System.Drawing.Size(125, 19);
             this.labelTotalSection.TabIndex = 3;
             this.labelTotalSection.Text = "Total Section :   ";
             // 
@@ -409,9 +406,10 @@ namespace School_Management_System.View
             // 
             this.labelTotalCourse.AutoSize = true;
             this.labelTotalCourse.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalCourse.Location = new System.Drawing.Point(59, 168);
+            this.labelTotalCourse.Location = new System.Drawing.Point(134, 155);
+            this.labelTotalCourse.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTotalCourse.Name = "labelTotalCourse";
-            this.labelTotalCourse.Size = new System.Drawing.Size(145, 23);
+            this.labelTotalCourse.Size = new System.Drawing.Size(121, 19);
             this.labelTotalCourse.TabIndex = 2;
             this.labelTotalCourse.Text = "Total Course :   ";
             // 
@@ -419,9 +417,10 @@ namespace School_Management_System.View
             // 
             this.labelTotalStudent.AutoSize = true;
             this.labelTotalStudent.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalStudent.Location = new System.Drawing.Point(60, 70);
+            this.labelTotalStudent.Location = new System.Drawing.Point(135, 76);
+            this.labelTotalStudent.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTotalStudent.Name = "labelTotalStudent";
-            this.labelTotalStudent.Size = new System.Drawing.Size(153, 23);
+            this.labelTotalStudent.Size = new System.Drawing.Size(129, 19);
             this.labelTotalStudent.TabIndex = 1;
             this.labelTotalStudent.Text = "Total Student :   ";
             // 
@@ -429,26 +428,21 @@ namespace School_Management_System.View
             // 
             this.labelTotalTeacher.AutoSize = true;
             this.labelTotalTeacher.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalTeacher.Location = new System.Drawing.Point(379, 70);
+            this.labelTotalTeacher.Location = new System.Drawing.Point(374, 76);
+            this.labelTotalTeacher.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTotalTeacher.Name = "labelTotalTeacher";
-            this.labelTotalTeacher.Size = new System.Drawing.Size(156, 23);
+            this.labelTotalTeacher.Size = new System.Drawing.Size(130, 19);
             this.labelTotalTeacher.TabIndex = 0;
             this.labelTotalTeacher.Text = "Total Teacher :   ";
             // 
             // FormAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1151, 571);
-            this.Controls.Add(this.panelStudent);
-            this.Controls.Add(this.panelSection);
-            this.Controls.Add(this.panelCourse);
-            this.Controls.Add(this.panelTeacher);
-            
+            this.ClientSize = new System.Drawing.Size(863, 464);
             this.Controls.Add(this.panelAdminHome);
             this.Controls.Add(this.panelAdmin);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormAdmin";
             this.Text = "FormAdmin";
             this.Load += new System.EventHandler(this.FormAdmin_Load);
