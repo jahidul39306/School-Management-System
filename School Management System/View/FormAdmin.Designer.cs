@@ -70,6 +70,7 @@ namespace School_Management_System.View
             // 
             // panelAdmin
             // 
+            this.panelAdmin.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panelAdmin.Controls.Add(this.buttonTeacherAssign);
             this.panelAdmin.Controls.Add(this.buttonHome);
             this.panelAdmin.Controls.Add(this.buttonResultreport);
@@ -116,6 +117,7 @@ namespace School_Management_System.View
             this.buttonResultreport.TabIndex = 4;
             this.buttonResultreport.Text = "Result report";
             this.buttonResultreport.UseVisualStyleBackColor = false;
+            this.buttonResultreport.Click += new System.EventHandler(this.buttonResultreport_Click);
             // 
             // buttonSection
             // 
@@ -167,19 +169,20 @@ namespace School_Management_System.View
             // 
             // panelStudent
             // 
+            this.panelStudent.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panelStudent.Controls.Add(this.buttonShowStudent);
             this.panelStudent.Controls.Add(this.buttonUpdateStudent);
             this.panelStudent.Controls.Add(this.buttonAddStudent);
-            this.panelStudent.Location = new System.Drawing.Point(267, 15);
+            this.panelStudent.Location = new System.Drawing.Point(201, 12);
             this.panelStudent.Name = "panelStudent";
-            this.panelStudent.Size = new System.Drawing.Size(776, 503);
+            this.panelStudent.Size = new System.Drawing.Size(650, 409);
             this.panelStudent.TabIndex = 7;
             // 
             // buttonShowStudent
             // 
             this.buttonShowStudent.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonShowStudent.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonShowStudent.Location = new System.Drawing.Point(293, 261);
+            this.buttonShowStudent.Location = new System.Drawing.Point(250, 264);
             this.buttonShowStudent.Name = "buttonShowStudent";
             this.buttonShowStudent.Size = new System.Drawing.Size(181, 71);
             this.buttonShowStudent.TabIndex = 9;
@@ -191,7 +194,7 @@ namespace School_Management_System.View
             // 
             this.buttonUpdateStudent.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonUpdateStudent.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdateStudent.Location = new System.Drawing.Point(397, 122);
+            this.buttonUpdateStudent.Location = new System.Drawing.Point(354, 125);
             this.buttonUpdateStudent.Name = "buttonUpdateStudent";
             this.buttonUpdateStudent.Size = new System.Drawing.Size(185, 82);
             this.buttonUpdateStudent.TabIndex = 8;
@@ -203,7 +206,7 @@ namespace School_Management_System.View
             // 
             this.buttonAddStudent.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonAddStudent.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAddStudent.Location = new System.Drawing.Point(176, 122);
+            this.buttonAddStudent.Location = new System.Drawing.Point(133, 125);
             this.buttonAddStudent.Name = "buttonAddStudent";
             this.buttonAddStudent.Size = new System.Drawing.Size(174, 82);
             this.buttonAddStudent.TabIndex = 7;
@@ -213,19 +216,20 @@ namespace School_Management_System.View
             // 
             // panelTeacher
             // 
+            this.panelTeacher.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panelTeacher.Controls.Add(this.buttonShowTeacher);
             this.panelTeacher.Controls.Add(this.buttonUpdateTeacher);
             this.panelTeacher.Controls.Add(this.buttonAddTeacher);
-            this.panelTeacher.Location = new System.Drawing.Point(267, 15);
+            this.panelTeacher.Location = new System.Drawing.Point(201, 12);
             this.panelTeacher.Name = "panelTeacher";
-            this.panelTeacher.Size = new System.Drawing.Size(749, 503);
+            this.panelTeacher.Size = new System.Drawing.Size(650, 409);
             this.panelTeacher.TabIndex = 10;
             // 
             // buttonShowTeacher
             // 
             this.buttonShowTeacher.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonShowTeacher.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonShowTeacher.Location = new System.Drawing.Point(277, 249);
+            this.buttonShowTeacher.Location = new System.Drawing.Point(257, 240);
             this.buttonShowTeacher.Name = "buttonShowTeacher";
             this.buttonShowTeacher.Size = new System.Drawing.Size(176, 79);
             this.buttonShowTeacher.TabIndex = 9;
@@ -237,7 +241,7 @@ namespace School_Management_System.View
             // 
             this.buttonUpdateTeacher.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonUpdateTeacher.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdateTeacher.Location = new System.Drawing.Point(380, 135);
+            this.buttonUpdateTeacher.Location = new System.Drawing.Point(360, 126);
             this.buttonUpdateTeacher.Name = "buttonUpdateTeacher";
             this.buttonUpdateTeacher.Size = new System.Drawing.Size(176, 79);
             this.buttonUpdateTeacher.TabIndex = 8;
@@ -249,7 +253,7 @@ namespace School_Management_System.View
             // 
             this.buttonAddTeacher.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonAddTeacher.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAddTeacher.Location = new System.Drawing.Point(168, 135);
+            this.buttonAddTeacher.Location = new System.Drawing.Point(148, 126);
             this.buttonAddTeacher.Name = "buttonAddTeacher";
             this.buttonAddTeacher.Size = new System.Drawing.Size(176, 79);
             this.buttonAddTeacher.TabIndex = 7;
@@ -259,21 +263,22 @@ namespace School_Management_System.View
             // 
             // panelCourse
             // 
+            this.panelCourse.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panelCourse.Controls.Add(this.button);
             this.panelCourse.Controls.Add(this.buttonUpdateCourse);
             this.panelCourse.Controls.Add(this.buttonAddCourse);
-            this.panelCourse.Location = new System.Drawing.Point(262, 15);
+            this.panelCourse.Location = new System.Drawing.Point(201, 12);
             this.panelCourse.Name = "panelCourse";
-            this.panelCourse.Size = new System.Drawing.Size(820, 503);
+            this.panelCourse.Size = new System.Drawing.Size(638, 409);
             this.panelCourse.TabIndex = 11;
             // 
             // button
             // 
             this.button.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.button.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button.Location = new System.Drawing.Point(334, 287);
+            this.button.Location = new System.Drawing.Point(267, 229);
             this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(164, 49);
+            this.button.Size = new System.Drawing.Size(171, 49);
             this.button.TabIndex = 9;
             this.button.Text = "Show Course";
             this.button.UseVisualStyleBackColor = false;
@@ -283,11 +288,11 @@ namespace School_Management_System.View
             // 
             this.buttonUpdateCourse.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonUpdateCourse.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdateCourse.Location = new System.Drawing.Point(441, 185);
+            this.buttonUpdateCourse.Location = new System.Drawing.Point(374, 127);
             this.buttonUpdateCourse.Name = "buttonUpdateCourse";
-            this.buttonUpdateCourse.Size = new System.Drawing.Size(164, 49);
+            this.buttonUpdateCourse.Size = new System.Drawing.Size(171, 49);
             this.buttonUpdateCourse.TabIndex = 8;
-            this.buttonUpdateCourse.Text = "Update Course";
+            this.buttonUpdateCourse.Text = "Update/Delete";
             this.buttonUpdateCourse.UseVisualStyleBackColor = false;
             this.buttonUpdateCourse.Click += new System.EventHandler(this.buttonUpdateCourse_Click);
             // 
@@ -295,9 +300,9 @@ namespace School_Management_System.View
             // 
             this.buttonAddCourse.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonAddCourse.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAddCourse.Location = new System.Drawing.Point(211, 185);
+            this.buttonAddCourse.Location = new System.Drawing.Point(144, 127);
             this.buttonAddCourse.Name = "buttonAddCourse";
-            this.buttonAddCourse.Size = new System.Drawing.Size(164, 49);
+            this.buttonAddCourse.Size = new System.Drawing.Size(171, 49);
             this.buttonAddCourse.TabIndex = 7;
             this.buttonAddCourse.Text = "Add Course";
             this.buttonAddCourse.UseVisualStyleBackColor = false;
@@ -305,13 +310,14 @@ namespace School_Management_System.View
             // 
             // panelSection
             // 
+            this.panelSection.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panelSection.Controls.Add(this.buttonShowSection);
             this.panelSection.Controls.Add(this.buttonUpdateSection);
             this.panelSection.Controls.Add(this.buttonAddSection);
-            this.panelSection.Location = new System.Drawing.Point(260, 15);
+            this.panelSection.Location = new System.Drawing.Point(202, 13);
             this.panelSection.Margin = new System.Windows.Forms.Padding(4);
             this.panelSection.Name = "panelSection";
-            this.panelSection.Size = new System.Drawing.Size(836, 503);
+            this.panelSection.Size = new System.Drawing.Size(648, 408);
             this.panelSection.TabIndex = 11;
             // 
             // buttonShowSection
@@ -331,7 +337,7 @@ namespace School_Management_System.View
             // 
             this.buttonUpdateSection.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonUpdateSection.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdateSection.Location = new System.Drawing.Point(409, 127);
+            this.buttonUpdateSection.Location = new System.Drawing.Point(377, 127);
             this.buttonUpdateSection.Margin = new System.Windows.Forms.Padding(4);
             this.buttonUpdateSection.Name = "buttonUpdateSection";
             this.buttonUpdateSection.Size = new System.Drawing.Size(219, 60);
@@ -363,7 +369,7 @@ namespace School_Management_System.View
             this.panelAdminHome.Controls.Add(this.labelTotalStudent);
             this.panelAdminHome.Controls.Add(this.labelTotalTeacher);
             this.panelAdminHome.Location = new System.Drawing.Point(196, 12);
-            this.panelAdminHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelAdminHome.Margin = new System.Windows.Forms.Padding(2);
             this.panelAdminHome.Name = "panelAdminHome";
             this.panelAdminHome.Size = new System.Drawing.Size(663, 409);
             this.panelAdminHome.TabIndex = 1;
@@ -441,6 +447,10 @@ namespace School_Management_System.View
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(863, 464);
+            this.Controls.Add(this.panelStudent);
+            this.Controls.Add(this.panelSection);
+            this.Controls.Add(this.panelCourse);
+            this.Controls.Add(this.panelTeacher);
             this.Controls.Add(this.panelAdminHome);
             this.Controls.Add(this.panelAdmin);
             this.Name = "FormAdmin";

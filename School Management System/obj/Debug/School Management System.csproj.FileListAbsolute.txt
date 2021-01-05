@@ -54,3 +54,4 @@ E:\Semester 6\C#\project\School-Management-System\School Management System\obj\D
 E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School Management System.csproj.CoreCompileInputs.cache
 E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School Management System.exe
 E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School Management System.pdb
+E:\Semester 6\C#\project\School-Management-System\School Management System\obj\Debug\School_Management_System.View.FormResultShow.resources

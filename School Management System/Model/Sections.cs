@@ -151,7 +151,7 @@ namespace School_Management_System.Model
             conn.Close();
             return sections;
         }
-        /*public int GetTotalSection()
+        public int GetTotalSection()
         {
             conn.Open();
             string query = String.Format("Select count(*) from Sections");
@@ -159,6 +159,6 @@ namespace School_Management_System.Model
             int r = Convert.ToInt32(cmd.ExecuteScalar());
             conn.Close();
             return r;
-        }*/
+        }
     }
 }

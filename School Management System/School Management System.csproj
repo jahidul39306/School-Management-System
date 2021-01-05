@@ -128,6 +128,12 @@
     <Compile Include="View\FormLogIn.Designer.cs">
       <DependentUpon>FormLogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormResultShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormResultShow.Designer.cs">
+      <DependentUpon>FormResultShow.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormShowCourses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormLogIn.resx">
       <DependentUpon>FormLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormResultShow.resx">
+      <DependentUpon>FormResultShow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormShowCourses.resx">
       <DependentUpon>FormShowCourses.cs</DependentUpon>

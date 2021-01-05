@@ -31,25 +31,37 @@ namespace School_Management_System.View
         }
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            Section s = new Section();
-            s.secName = textBoxSecName.Text;
-            s.cId = Int32.Parse(comboBoxClaasId.Text);
-
-            //s.cId = Int32.Parse(textBoxClass.Text);
-            bool b = AdminController.AddSection(s);
-            if(b)
+            try
             {
-                MessageBox.Show("Section added to class");
-                this.Close();
+                Section s = new Section();
+                s.secName = textBoxSecName.Text;
+                s.cId = Int32.Parse(comboBoxClaasId.Text);
+
+                //s.cId = Int32.Parse(textBoxClass.Text);
+                bool b = AdminController.AddSection(s);
+                if (b)
+                {
+                    MessageBox.Show("Section added to class");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Fill all the boxes");
+
+                }
             }
-            else
+            catch(Exception)
             {
-                MessageBox.Show("Fill all the boxes");
-
+                MessageBox.Show("Invalid input");
             }
         }
 
         private void comboBoxClaasId_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormAddSection_Load(object sender, EventArgs e)
         {
 
         }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -116,6 +117,26 @@ namespace School_Management_System.Controller
         public static int GetTotalStudent()
         {
             return db.Students.GetTotalStudent();
+        }
+        public static int GetTotalTeachers()
+        {
+            return db.Teachers.GetTotalTeachers();
+        }
+        public static int GetTotalSection()
+        {
+            return db.Sections.GetTotalSection();
+        }
+        public static int GetTotalCourse()
+        {
+            return db.Courses.GetTotalCourse();
+        }
+        public static DataTable GetAllresults()
+        {
+            return db.Results.GetAllresults();
+        }
+        public static DataTable SearchResult(int search)
+        {
+            return db.Results.SearchResult(search);
         }
     }
 }

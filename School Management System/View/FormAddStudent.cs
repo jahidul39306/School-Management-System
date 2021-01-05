@@ -32,25 +32,33 @@ namespace School_Management_System.View
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            Student s = new Student();
-            s.name = textBoxName.Text;
-            s.roll = textBoxRoll.Text;
-            s.fatherName = textBoxFathersName.Text;
-            s.motherName = textBoxMothersName.Text;
-            s.dateOfBirth = Convert.ToDateTime(textBoxDateOfBirth.Text);
-            s.dateOfAdmission = Convert.ToDateTime(textBoxDateOfAdmission.Text);
-            s.contact = textBoxContact.Text;
-            s.address = richTextBoxAddress.Text;
-            s.gender = comboBoxGender.Text;
-            s.userName = textBoxUserName.Text;
-            s.password = textBoxPassword.Text;
-            s.secId = Int32.Parse(textBoxSectionId.Text);
-            s.cId = Int32.Parse(textBoxClassId.Text);
-            bool b = StudentController.AddStudent(s);
-            if(b)
+            try
             {
-                MessageBox.Show("Student Added");
-                this.Close();
+
+                Student s = new Student();
+                s.name = textBoxName.Text;
+                s.roll = textBoxRoll.Text;
+                s.fatherName = textBoxFathersName.Text;
+                s.motherName = textBoxMothersName.Text;
+                s.dateOfBirth = Convert.ToDateTime(textBoxDateOfBirth.Text);
+                s.dateOfAdmission = Convert.ToDateTime(textBoxDateOfAdmission.Text);
+                s.contact = textBoxContact.Text;
+                s.address = richTextBoxAddress.Text;
+                s.gender = comboBoxGender.Text;
+                s.userName = textBoxUserName.Text;
+                s.password = textBoxPassword.Text;
+                s.secId = Int32.Parse(textBoxSectionId.Text);
+                s.cId = Int32.Parse(textBoxClassId.Text);
+                bool b = StudentController.AddStudent(s);
+                if (b)
+                {
+                    MessageBox.Show("Student Added");
+                    this.Close();
+                }
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Invalid Input");
             }
             
         }

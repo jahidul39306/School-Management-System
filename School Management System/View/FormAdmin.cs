@@ -29,6 +29,18 @@ namespace School_Management_System.View
             string a = labelTotalStudent.Text;
             a += AdminController.GetTotalStudent().ToString();
             labelTotalStudent.Text = a;
+
+            string b = labelTotalTeacher.Text;
+            b += AdminController.GetTotalTeachers().ToString();
+            labelTotalTeacher.Text = b;
+
+            string c = labelTotalSection.Text;
+            c += AdminController.GetTotalSection().ToString();
+            labelTotalSection.Text = c;
+
+            string d = labelTotalCourse.Text;
+            d += AdminController.GetTotalCourse().ToString();
+            labelTotalCourse.Text = d;
         }
        
         private void FormAdmin_Load(object sender, EventArgs e)
@@ -149,6 +161,11 @@ namespace School_Management_System.View
         private void panelAdminHome_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void buttonResultreport_Click(object sender, EventArgs e)
+        {
+            new FormResultShow().Show();
         }
     }
 }
