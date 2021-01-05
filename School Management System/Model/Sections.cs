@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -83,7 +84,7 @@ namespace School_Management_System.Model
                 SqlCommand cmd = new SqlCommand(query, conn);
                 int r = cmd.ExecuteNonQuery();
                 conn.Close();
-                if (r > 0 && x > 0) return true;
+                if (r > 0 ) return true;
                 return false;
             }
             catch
@@ -92,5 +93,72 @@ namespace School_Management_System.Model
                 return false;
             }
         }
+        public ArrayList GetAllSections()
+        {
+            ArrayList sections = new ArrayList();
+            conn.Open();
+            string query = "SELECT * FROM Sections";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                int a = reader.GetInt32(reader.GetOrdinal("secId"));
+                sections.Add(a);
+            }
+            conn.Close();
+            return sections;
+        }
+        public ArrayList GetAllSecInfo()
+        {
+            ArrayList sections = new ArrayList();
+            conn.Open();
+            string query = "SELECT secId, secName, cId FROM Sections";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Section s = new Section();
+                s.secId = reader.GetInt32(reader.GetOrdinal("secId"));
+                s.secName = reader.GetString(reader.GetOrdinal("secName"));
+                s.cId = reader.GetInt32(reader.GetOrdinal("cId"));
+                sections.Add(s);
+            }
+            conn.Close();
+            return sections;
+
+        }
+        public ArrayList SearchSectios(string search)
+        {
+            ArrayList sections = new ArrayList();
+            conn.Open();
+
+
+
+            string query = string.Format("SELECT * FROM Sections WHERE secName LIKE '%{0}%'", search);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Section section = new Section();
+                section.secId = reader.GetInt32(reader.GetOrdinal("secId"));
+                section.secName = reader.GetString(reader.GetOrdinal("secName"));
+                section.cId = reader.GetInt32(reader.GetOrdinal("cId"));
+                sections.Add(section);
+
+
+
+            }
+            conn.Close();
+            return sections;
+        }
+        /*public int GetTotalSection()
+        {
+            conn.Open();
+            string query = String.Format("Select count(*) from Sections");
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int r = Convert.ToInt32(cmd.ExecuteScalar());
+            conn.Close();
+            return r;
+        }*/
     }
 }

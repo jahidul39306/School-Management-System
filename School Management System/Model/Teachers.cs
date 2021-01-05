@@ -338,5 +338,21 @@ namespace School_Management_System.Model
             return false;
 
         }
+        public ArrayList GetAllTeachersId()
+        {
+            ArrayList teachers = new ArrayList();
+            conn.Open();
+            string query = string.Format("SELECT * FROM Teachers");
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                
+                int t = reader.GetInt32(reader.GetOrdinal("tId"));
+                teachers.Add(t);
+            }
+            conn.Close();
+            return teachers;
+        }
     }
 }

@@ -92,6 +92,12 @@
     <Compile Include="View\FormAddResult1.Designer.cs">
       <DependentUpon>FormAddResult1.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormAddSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormAddSection.Designer.cs">
+      <DependentUpon>FormAddSection.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormAddStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,18 @@
     <Compile Include="View\FormLogIn.Designer.cs">
       <DependentUpon>FormLogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormShowCourses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormShowCourses.Designer.cs">
+      <DependentUpon>FormShowCourses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormShowSections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormShowSections.Designer.cs">
+      <DependentUpon>FormShowSections.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormShowStudentInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,11 +164,29 @@
     <Compile Include="View\FormTeacher.Designer.cs">
       <DependentUpon>FormTeacher.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormTeacherAssign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormTeacherAssign.Designer.cs">
+      <DependentUpon>FormTeacherAssign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormUpdateCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormUpdateCourse.Designer.cs">
+      <DependentUpon>FormUpdateCourse.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormUpdateResult.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FormUpdateResult.Designer.cs">
       <DependentUpon>FormUpdateResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormUpdateSections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormUpdateSections.Designer.cs">
+      <DependentUpon>FormUpdateSections.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FormUpdateStudent.cs">
       <SubType>Form</SubType>
@@ -173,8 +209,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\FormAddCourses.resx">
+      <DependentUpon>FormAddCourses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormAddResult1.resx">
       <DependentUpon>FormAddResult1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormAddSection.resx">
+      <DependentUpon>FormAddSection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormAddStudent.resx">
       <DependentUpon>FormAddStudent.cs</DependentUpon>
@@ -188,6 +230,12 @@
     <EmbeddedResource Include="View\FormLogIn.resx">
       <DependentUpon>FormLogIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FormShowCourses.resx">
+      <DependentUpon>FormShowCourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormShowSections.resx">
+      <DependentUpon>FormShowSections.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormShowStudentInfo.resx">
       <DependentUpon>FormShowStudentInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,8 +248,17 @@
     <EmbeddedResource Include="View\FormTeacher.resx">
       <DependentUpon>FormTeacher.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FormTeacherAssign.resx">
+      <DependentUpon>FormTeacherAssign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormUpdateCourse.resx">
+      <DependentUpon>FormUpdateCourse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormUpdateResult.resx">
       <DependentUpon>FormUpdateResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormUpdateSections.resx">
+      <DependentUpon>FormUpdateSections.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormUpdateStudent.resx">
       <DependentUpon>FormUpdateStudent.cs</DependentUpon>

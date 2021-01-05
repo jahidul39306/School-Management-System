@@ -67,5 +67,51 @@ namespace School_Management_System.Controller
         {
             return db.Courses.DeleteCourse(coId);
         }
+
+        public static ArrayList GetAllClasses()
+        {
+            return db.Classes.GetAllClasses();
+        }
+
+        public static ArrayList GetAllCourses()
+        {
+            return db.Courses.GetAllCourses();
+        }
+        public static ArrayList GetAllSections()
+        {
+            return db.Sections.GetAllSections();
+        }
+        public static Section GetSection(int secId)
+        {
+            return db.Sections.GetSection(secId);
+        }
+        public static ArrayList GetAllSecInfo()
+        {
+            return db.Sections.GetAllSecInfo();
+        }
+        public static ArrayList SearchSectios(string search)
+        {
+            return db.Sections.SearchSectios(search);
+        }
+        public static ArrayList GetAllCoursesInfo()
+        {
+            return db.Courses.GetAllCoursesInfo();
+        }
+        public static ArrayList SearchCourses(string search)
+        {
+            return db.Courses.SearchCourses(search);
+        }
+        public static Course GetCourse(int coId)
+        {
+            return db.Courses.GetCourse(coId);
+        }
+        public static ArrayList GetAllTeachersId()
+        {
+            return db.Teachers.GetAllTeachersId();
+        }
+        public static bool AssignTeacher(int tId, int coId, int cId, int secId)
+        {
+            return db.Admins.AssignTeacher(tId, coId, cId, secId);
+        }
     }
 }

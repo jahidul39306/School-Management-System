@@ -1,4 +1,7 @@
-﻿using System;
+﻿using School_Management_System.Controller;
+using School_Management_System.Model;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,8 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using School_Management_System.Model;
-using School_Management_System.Controller;
+
 namespace School_Management_System.View
 {
     public partial class FormAddSection : Form
@@ -16,27 +18,40 @@ namespace School_Management_System.View
         public FormAddSection()
         {
             InitializeComponent();
+            //ArrayList classes = AdminController.GetAllClasses();
+            FillClassComboBox();
         }
-
+        public void FillClassComboBox()
+        {
+            ArrayList classes = AdminController.GetAllClasses();
+            foreach(var e in classes)
+            {
+                comboBoxClaasId.Items.Add(e.ToString());
+            }
+        }
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            try
+            Section s = new Section();
+            s.secName = textBoxSecName.Text;
+            s.cId = Int32.Parse(comboBoxClaasId.Text);
+
+            //s.cId = Int32.Parse(textBoxClass.Text);
+            bool b = AdminController.AddSection(s);
+            if(b)
             {
-                Section s = new Section();
-                s.secName = textBoxSectionName.Text;
-                s.cId = Int32.Parse(textBoxClassId.Text);
-                bool b = SectionController.AddSection(s);
-                if (b)
-                {
-                    MessageBox.Show("Section Added");
-                }
-                else
-                    MessageBox.Show("Failed");
+                MessageBox.Show("Section added to class");
+                this.Close();
             }
-            catch (Exception)
+            else
             {
-                MessageBox.Show("Invalid input");
+                MessageBox.Show("Fill all the boxes");
+
             }
+        }
+
+        private void comboBoxClaasId_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

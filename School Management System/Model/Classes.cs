@@ -89,5 +89,20 @@ namespace School_Management_System.Model
     
         }
 
+        public ArrayList GetAllClasses()
+        {
+            ArrayList classes = new ArrayList();
+            conn.Open();
+            string query = "SELECT * FROM Classes";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                int a = reader.GetInt32(reader.GetOrdinal("cId"));
+                classes.Add(a);
+            }
+            conn.Close();
+            return classes;
+        }
     }
 }

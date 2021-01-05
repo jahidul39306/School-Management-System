@@ -1,4 +1,5 @@
-﻿using System;
+﻿using School_Management_System.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,8 +21,33 @@ namespace School_Management_System.View
             panelTeacher.Visible = false;
             panelCourse.Visible = false;
             panelSection.Visible = false;
-        }
+            //GetLabelValue();
 
+        }
+        /*public void GetLabelValue()
+        {
+            string a = labelTotalStudent.Text;
+            a += AdminController.GetTotalStudet().ToString();
+            labelTotalStudent.Text = a;
+
+
+
+            string b = labelTotalTeacher.Text;
+            b += AdminController.GetTotalTeacher().ToString();
+            labelTotalTeacher.Text = b;
+
+
+
+            string c = labelTotalSection.Text;
+            c += SectionController.GetTotalSection().ToString();
+            labelTotalSection.Text = c;
+
+
+
+            string d = labelTotalCourse.Text;
+            d += CourseController.GetTotalCourse().ToString();
+            labelTotalCourse.Text = d;
+        }*/
         private void FormAdmin_Load(object sender, EventArgs e)
         {
 
@@ -100,6 +126,46 @@ namespace School_Management_System.View
         private void buttonShowTeacher_Click(object sender, EventArgs e)
         {
             new FormShowTeacherInfo().Show();
+        }
+
+        private void buttonAddSection_Click(object sender, EventArgs e)
+        {
+            new FormAddSection().Show();
+        }
+
+        private void buttonUpdateSection_Click(object sender, EventArgs e)
+        {
+            new FormUpdateSections().Show();
+        }
+
+        private void buttonShowSection_Click(object sender, EventArgs e)
+        {
+            new FormShowSections().Show();
+        }
+
+        private void buttonAddCourse_Click(object sender, EventArgs e)
+        {
+            new FormAddCourses().Show();
+        }
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            new FormShowCourses().Show();
+        }
+
+        private void buttonUpdateCourse_Click(object sender, EventArgs e)
+        {
+            new FormUpdateCourse().Show();
+        }
+
+        private void buttonTeacherAssign_Click(object sender, EventArgs e)
+        {
+            new FormTeacherAssign().Show();
+        }
+
+        private void panelAdminHome_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

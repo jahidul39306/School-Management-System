@@ -961,8 +961,15 @@ namespace School_Management_System.View
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1045, 639);
             this.Controls.Add(this.panelSResult);
-            
+            this.Controls.Add(this.panelChangePass);
+            this.Controls.Add(this.panelTeacherInfo);
+            this.Controls.Add(this.panelResultAdd);
+            this.Controls.Add(this.panelResultUpdate);
+            this.Controls.Add(this.panelStudentInfo);
             this.Controls.Add(this.panelTeacher);
+
+
+            //this.Controls.Add(this.panelTeacher);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormTeacher";
             this.Text = "FormTeacher";
