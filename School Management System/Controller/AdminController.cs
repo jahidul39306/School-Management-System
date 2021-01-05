@@ -113,5 +113,9 @@ namespace School_Management_System.Controller
         {
             return db.Admins.AssignTeacher(tId, coId, cId, secId);
         }
+        public static int GetTotalStudent()
+        {
+            return db.Students.GetTotalStudent();
+        }
     }
 }

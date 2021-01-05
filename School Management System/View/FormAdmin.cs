@@ -21,33 +21,16 @@ namespace School_Management_System.View
             panelTeacher.Visible = false;
             panelCourse.Visible = false;
             panelSection.Visible = false;
-            //GetLabelValue();
+            GetLabelValue();
 
         }
-        /*public void GetLabelValue()
+        public void GetLabelValue()
         {
             string a = labelTotalStudent.Text;
-            a += AdminController.GetTotalStudet().ToString();
+            a += AdminController.GetTotalStudent().ToString();
             labelTotalStudent.Text = a;
-
-
-
-            string b = labelTotalTeacher.Text;
-            b += AdminController.GetTotalTeacher().ToString();
-            labelTotalTeacher.Text = b;
-
-
-
-            string c = labelTotalSection.Text;
-            c += SectionController.GetTotalSection().ToString();
-            labelTotalSection.Text = c;
-
-
-
-            string d = labelTotalCourse.Text;
-            d += CourseController.GetTotalCourse().ToString();
-            labelTotalCourse.Text = d;
-        }*/
+        }
+       
         private void FormAdmin_Load(object sender, EventArgs e)
         {
 
